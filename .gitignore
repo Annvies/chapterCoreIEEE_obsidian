@@ -1,0 +1,10 @@
+# Estado local de Obsidian: cambia en cada sesión y es distinto para cada persona
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
