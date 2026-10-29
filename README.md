@@ -11,6 +11,12 @@ Estudiantil IEEE (UPB).
 1. Clona este repositorio.
 2. En Obsidian, elige **Abrir carpeta como bóveda** y selecciona la carpeta clonada.
 
+## Cerebros por módulo
+
+El mapa de los seis módulos y sus conexiones está en [[Cerebros/Mapa de cerebros]].
+La vista espacial con grupos de color está en [[ChapterCore - Cerebros.canvas]].
+Cada módulo tiene su cerebro y tres subgrupos enlazados.
+
 ## Qué se versiona
 
 - Las notas (`.md`) y los adjuntos.
