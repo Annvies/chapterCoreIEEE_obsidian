@@ -17,8 +17,8 @@ tags:
 # ChapterCore — Cerebro central
 
 **ChapterCore** es el sistema de gestión integral de la Rama Estudiantil IEEE (UPB) y sus
-capítulos. Este cerebro central conecta los **seis cerebros especializados**, uno por
-módulo del sistema. Cada cerebro tiene tres subgrupos y, debajo, notas de concepto
+capítulos. Este cerebro central conecta los **seis cerebros especializados** del MVP, uno
+por módulo del sistema, y el del Módulo 7, propuesto. Cada cerebro tiene tres subgrupos y, debajo, notas de concepto
 verificadas en el código.
 
 > [!abstract] Estructura del conocimiento
@@ -48,6 +48,7 @@ Nodos propios del cerebro central, agrupados por tema:
 | 4 | [[Cerebro 4 - Difusión y QR]] | Enlaces cortos, QR dinámicos y conteo de visitas |
 | 5 | [[Cerebro 5 - Secretaría y formularios]] | Formularios dinámicos versionados, respuestas y adjuntos |
 | 6 | [[Cerebro 6 - Feedback y KPIs]] | Dashboard: miembros, oportunidades, respuestas, satisfacción y NPS |
+| 7 | [[Cerebro 7 - Tesorería y Gastos]] *(propuesto)* | Gastos de la Rama y de cada capítulo y total gastado por periodo; en rama, pendiente de aprobación |
 
 > [!info] Arquitectura del producto
 > - Backend NestJS + PostgreSQL en `backendChapterCoreIEEE/`; frontend React en
@@ -64,21 +65,23 @@ Nodos propios del cerebro central, agrupados por tema:
 > - **Módulo 5 → Módulo 6:** respuestas, escalas `useInKpis` y comentarios alimentan
 >   satisfacción, NPS y feedback reciente.
 > - **Módulo 4 → Módulo 5:** los enlaces cortos y QR difunden formularios publicados.
-> - **Módulo 4 → Módulo 6** *(propuesto, PR #28)*: las visitas con origen QR se cuentan
->   como escaneos en el Dashboard.
+> - **Módulo 4 → Módulo 6:** las visitas con origen QR se cuentan como escaneos en el
+>   Dashboard.
 > - **Módulo 2:** usa permisos y capítulos del Módulo 1; no alimenta el Dashboard.
+> - **Módulo 1 y 2 → Módulo 7** *(propuesto)*: tesorería usa la matriz de permisos y el
+>   catálogo de capítulos; no alimenta el Dashboard.
 
 > [!warning] Integraciones pendientes
-> - Escaneos QR en el Dashboard y alcance por capítulo del Director: **resueltos en el
->   PR #28, pendiente de fusión**; en `main` siguen sin aplicarse.
-> - Formularios públicos con enlaces de Google Drive en lugar de archivos: **PR #27,
->   pendiente de fusión**.
+> - Escaneos QR en el Dashboard, alcance por capítulo del Director (PR #28) y enlaces de
+>   Google Drive en formularios públicos (PR #27): **ya están en `main`** (PR #29).
+> - Módulo 7, tesorería: en la rama `feat/modulo-7-gastos-tesoreria`, pendiente de
+>   aprobación del equipo.
 > - No existe un módulo de eventos (el Dashboard lo informa como no disponible).
 
 ## Cómo leer el grafo
 
 - El grafo muestra solo la carpeta `Cerebros/` (filtro `path:"Cerebros/"`). Colores: central (dorado), Módulo 1
-  naranja, 2 coral, 3 amarillo, 4 verde, 5 azul, 6 violeta.
+  naranja, 2 coral, 3 amarillo, 4 verde, 5 azul, 6 violeta, 7 turquesa.
 - Los nodos grandes son los cerebros (más conexiones); los pequeños, conceptos.
 - Vista espacial: `ChapterCore - Cerebros.canvas`.
 
