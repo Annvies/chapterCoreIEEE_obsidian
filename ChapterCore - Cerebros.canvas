@@ -1,62 +1,1346 @@
 {
-	"nodes":[
-		{"id":"cluster-m1","type":"group","x":0,"y":0,"width":570,"height":390,"label":"MÓDULO 1 · BASE INSTITUCIONAL","color":"1"},
-		{"id":"cluster-m2","type":"group","x":640,"y":0,"width":570,"height":390,"label":"MÓDULO 2 · CONTACTOS","color":"2"},
-		{"id":"cluster-m3","type":"group","x":1280,"y":0,"width":570,"height":390,"label":"MÓDULO 3 · OPORTUNIDADES","color":"3"},
-		{"id":"cluster-m4","type":"group","x":0,"y":460,"width":570,"height":390,"label":"MÓDULO 4 · DIFUSIÓN Y QR","color":"4"},
-		{"id":"cluster-m5","type":"group","x":640,"y":460,"width":570,"height":390,"label":"MÓDULO 5 · SECRETARÍA","color":"5"},
-		{"id":"cluster-m6","type":"group","x":1280,"y":460,"width":570,"height":390,"label":"MÓDULO 6 · FEEDBACK Y KPIs","color":"6"},
-		{"id":"hub-m1","type":"file","file":"Cerebros/Cerebro 1 - Base institucional.md","x":20,"y":65,"width":530,"height":105,"color":"1"},
-		{"id":"m1-a","type":"file","file":"Cerebros/M1 - Identidad y acceso.md","x":20,"y":215,"width":165,"height":130,"color":"1"},
-		{"id":"m1-b","type":"file","file":"Cerebros/M1 - Capítulos y sociedades.md","x":202,"y":215,"width":165,"height":130,"color":"1"},
-		{"id":"m1-c","type":"file","file":"Cerebros/M1 - Permisos compartidos.md","x":385,"y":215,"width":165,"height":130,"color":"1"},
-		{"id":"hub-m2","type":"file","file":"Cerebros/Cerebro 2 - Contactos.md","x":660,"y":65,"width":530,"height":105,"color":"2"},
-		{"id":"m2-a","type":"file","file":"Cerebros/M2 - Directorio.md","x":660,"y":215,"width":165,"height":130,"color":"2"},
-		{"id":"m2-b","type":"file","file":"Cerebros/M2 - Relaciones institucionales.md","x":842,"y":215,"width":165,"height":130,"color":"2"},
-		{"id":"m2-c","type":"file","file":"Cerebros/M2 - Seguimiento.md","x":1025,"y":215,"width":165,"height":130,"color":"2"},
-		{"id":"hub-m3","type":"file","file":"Cerebros/Cerebro 3 - Oportunidades IEEE.md","x":1300,"y":65,"width":530,"height":105,"color":"3"},
-		{"id":"m3-a","type":"file","file":"Cerebros/M3 - Descubrimiento.md","x":1300,"y":215,"width":165,"height":130,"color":"3"},
-		{"id":"m3-b","type":"file","file":"Cerebros/M3 - Extracción y revisión.md","x":1482,"y":215,"width":165,"height":130,"color":"3"},
-		{"id":"m3-c","type":"file","file":"Cerebros/M3 - Publicación y búsqueda.md","x":1665,"y":215,"width":165,"height":130,"color":"3"},
-		{"id":"hub-m4","type":"file","file":"Cerebros/Cerebro 4 - Difusión y QR.md","x":20,"y":525,"width":530,"height":105,"color":"4"},
-		{"id":"m4-a","type":"file","file":"Cerebros/M4 - Enlaces cortos.md","x":20,"y":675,"width":165,"height":130,"color":"4"},
-		{"id":"m4-b","type":"file","file":"Cerebros/M4 - Códigos QR.md","x":202,"y":675,"width":165,"height":130,"color":"4"},
-		{"id":"m4-c","type":"file","file":"Cerebros/M4 - Métricas de difusión.md","x":385,"y":675,"width":165,"height":130,"color":"4"},
-		{"id":"hub-m5","type":"file","file":"Cerebros/Cerebro 5 - Secretaría y formularios.md","x":660,"y":525,"width":530,"height":105,"color":"5"},
-		{"id":"m5-a","type":"file","file":"Cerebros/M5 - Diseño de formularios.md","x":660,"y":675,"width":165,"height":130,"color":"5"},
-		{"id":"m5-b","type":"file","file":"Cerebros/M5 - Respuestas y versiones.md","x":842,"y":675,"width":165,"height":130,"color":"5"},
-		{"id":"m5-c","type":"file","file":"Cerebros/M5 - Datos y privacidad.md","x":1025,"y":675,"width":165,"height":130,"color":"5"},
-		{"id":"hub-m6","type":"file","file":"Cerebros/Cerebro 6 - Feedback y KPIs.md","x":1300,"y":525,"width":530,"height":105,"color":"6"},
-		{"id":"m6-a","type":"file","file":"Cerebros/M6 - Indicadores.md","x":1300,"y":675,"width":165,"height":130,"color":"6"},
-		{"id":"m6-b","type":"file","file":"Cerebros/M6 - Periodos y filtros.md","x":1482,"y":675,"width":165,"height":130,"color":"6"},
-		{"id":"m6-c","type":"file","file":"Cerebros/M6 - Lectura del feedback.md","x":1665,"y":675,"width":165,"height":130,"color":"6"}
+	"nodes": [
+		{
+			"id": "cluster-central",
+			"type": "group",
+			"x": 0,
+			"y": 0,
+			"width": 3240,
+			"height": 420,
+			"label": "CEREBRO CENTRAL · CONOCIMIENTO TRANSVERSAL",
+			"color": "#C9A227"
+		},
+		{
+			"id": "central",
+			"type": "file",
+			"file": "Cerebros/ChapterCore - Cerebro central.md",
+			"x": 1270,
+			"y": 40,
+			"width": 700,
+			"height": 130,
+			"color": "#C9A227"
+		},
+		{
+			"id": "cc-0",
+			"type": "file",
+			"file": "Cerebros/CC - Arquitectura y stack.md",
+			"x": 20,
+			"y": 240,
+			"width": 624,
+			"height": 140,
+			"color": "#C9A227"
+		},
+		{
+			"id": "cc-1",
+			"type": "file",
+			"file": "Cerebros/CC - Seguridad transversal.md",
+			"x": 664,
+			"y": 240,
+			"width": 624,
+			"height": 140,
+			"color": "#C9A227"
+		},
+		{
+			"id": "cc-2",
+			"type": "file",
+			"file": "Cerebros/CC - Despliegue e integración continua.md",
+			"x": 1308,
+			"y": 240,
+			"width": 624,
+			"height": 140,
+			"color": "#C9A227"
+		},
+		{
+			"id": "cc-3",
+			"type": "file",
+			"file": "Cerebros/CC - Diseño e interfaz.md",
+			"x": 1952,
+			"y": 240,
+			"width": 624,
+			"height": 140,
+			"color": "#C9A227"
+		},
+		{
+			"id": "cc-4",
+			"type": "file",
+			"file": "Cerebros/CC - Proyecto y equipo.md",
+			"x": 2596,
+			"y": 240,
+			"width": 624,
+			"height": 140,
+			"color": "#C9A227"
+		},
+		{
+			"id": "cluster-m1",
+			"type": "group",
+			"x": 0,
+			"y": 540,
+			"width": 1000,
+			"height": 600,
+			"label": "MÓDULO 1 · BASE INSTITUCIONAL",
+			"color": "1"
+		},
+		{
+			"id": "hub-m1",
+			"type": "file",
+			"file": "Cerebros/Cerebro 1 - Base institucional.md",
+			"x": 20,
+			"y": 580,
+			"width": 960,
+			"height": 100,
+			"color": "1"
+		},
+		{
+			"id": "m1-f0",
+			"type": "file",
+			"file": "Cerebros/M1 - Identidad y acceso.md",
+			"x": 20,
+			"y": 715,
+			"width": 305,
+			"height": 110,
+			"color": "1"
+		},
+		{
+			"id": "m1-f1",
+			"type": "file",
+			"file": "Cerebros/M1 - Capítulos y sociedades.md",
+			"x": 345,
+			"y": 715,
+			"width": 305,
+			"height": 110,
+			"color": "1"
+		},
+		{
+			"id": "m1-f2",
+			"type": "file",
+			"file": "Cerebros/M1 - Permisos compartidos.md",
+			"x": 670,
+			"y": 715,
+			"width": 305,
+			"height": 110,
+			"color": "1"
+		},
+		{
+			"id": "code-m1",
+			"type": "file",
+			"file": "Cerebros/M1 - Código del módulo.md",
+			"x": 20,
+			"y": 855,
+			"width": 960,
+			"height": 90,
+			"color": "1"
+		},
+		{
+			"id": "m1-t0",
+			"type": "file",
+			"file": "Cerebros/M1 - API.md",
+			"x": 20,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "m1-t1",
+			"type": "file",
+			"file": "Cerebros/M1 - DTO y validaciones.md",
+			"x": 182,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "m1-t2",
+			"type": "file",
+			"file": "Cerebros/M1 - Lógica del backend.md",
+			"x": 344,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "m1-t3",
+			"type": "file",
+			"file": "Cerebros/M1 - Base de datos.md",
+			"x": 506,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "m1-t4",
+			"type": "file",
+			"file": "Cerebros/M1 - Interfaz.md",
+			"x": 668,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "m1-t5",
+			"type": "file",
+			"file": "Cerebros/M1 - Pruebas.md",
+			"x": 830,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "1"
+		},
+		{
+			"id": "cluster-m2",
+			"type": "group",
+			"x": 1120,
+			"y": 540,
+			"width": 1000,
+			"height": 600,
+			"label": "MÓDULO 2 · CONTACTOS",
+			"color": "2"
+		},
+		{
+			"id": "hub-m2",
+			"type": "file",
+			"file": "Cerebros/Cerebro 2 - Contactos.md",
+			"x": 1140,
+			"y": 580,
+			"width": 960,
+			"height": 100,
+			"color": "2"
+		},
+		{
+			"id": "m2-f0",
+			"type": "file",
+			"file": "Cerebros/M2 - Directorio.md",
+			"x": 1140,
+			"y": 715,
+			"width": 305,
+			"height": 110,
+			"color": "2"
+		},
+		{
+			"id": "m2-f1",
+			"type": "file",
+			"file": "Cerebros/M2 - Relaciones institucionales.md",
+			"x": 1465,
+			"y": 715,
+			"width": 305,
+			"height": 110,
+			"color": "2"
+		},
+		{
+			"id": "m2-f2",
+			"type": "file",
+			"file": "Cerebros/M2 - Seguimiento.md",
+			"x": 1790,
+			"y": 715,
+			"width": 305,
+			"height": 110,
+			"color": "2"
+		},
+		{
+			"id": "code-m2",
+			"type": "file",
+			"file": "Cerebros/M2 - Código del módulo.md",
+			"x": 1140,
+			"y": 855,
+			"width": 960,
+			"height": 90,
+			"color": "2"
+		},
+		{
+			"id": "m2-t0",
+			"type": "file",
+			"file": "Cerebros/M2 - API.md",
+			"x": 1140,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "2"
+		},
+		{
+			"id": "m2-t1",
+			"type": "file",
+			"file": "Cerebros/M2 - DTO y validaciones.md",
+			"x": 1302,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "2"
+		},
+		{
+			"id": "m2-t2",
+			"type": "file",
+			"file": "Cerebros/M2 - Lógica del backend.md",
+			"x": 1464,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "2"
+		},
+		{
+			"id": "m2-t3",
+			"type": "file",
+			"file": "Cerebros/M2 - Base de datos.md",
+			"x": 1626,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "2"
+		},
+		{
+			"id": "m2-t4",
+			"type": "file",
+			"file": "Cerebros/M2 - Interfaz.md",
+			"x": 1788,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "2"
+		},
+		{
+			"id": "m2-t5",
+			"type": "file",
+			"file": "Cerebros/M2 - Pruebas.md",
+			"x": 1950,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "2"
+		},
+		{
+			"id": "cluster-m3",
+			"type": "group",
+			"x": 2240,
+			"y": 540,
+			"width": 1000,
+			"height": 600,
+			"label": "MÓDULO 3 · OPORTUNIDADES IEEE",
+			"color": "3"
+		},
+		{
+			"id": "hub-m3",
+			"type": "file",
+			"file": "Cerebros/Cerebro 3 - Oportunidades IEEE.md",
+			"x": 2260,
+			"y": 580,
+			"width": 960,
+			"height": 100,
+			"color": "3"
+		},
+		{
+			"id": "m3-f0",
+			"type": "file",
+			"file": "Cerebros/M3 - Descubrimiento.md",
+			"x": 2260,
+			"y": 715,
+			"width": 305,
+			"height": 110,
+			"color": "3"
+		},
+		{
+			"id": "m3-f1",
+			"type": "file",
+			"file": "Cerebros/M3 - Extracción y revisión.md",
+			"x": 2585,
+			"y": 715,
+			"width": 305,
+			"height": 110,
+			"color": "3"
+		},
+		{
+			"id": "m3-f2",
+			"type": "file",
+			"file": "Cerebros/M3 - Publicación y búsqueda.md",
+			"x": 2910,
+			"y": 715,
+			"width": 305,
+			"height": 110,
+			"color": "3"
+		},
+		{
+			"id": "code-m3",
+			"type": "file",
+			"file": "Cerebros/M3 - Código del módulo.md",
+			"x": 2260,
+			"y": 855,
+			"width": 960,
+			"height": 90,
+			"color": "3"
+		},
+		{
+			"id": "m3-t0",
+			"type": "file",
+			"file": "Cerebros/M3 - API.md",
+			"x": 2260,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "3"
+		},
+		{
+			"id": "m3-t1",
+			"type": "file",
+			"file": "Cerebros/M3 - DTO y validaciones.md",
+			"x": 2422,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "3"
+		},
+		{
+			"id": "m3-t2",
+			"type": "file",
+			"file": "Cerebros/M3 - Lógica del backend.md",
+			"x": 2584,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "3"
+		},
+		{
+			"id": "m3-t3",
+			"type": "file",
+			"file": "Cerebros/M3 - Base de datos.md",
+			"x": 2746,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "3"
+		},
+		{
+			"id": "m3-t4",
+			"type": "file",
+			"file": "Cerebros/M3 - Interfaz.md",
+			"x": 2908,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "3"
+		},
+		{
+			"id": "m3-t5",
+			"type": "file",
+			"file": "Cerebros/M3 - Pruebas.md",
+			"x": 3070,
+			"y": 980,
+			"width": 150,
+			"height": 130,
+			"color": "3"
+		},
+		{
+			"id": "cluster-m4",
+			"type": "group",
+			"x": 0,
+			"y": 1260,
+			"width": 1000,
+			"height": 600,
+			"label": "MÓDULO 4 · DIFUSIÓN Y QR",
+			"color": "4"
+		},
+		{
+			"id": "hub-m4",
+			"type": "file",
+			"file": "Cerebros/Cerebro 4 - Difusión y QR.md",
+			"x": 20,
+			"y": 1300,
+			"width": 960,
+			"height": 100,
+			"color": "4"
+		},
+		{
+			"id": "m4-f0",
+			"type": "file",
+			"file": "Cerebros/M4 - Enlaces cortos.md",
+			"x": 20,
+			"y": 1435,
+			"width": 305,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "m4-f1",
+			"type": "file",
+			"file": "Cerebros/M4 - Códigos QR.md",
+			"x": 345,
+			"y": 1435,
+			"width": 305,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "m4-f2",
+			"type": "file",
+			"file": "Cerebros/M4 - Métricas de difusión.md",
+			"x": 670,
+			"y": 1435,
+			"width": 305,
+			"height": 110,
+			"color": "4"
+		},
+		{
+			"id": "code-m4",
+			"type": "file",
+			"file": "Cerebros/M4 - Código del módulo.md",
+			"x": 20,
+			"y": 1575,
+			"width": 960,
+			"height": 90,
+			"color": "4"
+		},
+		{
+			"id": "m4-t0",
+			"type": "file",
+			"file": "Cerebros/M4 - API.md",
+			"x": 20,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "m4-t1",
+			"type": "file",
+			"file": "Cerebros/M4 - DTO y validaciones.md",
+			"x": 182,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "m4-t2",
+			"type": "file",
+			"file": "Cerebros/M4 - Lógica del backend.md",
+			"x": 344,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "m4-t3",
+			"type": "file",
+			"file": "Cerebros/M4 - Base de datos.md",
+			"x": 506,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "m4-t4",
+			"type": "file",
+			"file": "Cerebros/M4 - Interfaz.md",
+			"x": 668,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "m4-t5",
+			"type": "file",
+			"file": "Cerebros/M4 - Pruebas.md",
+			"x": 830,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "4"
+		},
+		{
+			"id": "cluster-m5",
+			"type": "group",
+			"x": 1120,
+			"y": 1260,
+			"width": 1000,
+			"height": 600,
+			"label": "MÓDULO 5 · SECRETARÍA Y FORMULARIOS",
+			"color": "5"
+		},
+		{
+			"id": "hub-m5",
+			"type": "file",
+			"file": "Cerebros/Cerebro 5 - Secretaría y formularios.md",
+			"x": 1140,
+			"y": 1300,
+			"width": 960,
+			"height": 100,
+			"color": "5"
+		},
+		{
+			"id": "m5-f0",
+			"type": "file",
+			"file": "Cerebros/M5 - Diseño de formularios.md",
+			"x": 1140,
+			"y": 1435,
+			"width": 305,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "m5-f1",
+			"type": "file",
+			"file": "Cerebros/M5 - Respuestas y versiones.md",
+			"x": 1465,
+			"y": 1435,
+			"width": 305,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "m5-f2",
+			"type": "file",
+			"file": "Cerebros/M5 - Datos y privacidad.md",
+			"x": 1790,
+			"y": 1435,
+			"width": 305,
+			"height": 110,
+			"color": "5"
+		},
+		{
+			"id": "code-m5",
+			"type": "file",
+			"file": "Cerebros/M5 - Código del módulo.md",
+			"x": 1140,
+			"y": 1575,
+			"width": 960,
+			"height": 90,
+			"color": "5"
+		},
+		{
+			"id": "m5-t0",
+			"type": "file",
+			"file": "Cerebros/M5 - API.md",
+			"x": 1140,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "5"
+		},
+		{
+			"id": "m5-t1",
+			"type": "file",
+			"file": "Cerebros/M5 - DTO y validaciones.md",
+			"x": 1302,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "5"
+		},
+		{
+			"id": "m5-t2",
+			"type": "file",
+			"file": "Cerebros/M5 - Lógica del backend.md",
+			"x": 1464,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "5"
+		},
+		{
+			"id": "m5-t3",
+			"type": "file",
+			"file": "Cerebros/M5 - Base de datos.md",
+			"x": 1626,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "5"
+		},
+		{
+			"id": "m5-t4",
+			"type": "file",
+			"file": "Cerebros/M5 - Interfaz.md",
+			"x": 1788,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "5"
+		},
+		{
+			"id": "m5-t5",
+			"type": "file",
+			"file": "Cerebros/M5 - Pruebas.md",
+			"x": 1950,
+			"y": 1700,
+			"width": 150,
+			"height": 130,
+			"color": "5"
+		},
+		{
+			"id": "cluster-m6",
+			"type": "group",
+			"x": 2240,
+			"y": 1260,
+			"width": 1000,
+			"height": 600,
+			"label": "MÓDULO 6 · FEEDBACK Y KPIS",
+			"color": "6"
+		},
+		{
+			"id": "hub-m6",
+			"type": "file",
+			"file": "Cerebros/Cerebro 6 - Feedback y KPIs.md",
+			"x": 2260,
+			"y": 1300,
+			"width": 960,
+			"height": 100,
+			"color": "6"
+		},
+		{
+			"id": "m6-f0",
+			"type": "file",
+			"file": "Cerebros/M6 - Indicadores.md",
+			"x": 2260,
+			"y": 1435,
+			"width": 305,
+			"height": 110,
+			"color": "6"
+		},
+		{
+			"id": "m6-f1",
+			"type": "file",
+			"file": "Cerebros/M6 - Periodos y filtros.md",
+			"x": 2585,
+			"y": 1435,
+			"width": 305,
+			"height": 110,
+			"color": "6"
+		},
+		{
+			"id": "m6-f2",
+			"type": "file",
+			"file": "Cerebros/M6 - Lectura del feedback.md",
+			"x": 2910,
+			"y": 1435,
+			"width": 305,
+			"height": 110,
+			"color": "6"
+		},
+		{
+			"id": "code-m6",
+			"type": "file",
+			"file": "Cerebros/M6 - Código del módulo.md",
+			"x": 2260,
+			"y": 1575,
+			"width": 960,
+			"height": 90,
+			"color": "6"
+		},
+		{
+			"id": "m6-t0",
+			"type": "file",
+			"file": "Cerebros/M6 - API.md",
+			"x": 2260,
+			"y": 1700,
+			"width": 182,
+			"height": 130,
+			"color": "6"
+		},
+		{
+			"id": "m6-t1",
+			"type": "file",
+			"file": "Cerebros/M6 - DTO y validaciones.md",
+			"x": 2454,
+			"y": 1700,
+			"width": 182,
+			"height": 130,
+			"color": "6"
+		},
+		{
+			"id": "m6-t2",
+			"type": "file",
+			"file": "Cerebros/M6 - Lógica del backend.md",
+			"x": 2648,
+			"y": 1700,
+			"width": 182,
+			"height": 130,
+			"color": "6"
+		},
+		{
+			"id": "m6-t3",
+			"type": "file",
+			"file": "Cerebros/M6 - Interfaz.md",
+			"x": 2842,
+			"y": 1700,
+			"width": 182,
+			"height": 130,
+			"color": "6"
+		},
+		{
+			"id": "m6-t4",
+			"type": "file",
+			"file": "Cerebros/M6 - Pruebas.md",
+			"x": 3036,
+			"y": 1700,
+			"width": 182,
+			"height": 130,
+			"color": "6"
+		}
 	],
-	"edges":[
-		{"id":"m1-in-a","fromNode":"hub-m1","toNode":"m1-a","fromSide":"bottom","toSide":"top","color":"1"},
-		{"id":"m1-in-b","fromNode":"hub-m1","toNode":"m1-b","fromSide":"bottom","toSide":"top","color":"1"},
-		{"id":"m1-in-c","fromNode":"hub-m1","toNode":"m1-c","fromSide":"bottom","toSide":"top","color":"1"},
-		{"id":"m2-in-a","fromNode":"hub-m2","toNode":"m2-a","fromSide":"bottom","toSide":"top","color":"2"},
-		{"id":"m2-in-b","fromNode":"hub-m2","toNode":"m2-b","fromSide":"bottom","toSide":"top","color":"2"},
-		{"id":"m2-in-c","fromNode":"hub-m2","toNode":"m2-c","fromSide":"bottom","toSide":"top","color":"2"},
-		{"id":"m3-in-a","fromNode":"hub-m3","toNode":"m3-a","fromSide":"bottom","toSide":"top","color":"3"},
-		{"id":"m3-in-b","fromNode":"hub-m3","toNode":"m3-b","fromSide":"bottom","toSide":"top","color":"3"},
-		{"id":"m3-in-c","fromNode":"hub-m3","toNode":"m3-c","fromSide":"bottom","toSide":"top","color":"3"},
-		{"id":"m4-in-a","fromNode":"hub-m4","toNode":"m4-a","fromSide":"bottom","toSide":"top","color":"4"},
-		{"id":"m4-in-b","fromNode":"hub-m4","toNode":"m4-b","fromSide":"bottom","toSide":"top","color":"4"},
-		{"id":"m4-in-c","fromNode":"hub-m4","toNode":"m4-c","fromSide":"bottom","toSide":"top","color":"4"},
-		{"id":"m5-in-a","fromNode":"hub-m5","toNode":"m5-a","fromSide":"bottom","toSide":"top","color":"5"},
-		{"id":"m5-in-b","fromNode":"hub-m5","toNode":"m5-b","fromSide":"bottom","toSide":"top","color":"5"},
-		{"id":"m5-in-c","fromNode":"hub-m5","toNode":"m5-c","fromSide":"bottom","toSide":"top","color":"5"},
-		{"id":"m6-in-a","fromNode":"hub-m6","toNode":"m6-a","fromSide":"bottom","toSide":"top","color":"6"},
-		{"id":"m6-in-b","fromNode":"hub-m6","toNode":"m6-b","fromSide":"bottom","toSide":"top","color":"6"},
-		{"id":"m6-in-c","fromNode":"hub-m6","toNode":"m6-c","fromSide":"bottom","toSide":"top","color":"6"},
-		{"id":"cross-m1-m2","fromNode":"hub-m1","toNode":"hub-m2","fromSide":"right","toSide":"left","color":"2","label":"permisos y catálogo"},
-		{"id":"cross-m1-m3","fromNode":"hub-m1","toNode":"hub-m3","fromSide":"right","toSide":"left","color":"3","label":"permisos y catálogo"},
-		{"id":"cross-m1-m4","fromNode":"hub-m1","toNode":"hub-m4","fromSide":"bottom","toSide":"top","color":"4","label":"permisos"},
-		{"id":"cross-m1-m5","fromNode":"hub-m1","toNode":"hub-m5","fromSide":"bottom","toSide":"top","color":"5","label":"permisos"},
-		{"id":"cross-m1-m6","fromNode":"hub-m1","toNode":"hub-m6","fromSide":"right","toSide":"left","color":"6","label":"integrantes"},
-		{"id":"cross-m3-m6","fromNode":"hub-m3","toNode":"hub-m6","fromSide":"bottom","toSide":"top","color":"3","label":"oportunidades publicadas"},
-		{"id":"cross-m4-m5","fromNode":"hub-m4","toNode":"hub-m5","fromSide":"right","toSide":"left","color":"4","label":"QR para formularios"},
-		{"id":"cross-m5-m6","fromNode":"hub-m5","toNode":"hub-m6","fromSide":"right","toSide":"left","color":"5","label":"respuestas y KPIs"}
+	"edges": [
+		{
+			"id": "cc-0-in",
+			"fromNode": "central",
+			"toNode": "cc-0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#C9A227"
+		},
+		{
+			"id": "cc-1-in",
+			"fromNode": "central",
+			"toNode": "cc-1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#C9A227"
+		},
+		{
+			"id": "cc-2-in",
+			"fromNode": "central",
+			"toNode": "cc-2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#C9A227"
+		},
+		{
+			"id": "cc-3-in",
+			"fromNode": "central",
+			"toNode": "cc-3",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#C9A227"
+		},
+		{
+			"id": "cc-4-in",
+			"fromNode": "central",
+			"toNode": "cc-4",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#C9A227"
+		},
+		{
+			"id": "central-m1",
+			"fromNode": "central",
+			"toNode": "hub-m1",
+			"color": "#C9A227",
+			"label": "módulo 1"
+		},
+		{
+			"id": "m1-f0-in",
+			"fromNode": "hub-m1",
+			"toNode": "m1-f0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "1"
+		},
+		{
+			"id": "m1-f1-in",
+			"fromNode": "hub-m1",
+			"toNode": "m1-f1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "1"
+		},
+		{
+			"id": "m1-f2-in",
+			"fromNode": "hub-m1",
+			"toNode": "m1-f2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "1"
+		},
+		{
+			"id": "code-m1-in",
+			"fromNode": "hub-m1",
+			"toNode": "code-m1",
+			"fromSide": "left",
+			"toSide": "left",
+			"color": "1",
+			"label": "código"
+		},
+		{
+			"id": "m1-t0-in",
+			"fromNode": "code-m1",
+			"toNode": "m1-t0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "1"
+		},
+		{
+			"id": "m1-t1-in",
+			"fromNode": "code-m1",
+			"toNode": "m1-t1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "1"
+		},
+		{
+			"id": "m1-t2-in",
+			"fromNode": "code-m1",
+			"toNode": "m1-t2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "1"
+		},
+		{
+			"id": "m1-t3-in",
+			"fromNode": "code-m1",
+			"toNode": "m1-t3",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "1"
+		},
+		{
+			"id": "m1-t4-in",
+			"fromNode": "code-m1",
+			"toNode": "m1-t4",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "1"
+		},
+		{
+			"id": "m1-t5-in",
+			"fromNode": "code-m1",
+			"toNode": "m1-t5",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "1"
+		},
+		{
+			"id": "central-m2",
+			"fromNode": "central",
+			"toNode": "hub-m2",
+			"color": "#C9A227",
+			"label": "módulo 2"
+		},
+		{
+			"id": "m2-f0-in",
+			"fromNode": "hub-m2",
+			"toNode": "m2-f0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "m2-f1-in",
+			"fromNode": "hub-m2",
+			"toNode": "m2-f1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "m2-f2-in",
+			"fromNode": "hub-m2",
+			"toNode": "m2-f2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "code-m2-in",
+			"fromNode": "hub-m2",
+			"toNode": "code-m2",
+			"fromSide": "left",
+			"toSide": "left",
+			"color": "2",
+			"label": "código"
+		},
+		{
+			"id": "m2-t0-in",
+			"fromNode": "code-m2",
+			"toNode": "m2-t0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "m2-t1-in",
+			"fromNode": "code-m2",
+			"toNode": "m2-t1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "m2-t2-in",
+			"fromNode": "code-m2",
+			"toNode": "m2-t2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "m2-t3-in",
+			"fromNode": "code-m2",
+			"toNode": "m2-t3",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "m2-t4-in",
+			"fromNode": "code-m2",
+			"toNode": "m2-t4",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "m2-t5-in",
+			"fromNode": "code-m2",
+			"toNode": "m2-t5",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "2"
+		},
+		{
+			"id": "central-m3",
+			"fromNode": "central",
+			"toNode": "hub-m3",
+			"color": "#C9A227",
+			"label": "módulo 3"
+		},
+		{
+			"id": "m3-f0-in",
+			"fromNode": "hub-m3",
+			"toNode": "m3-f0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "m3-f1-in",
+			"fromNode": "hub-m3",
+			"toNode": "m3-f1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "m3-f2-in",
+			"fromNode": "hub-m3",
+			"toNode": "m3-f2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "code-m3-in",
+			"fromNode": "hub-m3",
+			"toNode": "code-m3",
+			"fromSide": "left",
+			"toSide": "left",
+			"color": "3",
+			"label": "código"
+		},
+		{
+			"id": "m3-t0-in",
+			"fromNode": "code-m3",
+			"toNode": "m3-t0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "m3-t1-in",
+			"fromNode": "code-m3",
+			"toNode": "m3-t1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "m3-t2-in",
+			"fromNode": "code-m3",
+			"toNode": "m3-t2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "m3-t3-in",
+			"fromNode": "code-m3",
+			"toNode": "m3-t3",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "m3-t4-in",
+			"fromNode": "code-m3",
+			"toNode": "m3-t4",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "m3-t5-in",
+			"fromNode": "code-m3",
+			"toNode": "m3-t5",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "3"
+		},
+		{
+			"id": "central-m4",
+			"fromNode": "central",
+			"toNode": "hub-m4",
+			"color": "#C9A227",
+			"label": "módulo 4"
+		},
+		{
+			"id": "m4-f0-in",
+			"fromNode": "hub-m4",
+			"toNode": "m4-f0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "m4-f1-in",
+			"fromNode": "hub-m4",
+			"toNode": "m4-f1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "m4-f2-in",
+			"fromNode": "hub-m4",
+			"toNode": "m4-f2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "code-m4-in",
+			"fromNode": "hub-m4",
+			"toNode": "code-m4",
+			"fromSide": "left",
+			"toSide": "left",
+			"color": "4",
+			"label": "código"
+		},
+		{
+			"id": "m4-t0-in",
+			"fromNode": "code-m4",
+			"toNode": "m4-t0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "m4-t1-in",
+			"fromNode": "code-m4",
+			"toNode": "m4-t1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "m4-t2-in",
+			"fromNode": "code-m4",
+			"toNode": "m4-t2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "m4-t3-in",
+			"fromNode": "code-m4",
+			"toNode": "m4-t3",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "m4-t4-in",
+			"fromNode": "code-m4",
+			"toNode": "m4-t4",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "m4-t5-in",
+			"fromNode": "code-m4",
+			"toNode": "m4-t5",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "4"
+		},
+		{
+			"id": "central-m5",
+			"fromNode": "central",
+			"toNode": "hub-m5",
+			"color": "#C9A227",
+			"label": "módulo 5"
+		},
+		{
+			"id": "m5-f0-in",
+			"fromNode": "hub-m5",
+			"toNode": "m5-f0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "5"
+		},
+		{
+			"id": "m5-f1-in",
+			"fromNode": "hub-m5",
+			"toNode": "m5-f1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "5"
+		},
+		{
+			"id": "m5-f2-in",
+			"fromNode": "hub-m5",
+			"toNode": "m5-f2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "5"
+		},
+		{
+			"id": "code-m5-in",
+			"fromNode": "hub-m5",
+			"toNode": "code-m5",
+			"fromSide": "left",
+			"toSide": "left",
+			"color": "5",
+			"label": "código"
+		},
+		{
+			"id": "m5-t0-in",
+			"fromNode": "code-m5",
+			"toNode": "m5-t0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "5"
+		},
+		{
+			"id": "m5-t1-in",
+			"fromNode": "code-m5",
+			"toNode": "m5-t1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "5"
+		},
+		{
+			"id": "m5-t2-in",
+			"fromNode": "code-m5",
+			"toNode": "m5-t2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "5"
+		},
+		{
+			"id": "m5-t3-in",
+			"fromNode": "code-m5",
+			"toNode": "m5-t3",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "5"
+		},
+		{
+			"id": "m5-t4-in",
+			"fromNode": "code-m5",
+			"toNode": "m5-t4",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "5"
+		},
+		{
+			"id": "m5-t5-in",
+			"fromNode": "code-m5",
+			"toNode": "m5-t5",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "5"
+		},
+		{
+			"id": "central-m6",
+			"fromNode": "central",
+			"toNode": "hub-m6",
+			"color": "#C9A227",
+			"label": "módulo 6"
+		},
+		{
+			"id": "m6-f0-in",
+			"fromNode": "hub-m6",
+			"toNode": "m6-f0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "6"
+		},
+		{
+			"id": "m6-f1-in",
+			"fromNode": "hub-m6",
+			"toNode": "m6-f1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "6"
+		},
+		{
+			"id": "m6-f2-in",
+			"fromNode": "hub-m6",
+			"toNode": "m6-f2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "6"
+		},
+		{
+			"id": "code-m6-in",
+			"fromNode": "hub-m6",
+			"toNode": "code-m6",
+			"fromSide": "left",
+			"toSide": "left",
+			"color": "6",
+			"label": "código"
+		},
+		{
+			"id": "m6-t0-in",
+			"fromNode": "code-m6",
+			"toNode": "m6-t0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "6"
+		},
+		{
+			"id": "m6-t1-in",
+			"fromNode": "code-m6",
+			"toNode": "m6-t1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "6"
+		},
+		{
+			"id": "m6-t2-in",
+			"fromNode": "code-m6",
+			"toNode": "m6-t2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "6"
+		},
+		{
+			"id": "m6-t3-in",
+			"fromNode": "code-m6",
+			"toNode": "m6-t3",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "6"
+		},
+		{
+			"id": "m6-t4-in",
+			"fromNode": "code-m6",
+			"toNode": "m6-t4",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "6"
+		}
 	]
 }
