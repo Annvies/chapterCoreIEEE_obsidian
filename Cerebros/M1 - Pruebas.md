@@ -3,7 +3,7 @@ type: grupo
 modulo: 1
 estado: confirmado
 generado: true
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -15,13 +15,16 @@ tags:
 [[M1 - Código del módulo]] · [[Cerebro 1 - Base institucional]]
 
 > [!abstract] Pruebas
-> Archivos de pruebas automatizadas y los casos que verifican. 5 notas generadas desde el código.
+> Archivos de pruebas automatizadas y los casos que verifican. 8 notas generadas desde el código.
 
-### Prueba (5)
+### Prueba (8)
 
+- [[M1 - Prueba PendingRequestsPanel.test]]
+- [[M1 - Prueba ProfilePage.test]]
 - [[M1 - Prueba auth-flow.test]]
 - [[M1 - Prueba auth.service.spec]]
 - [[M1 - Prueba guards.spec]]
+- [[M1 - Prueba ieee-membership.spec]]
 - [[M1 - Prueba permissions.spec]]
 - [[M1 - Prueba users.service.spec]]
 

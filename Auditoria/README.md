@@ -11,5 +11,6 @@ pidió, en qué se basó y qué quedó pendiente**, sin tener que leer cada comm
 
 | Fecha | Cambio | Pedido por | Commits |
 |---|---|---|---|
+| 2026-10-30 | [Cerebros M1 y M2: membresía IEEE y aprobación de invitaciones](2026-10-30%20-%20Cerebros%20M1%20y%20M2%20membresía%20IEEE.md) | angelaValcarce | — |
 | 2026-10-29 | [README y registro de auditoría](2026-10-29%20-%20README%20y%20registro%20de%20auditoría.md) | Marian Zamorano | `4cd99a4` |
 | 2026-10-29 | [Skill obsidian-cerebros y reestructuración de los cerebros](2026-10-29%20-%20Skill%20obsidian-cerebros%20y%20reestructuración%20de%20los%20cerebros.md) | Marian Zamorano | `4d1f6c7` … `f9c2713` (13) |

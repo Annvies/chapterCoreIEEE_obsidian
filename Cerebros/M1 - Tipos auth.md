@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/types/auth.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -30,18 +30,23 @@ tags:
 | `Ambito` | type | — |
 | `UserStatus` | type | — |
 | `LinkPurpose` | type | — |
+| `IeeeGrade` | type | — |
+| `IeeeStatus` | type | Lo calcula el backend: número, vencimiento y verificación manual (vTools). |
 | `PermissionCell` | interface | — |
 | `Chapter` | interface | — |
 | `UserView` | interface | — |
+| `IeeeProfile` | interface | — |
 | `Profile` | interface | — |
 | `Session` | interface | — |
+| `PendingApproval` | interface | Respuesta al activar una invitación que aún debe aceptar la Mesa Directiva. |
 | `LinkInfo` | interface | — |
 | `AccessLink` | interface | — |
 | `UserList` | interface | — |
 | `PermissionMatrix` | interface | — |
 | `PositionInput` | interface | — |
-| `InviteUserInput` | interface | — |
+| `InviteUserInput` | interface | Sin número IEEE: lo registra la propia persona (activación o «Mi perfil»). |
 | `UpdateUserInput` | interface | — |
+| `UpdateIeeeProfileInput` | interface | — |
 
 
 ## Enlaces

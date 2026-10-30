@@ -75,6 +75,19 @@ Documentación técnica: [[M2 - Código del módulo]] (endpoints, archivos, pant
 > - Definir privacidad, conservación y eliminación de datos.
 > - Mantener claro que la acción de correo abre un cliente local, no envía desde
 >   ChapterCore.
+> - **Hallazgo (2026-10-30):** el historial rechaza fechas futuras comparando con
+>   «hoy» en **UTC** (`todayIso` en `contacts/domain/contact.ts`). En Bolivia (UTC−4),
+>   después de las 20:00 se acepta la fecha del día siguiente. No rechaza fechas válidas.
+
+> [!success] Verificado de punta a punta (2026-10-30)
+> Contra PostgreSQL local con las cuentas de prueba, 49 comprobaciones sin fallas:
+> permisos por nivel (Miembro sin acceso, Director solo lectura, Secretaría edita e
+> importa, solo Mesa borra), alta con capítulo y validaciones, conteos y filtros (tipo,
+> texto, estado, capítulo, sector, último contacto), historial (rechaza fechas futuras;
+> una interacción antigua no retrocede el último contacto), edición que reemplaza
+> campos y conserva el historial, importación CSV (`;`, capítulo por sigla, todo o
+> nada con errores por fila) y borrado. Pruebas unitarias: backend 23/23 y frontend 7/7.
+> Detalle en [[2026-10-30 - Cerebros M1 y M2 membresía IEEE]].
 
 ## Conexiones
 

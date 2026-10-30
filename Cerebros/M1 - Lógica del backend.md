@@ -3,7 +3,7 @@ type: grupo
 modulo: 1
 estado: confirmado
 generado: true
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -15,7 +15,7 @@ tags:
 [[M1 - Código del módulo]] · [[Cerebro 1 - Base institucional]]
 
 > [!abstract] Lógica del backend
-> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 22 notas generadas desde el código.
+> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 23 notas generadas desde el código.
 
 ### Configuración (1)
 
@@ -27,9 +27,10 @@ tags:
 - [[M1 - public.decorator]]
 - [[M1 - require-permission.decorator]]
 
-### Dominio (5)
+### Dominio (6)
 
 - [[M1 - authenticated-user]]
+- [[M1 - ieee-membership]]
 - [[M1 - one-time-token]]
 - [[M1 - password-policy]]
 - [[M1 - permissions]]

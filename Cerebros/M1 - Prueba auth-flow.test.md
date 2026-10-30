@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/auth/auth-flow.test.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -17,7 +17,7 @@ tags:
 [[M1 - Pruebas]] · [[Cerebro 1 - Base institucional]]
 
 > [!abstract] Prueba
-> 9 casos de prueba (Vitest + Testing Library).
+> 11 casos de prueba (Vitest + Testing Library).
 
 ### Casos
 
@@ -32,6 +32,8 @@ tags:
 - **Activación de cuenta**
   - avisa si el enlace no trae token
   - valida el enlace y define la contraseña
+  - exige el número IEEE y, si la cuenta espera aprobación, no abre sesión
+  - restablecer la contraseña no pide el número IEEE
 - **can()**
   - aplica el orden de permisos de la matriz
 
