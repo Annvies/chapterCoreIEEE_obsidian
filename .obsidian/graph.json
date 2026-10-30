@@ -55,6 +55,13 @@
         "a": 1,
         "rgb": 9133302
       }
+    },
+    {
+      "query": "tag:#modulo-7",
+      "color": {
+        "a": 1,
+        "rgb": 1357990
+      }
     }
   ],
   "collapse-display": true,
