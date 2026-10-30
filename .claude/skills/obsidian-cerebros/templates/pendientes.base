@@ -1,0 +1,37 @@
+filters:
+  and:
+    - file.inFolder("Cerebros")
+    - file.hasTag("chaptercore")
+formulas:
+  dias_sin_verificar: 'if(actualizado, (now() - date(actualizado)).days, "")'
+properties:
+  modulo:
+    displayName: Módulo
+  estado:
+    displayName: Estado
+  actualizado:
+    displayName: Verificado
+  formula.dias_sin_verificar:
+    displayName: Días sin verificar
+views:
+  - type: table
+    name: Por módulo
+    groupBy:
+      property: note.modulo
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - estado
+      - actualizado
+      - formula.dias_sin_verificar
+  - type: table
+    name: Sin verificar
+    filters:
+      or:
+        - 'estado != "confirmado"'
+        - actualizado.isEmpty()
+    order:
+      - file.name
+      - modulo
+      - estado

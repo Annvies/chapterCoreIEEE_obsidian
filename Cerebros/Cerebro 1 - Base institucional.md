@@ -16,72 +16,69 @@ tags:
 - [[M1 - Permisos compartidos]]
 
 > [!abstract] Identidad y estructura
-> Este módulo representa la base transversal de ChapterCore: integrantes, cargos y
-> permisos, además del catálogo compartido de capítulos y sociedades. Los demás módulos
-> necesitan distinguir quién realiza una acción, qué está autorizado a hacer y, cuando
-> corresponde, a qué unidad institucional se asocia el registro.
+> Este módulo es la base transversal de ChapterCore: cuentas de integrantes, su cargo
+> y ámbito (Rama o capítulo), el nivel de acceso que resulta de ese cargo y la matriz
+> de permisos que aplican los demás módulos. El catálogo de capítulos es la tabla
+> `ieee_societies`, compartida con Oportunidades y Contactos.
+
+> [!info] Decisiones confirmadas (2026-10-19)
+> - **Autenticación propia** con correo y contraseña (bcrypt + JWT emitido por el
+>   backend). No hay proveedor de identidad externo ni «Ingresar con IEEE Account».
+> - **Cada persona tiene un solo cargo**: Presidente, Vicepresidente, Tesorero,
+>   Secretario o Webmaster, con ámbito Rama o capítulo. Sin cargo es «miembro».
+> - **Cuatro niveles de acceso** (mockup 03): Mesa Directiva, Secretaría, Director de
+>   capítulo y Miembro. Ver [[M1 - Permisos compartidos]].
+> - **Alta solo por invitación** de la Mesa Directiva, con enlace de un solo uso.
+> - **No hay servicio de correo**: los enlaces se comparten manualmente.
+
+> [!success] Ciclo de vida de una cuenta
+> 1. La Mesa Directiva invita (correo, nombre, cargo, ámbito, capítulo y n.º IEEE
+>    opcional). La cuenta queda en estado `invited`.
+> 2. El sistema genera un enlace de invitación válido **7 días**.
+> 3. La persona abre el enlace, define su contraseña y la cuenta pasa a `active`.
+> 4. Si olvida la contraseña, la Mesa Directiva genera un enlace de restablecimiento
+>    válido **24 horas**.
+> 5. La Mesa Directiva puede desactivar (`disabled`) y reactivar la cuenta.
 >
-> **Estado del conocimiento:** la descripción recibida solo menciona estas capacidades
-> como dependencias; no proporciona un inventario funcional completo del Módulo 1.
+> La primera cuenta (Presidencia de la Rama) se crea con el script
+> `npm run seed:admin`, que imprime su enlace de activación.
 
-> [!info] Superficies que dependen de la base
-> - **Contactos:** utiliza cargos/permisos y el catálogo de capítulos; la pertenencia
->   de un contacto a un capítulo es dato y filtro, no restricción de acceso.
-> - **Oportunidades:** requiere sesión y permisos diferenciados para buscar, extraer y
->   publicar; las fichas también pueden asociarse a capítulo/sociedad.
-> - **Difusión:** requiere permisos para administrar enlaces y consultar estadísticas;
->   las redirecciones públicas no son una acción de administración.
-> - **Secretaría:** los formularios publicados admiten respuestas sin sesión, mientras
->   su gestión y revisión requieren permisos.
-> - **KPIs:** el Dashboard informa integrantes activos y considera permisos del sistema.
-
-> [!success] Relación con el sistema
-> El módulo funciona como una dependencia compartida, no como una pantalla aislada:
-> autenticar o identificar a una persona es distinto de autorizar cada operación.
-> La lista anterior es el comportamiento indicado para los módulos que lo consumen,
-> no una especificación de cómo se implementa el control de acceso.
-
-> [!tip] Contexto institucional IEEE
-> IEEE describe las ramas estudiantiles como comunidades que conectan estudiantes,
-> profesorado y profesionales, y enumera actividades técnicas, sociales, de extensión y
-> oportunidades regionales. IEEE Region 9 SAC sitúa su trabajo en el desarrollo
-> académico, profesional y de liderazgo de estudiantes en Latinoamérica y el Caribe.
-> Este contexto puede orientar el vocabulario del catálogo; no determina los cargos,
-> permisos ni estructura que ChapterCore implementa.
-
-> [!example] Ejemplo de relación entre datos
-> Una oportunidad podría asociarse a una sociedad; un contacto, a un capítulo; y una
-> respuesta de formulario, a quien la revisa. Son ejemplos de relaciones posibles en
-> las superficies descritas, no afirmaciones sobre el esquema de base de datos.
+> [!example] Del cargo al nivel de acceso
+> | Cargo | Ámbito | Nivel |
+> |---|---|---|
+> | Presidente, Vicepresidente, Tesorero, Webmaster | Rama | Mesa Directiva |
+> | Secretario | Rama o capítulo | Secretaría |
+> | Presidente, Vicepresidente, Tesorero, Webmaster | Capítulo | Director de capítulo |
+> | Sin cargo | — | Miembro |
 
 > [!warning] No confundir sesión con autorización
-> Que una página requiera iniciar sesión no implica que todos los usuarios puedan
-> editarla. Mantener diferenciadas lectura, creación, edición, publicación,
-> administración y consulta de métricas es una recomendación para documentar la matriz
-> real; los permisos concretos del Módulo 1 aún no se proporcionaron.
+> Tener sesión no implica poder editar. Cada operación declara qué permiso necesita
+> (`@RequirePermission`) y un guard global lo compara con el nivel del usuario. Las
+> rutas públicas (login, enlaces, formularios publicados, redirecciones) se marcan
+> explícitamente como `@Public`.
 
-> [!question] Detalles que faltan
-> Confirmar el ciclo de autenticación, los cargos existentes, la matriz de permisos,
-> alta/baja de integrantes, gestión de sesiones, catálogo de capítulos/sociedades,
-> pertenencia a múltiples unidades y reglas para cambios históricos.
-
-> [!todo] Pendiente para completar este cerebro
-> Incorporar la documentación del Módulo 1 y reemplazar las preguntas abiertas por
-> reglas confirmadas. No inventar nombres de cargos ni permisos para rellenar vacíos.
+> [!todo] Pendientes del Módulo 1
+> - Los permisos «su capítulo» aún **no filtran datos por capítulo**: hoy solo se
+>   aplica el nivel, y los módulos todavía no guardan el capítulo en todos los
+>   registros.
+> - Fuera del MVP por ahora: **registro de actividad** y **transferencia del periodo
+>   de gestión** (aparecen en el mockup 03).
+> - Sin servicio de correo, invitaciones y restablecimientos dependen de que la Mesa
+>   Directiva comparta el enlace por otro canal.
 
 ## Conexiones
 
 Es una dependencia de [[Cerebro 2 - Contactos]], [[Cerebro 3 - Oportunidades IEEE]],
 [[Cerebro 4 - Difusión y QR]], [[Cerebro 5 - Secretaría y formularios]] y
-[[Cerebro 6 - Feedback y KPIs]]. El Dashboard informa integrantes activos.
+[[Cerebro 6 - Feedback y KPIs]]. El Dashboard informa integrantes activos y el ranking
+de capítulos por miembros activos.
 
-## Fuentes externas de contexto
+## Fuentes
 
-- [IEEE Student Branches](https://students.ieee.org/student-branches/): propósito y
-  actividades generales de las ramas estudiantiles.
-- [IEEE Region 9 SAC](https://r9.ieee.org/sac/): misión y acciones del comité de
-  actividades estudiantiles regional.
-- [Callouts — ayuda oficial de Obsidian](https://obsidian.md/help/Editing+and+formatting/Callouts):
-  formato de los subgrupos visuales de esta nota.
-
-Estas fuentes describen contexto institucional, no la implementación de ChapterCore.
+- `CONTEXTO.md` §5 del repositorio del producto: cargos, capítulos y decisiones
+  confirmadas del Módulo 1.
+- `backendChapterCoreIEEE/src/auth/`: implementación (dominio, servicios, guards).
+- `backendChapterCoreIEEE/src/database/migrations/…-CreateAuthModule.ts`: tablas
+  `users` y `auth_tokens`.
+- [IEEE Student Branches](https://students.ieee.org/student-branches/): contexto
+  general de las ramas estudiantiles (no define la implementación).

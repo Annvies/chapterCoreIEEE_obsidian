@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "chaptercore-vault": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${workspaceFolder}/.claude/skills/obsidian-cerebros/mcp/server.mjs"]
+    }
+  }
+}

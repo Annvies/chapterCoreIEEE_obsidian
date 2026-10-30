@@ -55,10 +55,10 @@ y la [guía oficial de callouts](https://obsidian.md/help/Editing+and+formatting
 
 ## Nota sobre la fuente
 
-La información recibida detalla funcionalidad y límites de los módulos 2 a 6 y menciona
-al Módulo 1 como proveedor de usuarios, permisos y catálogo compartido, pero no describe
-su flujo funcional completo. Por eso, el cerebro del Módulo 1 señala ese
-alcance como provisional y pendiente de confirmar.
+Los seis cerebros se basan en la descripción funcional de los módulos. El Módulo 1 se
+completó a partir de `CONTEXTO.md` §5 y del código de `backendChapterCoreIEEE/src/auth/`
+del repositorio del producto (rama `main`): autenticación propia, cargos y ámbitos,
+niveles de acceso, matriz oficial de permisos y catálogo `ieee_societies`.
 
 Las referencias externas de cada nota son fuentes de contexto, no evidencia de que una
 integración o función esté implementada en ChapterCore. Para las funciones del producto,

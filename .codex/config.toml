@@ -1,0 +1,6 @@
+# Codex CLI: configuración de proyecto (requiere marcar el proyecto como de confianza).
+# Si tu versión de Codex no lee este archivo, copia el bloque a ~/.codex/config.toml
+# usando la ruta absoluta del servidor.
+[mcp_servers.chaptercore-vault]
+command = "node"
+args = [".claude/skills/obsidian-cerebros/mcp/server.mjs"]

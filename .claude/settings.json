@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__chaptercore-vault__vault_overview",
+      "mcp__chaptercore-vault__vault_lint",
+      "mcp__chaptercore-vault__vault_list_notes",
+      "mcp__chaptercore-vault__vault_read_note",
+      "mcp__chaptercore-vault__vault_search",
+      "mcp__chaptercore-vault__vault_links",
+      "mcp__chaptercore-vault__module_context",
+      "mcp__chaptercore-vault__repo_overview",
+      "mcp__chaptercore-vault__repo_read_file",
+      "mcp__chaptercore-vault__repo_search"
+    ],
+    "ask": [
+      "mcp__chaptercore-vault__vault_write_note",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch"
+    ],
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)"
+    ]
+  }
+}

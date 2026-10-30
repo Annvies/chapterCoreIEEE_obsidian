@@ -4,6 +4,14 @@
 .obsidian/cache
 .trash/
 
+# Secretos de plugins: la API key y los certificados de Local REST API no se comparten
+.obsidian/plugins/obsidian-local-rest-api/
+
+# Ajustes personales de los agentes y ruta local del repositorio del producto
+.claude/settings.local.json
+.chaptercore.local.json
+.chaptercore-audit.log*
+
 # Archivos del sistema operativo
 .DS_Store
 Thumbs.db

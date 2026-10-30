@@ -10,21 +10,31 @@ tags:
 [[Cerebro 1 - Base institucional]] · Base transversal
 
 > [!abstract] Idea central
-> Los otros módulos diferencian entre tener una sesión y poder realizar una acción.
-> Este subgrupo reúne lo conocido de identidad y acceso sin inventar el mecanismo
-> técnico de autenticación.
+> ChapterCore gestiona sus propias cuentas: correo y contraseña, sin proveedor externo.
+> Identificar a la persona (sesión) es un paso distinto de autorizar cada operación
+> ([[M1 - Permisos compartidos]]).
 
-> [!info] Lo que sí se conoce
-> Oportunidades requieren sesión para buscar y permisos diferenciados para leer,
-> extraer y publicar. Contactos, difusión y formularios también condicionan acciones a
-> los cargos o permisos.
+> [!info] Inicio de sesión
+> - Contraseña de **8+ caracteres con letras y números** (máx. 72 bytes, límite de
+>   bcrypt).
+> - Sesión JWT de **8 horas**, o **30 días** si se marca «recordarme».
+> - **5 intentos fallidos** bloquean la cuenta **15 minutos**.
+> - El mensaje de error es el mismo si el correo no existe o la contraseña es
+>   incorrecta, para no revelar qué cuentas existen.
 
-> [!warning] No especificado
-> Proveedor de identidad, recuperación de cuenta, ciclo de sesión, nombres de cargos y
-> matriz exacta de permisos. Consultar documentación del Módulo 1 antes de afirmar
-> detalles.
+> [!success] Enlaces de un solo uso
+> Invitación (7 días) y restablecimiento (24 h). Solo se guarda el hash del token;
+> al usarse, se invalidan los demás enlaces pendientes de esa persona.
+
+> [!tip] Cierre de sesiones
+> Cada usuario tiene un `token_version`. Cambiar la contraseña o desactivar la cuenta
+> lo incrementa, y todas las sesiones abiertas dejan de ser válidas.
+
+> [!warning] Reglas de protección
+> Nadie puede desactivarse a sí mismo ni quitarse su propio nivel de Mesa Directiva, y
+> el sistema impide dejar la Rama sin al menos una persona activa de Mesa Directiva.
 
 ## Enlaces
 
 - Comparte criterios con [[M1 - Permisos compartidos]].
-- Los permisos controlan flujos de otros módulos, descritos en sus cerebros principales.
+- El cargo de capítulo se apoya en [[M1 - Capítulos y sociedades]].

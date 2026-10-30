@@ -10,21 +10,34 @@ tags:
 [[Cerebro 1 - Base institucional]] · Autorización transversal
 
 > [!abstract] Idea central
-> Los permisos conectan la identidad de una persona con operaciones concretas en los
-> módulos. La autorización debe describirse por operación, no solamente por pantalla.
+> La matriz de permisos del mockup 03 es la oficial desde el 2026-10-19. Cada nivel
+> tiene un acceso por función, y cada acceso incluye a los anteriores:
+> `Ninguno < Responder < Ver < Editar < Total`.
 
-> [!info] Ejemplos documentados
-> - Contactos: visibilidad y acciones dependen del cargo; dirección de capítulo ve el
->   directorio completo.
-> - Oportunidades: lectura para buscar; edición para extraer y publicar.
-> - Difusión: permisos para administrar enlaces y consultar estadísticas.
-> - Formularios: permisos para administrar formularios y revisar respuestas públicas.
+> [!info] Matriz oficial
+> | Función | Mesa Directiva | Secretaría | Director de capítulo | Miembro |
+> |---|---|---|---|---|
+> | Contactos | Total | Editar | Ver | Ninguno |
+> | Oportunidades | Total | Editar | Editar | Ver |
+> | Difusión | Total | Ver | Editar | Ninguno |
+> | Formularios | Total | Total | Editar | Responder |
+> | Dashboard | Total | Ver | Ver (su capítulo) | Ninguno |
+> | Usuarios | Total | Ninguno | Ninguno | Ninguno |
 
-> [!question] Por completar
-> Registrar cargos, permisos, excepciones y alcance de cada módulo desde la
-> especificación oficial.
+> [!example] Cómo se lee
+> En Oportunidades, «Ver» permite buscar, y «Editar» permite extraer con IA y
+> publicar. En Contactos, «Total» añade eliminar. Solo la Mesa Directiva administra
+> usuarios y cargos.
+
+> [!warning] «Su capítulo» todavía no filtra
+> El Director de capítulo tiene el Dashboard marcado como «Ver (su capítulo)», pero
+> hoy ve las métricas globales de la Rama. Ver [[M6 - Periodos y filtros]].
+
+> [!todo] Pendiente
+> Decidir si «su capítulo» debe filtrar los datos en cada módulo, y definir los grupos
+> de visibilidad de contactos.
 
 ## Enlaces
 
-Depende de [[M1 - Identidad y acceso]]. Los flujos autorizados de cada módulo se
-describen en sus respectivos cerebros principales.
+Depende de [[M1 - Identidad y acceso]]. Implementado en
+`backendChapterCoreIEEE/src/auth/domain/permissions.ts`.

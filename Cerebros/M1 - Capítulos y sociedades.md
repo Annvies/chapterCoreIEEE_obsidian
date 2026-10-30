@@ -10,19 +10,27 @@ tags:
 [[Cerebro 1 - Base institucional]] · Catálogo institucional compartido
 
 > [!abstract] Idea central
-> Un catálogo común ayuda a que los módulos asocien registros con capítulos o
-> sociedades usando referencias coherentes.
+> Los capítulos se identifican por el nombre oficial de la sociedad IEEE y se guardan
+> en la tabla `ieee_societies`. La usan los cargos de capítulo, los contactos y las
+> oportunidades.
 
-> [!info] Usos descritos
-> El capítulo asociado puede usarse como dato y filtro en contactos; las oportunidades
-> pueden incluir capítulo/sociedad; el Dashboard muestra un ranking de capítulos.
+> [!info] Catálogo inicial
+> PES, CIS, ComSoc, CASS, EMBS, RAS, IAS y CS (sociedades), y **WIE**, que es un grupo
+> de afinidad y no una sociedad. Cada entrada guarda sigla, nombre oficial, tipo y
+> sitio oficial (`https://`).
 
-> [!warning] Pendiente de confirmar
-> No se proporcionó el listado oficial de unidades, su jerarquía, códigos, altas/bajas
-> ni si una persona puede pertenecer a varias. No asumirlos.
+> [!success] Reglas de uso
+> - Un cargo de capítulo debe indicar un capítulo existente.
+> - En Contactos, el capítulo es dato y filtro; no restringe el acceso.
+> - El Dashboard hace un ranking de capítulos por miembros activos.
+> - Un capítulo con personas asignadas no se puede borrar.
+
+> [!warning] No es la lista de capítulos de esta Rama
+> El catálogo reúne sociedades verificadas en fuentes oficiales IEEE. No afirma que
+> cada una tenga un capítulo activo en la Rama UPB. Antes de añadir una entrada,
+> verificar el nombre en la fuente oficial.
 
 ## Enlaces
 
-Este catálogo se consume en los módulos de contactos y oportunidades, y permite
-clasificar capítulos en los indicadores. Consulta los cerebros principales de esos
-módulos para el detalle. El contexto regional de oportunidades se explica allí.
+Se consume en [[Cerebro 2 - Contactos]], [[Cerebro 3 - Oportunidades IEEE]] y
+[[M6 - Indicadores]].

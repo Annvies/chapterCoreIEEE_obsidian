@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "chaptercore-vault": {
+      "command": "node",
+      "args": [".claude/skills/obsidian-cerebros/mcp/server.mjs"],
+      "trust": false
+    }
+  }
+}
