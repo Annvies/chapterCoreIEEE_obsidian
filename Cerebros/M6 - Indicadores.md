@@ -23,7 +23,8 @@ tags:
 > - Formularios y respuestas: Módulo 5.
 
 > [!warning] Métricas que no llegan
-> Las visitas del Módulo 4 aún no están integradas en el Dashboard. No se describe una
+> En `main`, las visitas del Módulo 4 aún no están integradas en el Dashboard; el PR #28
+> (pendiente de fusión) las cuenta como escaneos. No se describe una
 > integración de métricas desde el directorio de contactos.
 
 ## Enlaces
@@ -34,3 +35,4 @@ Para interpretación y cobertura, consultar [[M6 - Periodos y filtros]] y
 ## Notas del subgrupo
 
 - [[M6 - Miembros activos y ranking]]
+- [[M6 - Escaneos de QR]]

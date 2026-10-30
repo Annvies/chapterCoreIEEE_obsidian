@@ -34,7 +34,8 @@ Documentación técnica: [[M6 - Código del módulo]] (endpoints, archivos, pant
 >   [[Cerebro 5 - Secretaría y formularios]].
 > - **Respuestas por estado, ranking de capítulos y feedback reciente:** resumen de
 >   datos operativos.
-> - **Visitas QR:** registradas en el Módulo 4, pero aún no integradas en el Dashboard.
+> - **Visitas QR:** registradas en el Módulo 4. En `main` aún no llegan al Dashboard;
+>   el PR #28 (pendiente de fusión) las cuenta como escaneos del periodo.
 > - **Contactos:** el Módulo 2 conserva su operación de directorio; no se describe que
 >   alimente indicadores aquí.
 
@@ -62,15 +63,16 @@ Documentación técnica: [[M6 - Código del módulo]] (endpoints, archivos, pant
 > inferir una causa a partir del indicador aislado.
 
 > [!warning] Cobertura y límites
-> Las métricas son globales para la Rama; el filtro por capítulo del Director aún no se
-> aplica. La ventana temporal tampoco afecta todos los conteos. Las visitas QR no están
-> disponibles en esta vista a pesar de medirse en el Módulo 4. Evitar presentar una
-> métrica como completa si su fuente o periodo no está incluido.
+> En `main` las métricas son globales para la Rama y las visitas QR no llegan a esta
+> vista. El PR #28 (pendiente de fusión) aplica el alcance por capítulo al Director y
+> cuenta los escaneos. La ventana temporal no afecta todos los conteos. Evitar presentar
+> una métrica como completa si su fuente o periodo no está incluido.
 
 > [!todo] Mejoras pendientes
-> - Aplicar el filtro por capítulo para el Director.
-> - Definir si se integrarán visitas QR y cómo se interpretarán junto con otros
->   indicadores.
+> - ~~Aplicar el filtro por capítulo para el Director.~~ Resuelto en el PR #28
+>   (pendiente de fusión).
+> - ~~Definir si se integrarán visitas QR.~~ Integradas en el PR #28 (pendiente de
+>   fusión); falta acordar cómo interpretarlas junto con otros indicadores.
 > - Mantener visible el periodo y la cobertura real de cada KPI.
 > - No añadir métricas de contactos sin una integración y definición explícitas.
 
@@ -79,7 +81,8 @@ Documentación técnica: [[M6 - Código del módulo]] (endpoints, archivos, pant
 [[Cerebro 1 - Base institucional]] aporta integrantes y permisos;
 [[Cerebro 3 - Oportunidades IEEE]] oportunidades; y
 [[Cerebro 5 - Secretaría y formularios]] respuestas, escalas y feedback. Las
-estadísticas de difusión del Módulo 4 todavía no están integradas.
+visitas QR de [[Cerebro 4 - Difusión y QR]] se integran en el PR #28, pendiente de
+fusión.
 
 ## Fuentes externas
 

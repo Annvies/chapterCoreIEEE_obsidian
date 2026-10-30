@@ -5,7 +5,7 @@ fuentes:
   - CONTEXTO.md
   - backendChapterCoreIEEE/src/
   - frontendChapterCoreIEEE/src/
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 aliases:
   - Mapa de cerebros
   - Cerebro central
@@ -64,11 +64,15 @@ Nodos propios del cerebro central, agrupados por tema:
 > - **Módulo 5 → Módulo 6:** respuestas, escalas `useInKpis` y comentarios alimentan
 >   satisfacción, NPS y feedback reciente.
 > - **Módulo 4 → Módulo 5:** los enlaces cortos y QR difunden formularios publicados.
+> - **Módulo 4 → Módulo 6** *(propuesto, PR #28)*: las visitas con origen QR se cuentan
+>   como escaneos en el Dashboard.
 > - **Módulo 2:** usa permisos y capítulos del Módulo 1; no alimenta el Dashboard.
 
 > [!warning] Integraciones pendientes
-> - Las visitas QR del Módulo 4 aún no llegan al Dashboard.
-> - El filtro por capítulo del Director de capítulo aún no se aplica.
+> - Escaneos QR en el Dashboard y alcance por capítulo del Director: **resueltos en el
+>   PR #28, pendiente de fusión**; en `main` siguen sin aplicarse.
+> - Formularios públicos con enlaces de Google Drive en lugar de archivos: **PR #27,
+>   pendiente de fusión**.
 > - No existe un módulo de eventos (el Dashboard lo informa como no disponible).
 
 ## Cómo leer el grafo
