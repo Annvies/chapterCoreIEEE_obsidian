@@ -16,7 +16,7 @@ tags:
 
 [[M2 - Interfaz]] · [[Cerebro 2 - Contactos]]
 
-> [!abstract] Cliente api
+> [!abstract] Cliente API
 > Cliente api del frontend (`frontendChapterCoreIEEE/src/api/contacts.ts`).
 
 ### Exporta

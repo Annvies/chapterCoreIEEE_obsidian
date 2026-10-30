@@ -31,13 +31,11 @@ Página de la aplicación. Ruta y permiso en [[M3 - Interfaz]].
 ## Enlaces
 
 - [[M3 - useIeeeSocieties]]
-- [[M3 - useOfficialDomains]]
 - [[M3 - useOpportunityDiscovery]]
 - [[M3 - useOpportunitySearch]]
 - [[M3 - useSavedOpportunities]]
 - [[M3 - useSearchHistory]]
 - [[M3 - Tipos opportunity]]
-- [[M3 - ExtractPanel]]
 - [[M3 - filters]]
 - [[M3 - discoveryAnnouncement]]
 - [[M3 - OfficialSearchResults]]

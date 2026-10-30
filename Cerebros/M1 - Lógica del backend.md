@@ -15,7 +15,7 @@ tags:
 [[M1 - Código del módulo]] · [[Cerebro 1 - Base institucional]]
 
 > [!abstract] Lógica del backend
-> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 23 notas generadas desde el código.
+> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 24 notas generadas desde el código.
 
 ### Configuración (1)
 
@@ -44,6 +44,10 @@ tags:
 ### Mapper (1)
 
 - [[M1 - user.mapper]]
+
+### Módulo Nest (1)
+
+- [[M1 - auth.module]]
 
 ### Repositorio (3)
 

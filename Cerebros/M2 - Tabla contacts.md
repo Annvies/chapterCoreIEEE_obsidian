@@ -58,5 +58,6 @@ tags:
 ## Enlaces
 
 - [[M2 - Modelo de datos contacts]]
+- [[M2 - Migración CreateContactsModule]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

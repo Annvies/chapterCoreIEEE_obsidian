@@ -15,7 +15,7 @@ tags:
 [[M1 - Código del módulo]] · [[Cerebro 1 - Base institucional]]
 
 > [!abstract] DTO y validaciones
-> Contratos de entrada de la API y sus reglas de validación (class-validator). 9 notas generadas desde el código.
+> Contratos de entrada de la API y sus reglas de validación (class-validator). 10 notas generadas desde el código.
 
 ### Dto (9)
 
@@ -28,6 +28,10 @@ tags:
 - [[M1 - DTO UpdateIeeeProfileDto]]
 - [[M1 - DTO UpdateUserDto]]
 - [[M1 - DTO UpdateUserStatusDto]]
+
+### Transformación (1)
+
+- [[M1 - transforms]]
 
 
 ## Enlaces

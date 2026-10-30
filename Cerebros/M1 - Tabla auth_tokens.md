@@ -45,5 +45,6 @@ tags:
 ## Enlaces
 
 - [[M1 - Modelo de datos users y auth_tokens]]
+- [[M1 - Migración CreateAuthModule]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

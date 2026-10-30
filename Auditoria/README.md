@@ -11,6 +11,7 @@ pidió, en qué se basó y qué quedó pendiente**, sin tener que leer cada comm
 
 | Fecha | Cambio | Pedido por | Commits |
 |---|---|---|---|
+| 2026-10-30 | [Remapeo completo de main y navegabilidad](2026-10-30%20-%20Remapeo%20completo%20de%20main%20y%20navegabilidad.md) | valelop2606 | — |
 | 2026-10-30 | [Mapeo de main: módulo 7 y búsqueda en fuentes oficiales](2026-10-30%20-%20Mapeo%20de%20main%20-%20módulo%207%20y%20búsqueda%20en%20fuentes%20oficiales.md) | valelop2606 | `6765acd` |
 | 2026-10-30 | [Cerebro 7: tesorería y gastos](2026-10-30%20-%20Cerebro%207%20tesorería%20y%20gastos.md) | angelaValcarce | — |
 | 2026-10-30 | [Módulos 5 y 6: enlaces Drive, QR y alcance por capítulo](2026-10-30%20-%20Módulos%205%20y%206%20-%20enlaces%20Drive,%20QR%20y%20alcance%20por%20capítulo.md) | valelop2606 | `49f7d9a` |

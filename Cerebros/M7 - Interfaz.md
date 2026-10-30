@@ -23,7 +23,7 @@ tags:
 |---|---|---|
 | `/tesoreria` | [[M7 - ExpensesPage]] | expenses · view |
 
-### Cliente api (1)
+### Cliente API (1)
 
 - [[M7 - Cliente API expenses]]
 

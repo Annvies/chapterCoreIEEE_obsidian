@@ -33,8 +33,6 @@ tags:
 | `items` | sí | `SearchHistoryEntry[]` |
 | `isLoading` | sí | `boolean` |
 | `error` | sí | `string \| null` |
-| `canExtract` | sí | `boolean` |
-| `onExtract` | sí | `(url: string) => void` |
 | `onRemove` | sí | `(id: string) => void` |
 | `onClear` | sí | `() => void` |
 | `confirm` | no | `(message: string) => boolean` |

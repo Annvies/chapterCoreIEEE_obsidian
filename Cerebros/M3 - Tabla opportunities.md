@@ -60,5 +60,7 @@ tags:
 ## Enlaces
 
 - [[M3 - Modelo de datos opportunities]]
+- [[M3 - Migración CreateOpportunities]]
+- [[M3 - Migración UniqueOpportunityEnlace]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

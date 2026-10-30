@@ -16,7 +16,7 @@ tags:
 
 [[M6 - Interfaz]] · [[Cerebro 6 - Feedback y KPIs]]
 
-> [!abstract] Cliente api
+> [!abstract] Cliente API
 > Contrato de backendChapterCoreIEEE/src/dashboard; es el único sitio que conoce la ruta.
 
 ### Exporta

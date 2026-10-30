@@ -30,10 +30,6 @@ tags:
 > - Guard global JWT: toda ruta exige sesión salvo las marcadas con `@Public()`.
 > - `@RequirePermission(función, acceso)` se compara con la matriz oficial del Módulo 1.
 
-
-
-
-
 ## Grupos técnicos
 
 Cada grupo tiene una nota por pieza del código:

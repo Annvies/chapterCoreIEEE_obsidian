@@ -16,7 +16,7 @@ tags:
 
 [[M7 - Interfaz]] · [[Cerebro 7 - Tesorería y Gastos]]
 
-> [!abstract] Cliente api
+> [!abstract] Cliente API
 > Cliente api del frontend (`frontendChapterCoreIEEE/src/api/expenses.ts`).
 
 ### Exporta

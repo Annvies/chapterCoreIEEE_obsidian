@@ -15,7 +15,7 @@ tags:
 [[M3 - Código del módulo]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Interfaz
-> Páginas, componentes, hooks, clientes de API y tipos del frontend React. 26 notas generadas desde el código.
+> Páginas, componentes, hooks, clientes de API y tipos del frontend React. 18 notas generadas desde el código.
 
 ### Rutas
 
@@ -23,18 +23,14 @@ tags:
 |---|---|---|
 | `/oportunidades` | [[M3 - OpportunitiesPage]] | opportunities · view |
 
-### Cliente api (1)
+### Cliente API (1)
 
 - [[M3 - Cliente API opportunities]]
 
-### Componente (12)
+### Componente (8)
 
 - [[M3 - DeadlineBadge]]
 - [[M3 - DiscoveryResultList]]
-- [[M3 - DraftCard]]
-- [[M3 - DraftEditor]]
-- [[M3 - ExtractPanel]]
-- [[M3 - ExtractSteps]]
 - [[M3 - OfficialSearchResults]]
 - [[M3 - OpportunityCard]]
 - [[M3 - OpportunityResults]]
@@ -42,21 +38,18 @@ tags:
 - [[M3 - SearchPanel]]
 - [[M3 - StrategySelector]]
 
-### Hook (7)
+### Hook (5)
 
 - [[M3 - useIeeeSocieties]]
-- [[M3 - useOfficialDomains]]
 - [[M3 - useOpportunityDiscovery]]
-- [[M3 - useOpportunityExtraction]]
 - [[M3 - useOpportunitySearch]]
 - [[M3 - useSavedOpportunities]]
 - [[M3 - useSearchHistory]]
 
-### Módulo (3)
+### Módulo (2)
 
 - [[M3 - discoveryAnnouncement]]
 - [[M3 - filters]]
-- [[M3 - validateDraft]]
 
 ### Página (1)
 
@@ -65,10 +58,6 @@ tags:
 ### Tipos (1)
 
 - [[M3 - Tipos opportunity]]
-
-### Utilidad (1)
-
-- [[M3 - lib officialSources]]
 
 
 ## Enlaces

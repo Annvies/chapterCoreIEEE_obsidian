@@ -15,7 +15,7 @@ tags:
 [[M3 - Código del módulo]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Lógica del backend
-> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 18 notas generadas desde el código.
+> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 19 notas generadas desde el código.
 
 ### Decorador (1)
 
@@ -38,6 +38,10 @@ tags:
 ### Guard (1)
 
 - [[M3 - user-throttler.guard]]
+
+### Módulo Nest (1)
+
+- [[M3 - opportunities.module]]
 
 ### Servicio (5)
 

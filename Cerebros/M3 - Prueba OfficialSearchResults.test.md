@@ -17,15 +17,14 @@ tags:
 [[M3 - Pruebas]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Prueba
-> 18 casos de prueba (Vitest + Testing Library).
+> 17 casos de prueba (Vitest + Testing Library).
 
 ### Casos
 
 - **OfficialSearchResults (RF-317, RF-321, RF-337, RF-340)**
   - muestra ruta, título enlazado en otra pestaña, fragmento, «Sin verificar» y estrategia
   - no interpreta el HTML del título
-  - un Miembro no ve «Extraer ficha»; el nivel Editar sí y recibe el enlace
-  - con nivel Editar, «Extraer ficha» entrega el enlace del resultado
+  - no ofrece «Extraer ficha»: solo el enlace a la página oficial
   - resume los intentos con su estado y motivo
   - mientras busca anuncia solo las estrategias habilitadas, en orden
   - muestra el mensaje de error de la petición (RF-343)
@@ -35,7 +34,7 @@ tags:
   - avisa si no hubo coincidencias exactas (RF-353)
   - sin catálogo no muestra ningún aviso de catálogo
 - **accesibilidad con teclado**
-  - el enlace y «Extraer ficha» se alcanzan con Tab en orden
+  - el enlace del resultado se alcanza con Tab
   - la región de resultados tiene un encabezado que la nombra
 - **SearchHistory (RF-325, RF-341)**
   - muestra el estado vacío

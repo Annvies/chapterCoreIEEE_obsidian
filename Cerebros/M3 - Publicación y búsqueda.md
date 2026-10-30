@@ -14,11 +14,16 @@ tags:
 
 > [!info] Acceso descrito
 > Buscar requiere sesión y permiso de lectura. Extraer y publicar requieren permiso de
-> edición. Las oportunidades publicadas alimentan un conteo del Dashboard.
+> edición en el backend. Las oportunidades publicadas alimentan un conteo del Dashboard.
+
+> [!warning] Sin publicación desde la interfaz (PR #43)
+> Desde el 2026-10-30 la interfaz solo busca y consulta oportunidades: no hay pantalla para
+> extraer ni publicar. Las oportunidades ya publicadas siguen apareciendo en la búsqueda.
 
 > [!example] Camino de una ficha
 > Fuente oficial → [[M3 - Extracción y revisión]] → revisión humana → publicación →
-> búsqueda de miembros → [[Cerebro 6 - Feedback y KPIs]].
+> búsqueda de miembros → [[Cerebro 6 - Feedback y KPIs]]. Hoy los dos primeros pasos solo
+> existen en el backend.
 
 > [!todo] Pendiente
 > Mantener explícita la lista de dominios admitidos y coherente con las fuentes que el

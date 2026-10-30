@@ -18,7 +18,7 @@ tags:
 
 | Módulo | Límite general | Límites propios |
 |---|---|---|
-| Oportunidades | 30/min | extraer 5/min, publicar 10/min |
+| Oportunidades | 30/min | extraer 5/min, publicar 10/min; búsqueda en fuentes oficiales 3/min **por persona** (`OPPORTUNITY_DISCOVERY_RATE_LIMIT`) |
 | Difusión | 60/min | crear enlace 20/min, redirección pública 120/min |
 | Autenticación | — | 5 intentos fallidos bloquean 15 min (por cuenta) |
 

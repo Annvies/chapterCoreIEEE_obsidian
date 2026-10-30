@@ -52,5 +52,6 @@ tags:
 ## Enlaces
 
 - [[M3 - Historial de búsquedas]]
+- [[M3 - Migración CreateOpportunitySearchHistory]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

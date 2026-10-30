@@ -22,6 +22,7 @@ tags:
 | Oportunidades | `opportunities` |
 | Difusión y QR | `dissemination` |
 | Formularios | `forms` |
+| Tesorería | `expenses` |
 | Roles y accesos | `users` |
 
 ## Enlaces
@@ -33,3 +34,4 @@ tags:
 - [[Cerebro 4 - Difusión y QR]]
 - [[Cerebro 5 - Secretaría y formularios]]
 - [[Cerebro 6 - Feedback y KPIs]]
+- [[Cerebro 7 - Tesorería y Gastos]]

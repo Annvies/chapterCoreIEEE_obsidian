@@ -26,7 +26,7 @@ tags:
 | `/accesos` | [[M1 - RolesPage]] | users · total |
 | `/perfil` | [[M1 - ProfilePage]] | sesión |
 
-### Cliente api (1)
+### Cliente API (1)
 
 - [[M1 - Cliente API auth]]
 

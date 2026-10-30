@@ -25,10 +25,14 @@ tags:
 | `/contactos` | Contactos · Ver |
 | `/oportunidades` | Oportunidades · Ver |
 | `/difusion` | Difusión · Ver |
+| `/tesoreria` | Gastos · Ver |
 | `/accesos` | Usuarios · Total |
+| `/perfil` | Sesión iniciada (perfil IEEE propio) |
 
 La protección real está en el backend; el frontend solo evita mostrar lo que no corresponde.
 
 ## Enlaces
 
 - [[CC - Seguridad transversal]]
+- [[Cerebro 1 - Base institucional]]
+- [[Cerebro 7 - Tesorería y Gastos]]

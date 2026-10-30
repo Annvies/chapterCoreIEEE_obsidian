@@ -19,6 +19,7 @@ tags:
 
 > [!abstract] Qué es
 > Gemini propone una ficha estructurada a partir del texto de la página; nunca publica.
+> Desde el PR #43 la interfaz ya no lo usa; el servicio sigue en el backend.
 
 > [!info] Confirmado en el código
 > - Modelo configurable (`GEMINI_MODEL`), `temperature: 0`, respuesta con esquema fijo, 60 s de espera.

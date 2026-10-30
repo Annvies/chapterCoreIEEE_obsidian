@@ -24,6 +24,7 @@ tags:
 | Permisos | Matriz del mockup 03 como oficial; cuatro niveles |
 | Contactos | Visibilidad solo por matriz; capítulo como dato y filtro; CSV todo o nada |
 | Oportunidades | Solo fuentes oficiales IEEE; Gemini nivel gratuito; revisión humana antes de publicar |
+| Oportunidades (2026-10-30) | Fuentes oficiales recorridas solo a petición, con catálogo de respaldo; extracción con IA retirada de la interfaz (PR #43) |
 | Difusión | Acortador de URLs con QR dinámicos |
 | KPIs | Fórmulas de satisfacción y NPS; periodos mes, semestre y gestión |
 

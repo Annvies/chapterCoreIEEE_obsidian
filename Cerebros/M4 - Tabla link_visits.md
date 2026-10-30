@@ -47,5 +47,6 @@ tags:
 ## Enlaces
 
 - [[M4 - Modelo short_links y link_visits]]
+- [[M4 - Migración CreateDifusionModule]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

@@ -29,7 +29,7 @@ tags:
   - con todas las estrategias desactivadas no la ofrece
   - una nueva búsqueda reemplaza los resultados de fuentes oficiales (RF-339)
   - la región viva existe antes de buscar y anuncia el resultado (RF-337)
-  - con nivel Editar, «Extraer ficha» carga el enlace en el panel sin extraer
+  - sin extracción con IA: ni el nivel Editar ve el panel ni «Extraer ficha»
 
 ## Enlaces
 

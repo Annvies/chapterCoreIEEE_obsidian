@@ -16,7 +16,7 @@ tags:
 
 [[M4 - Interfaz]] · [[Cerebro 4 - Difusión y QR]]
 
-> [!abstract] Cliente api
+> [!abstract] Cliente API
 > Único sitio que conoce las rutas de backendChapterCoreIEEE/src/difusion.
 
 ### Exporta

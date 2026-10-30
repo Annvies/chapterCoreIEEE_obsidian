@@ -44,7 +44,7 @@ Nodos propios del cerebro central, agrupados por tema:
 |---|---|---|
 | 1 | [[Cerebro 1 - Base institucional]] | Cuentas, cargos, niveles de acceso, matriz de permisos, catálogo de capítulos, perfil de membresía IEEE y aprobación de invitaciones |
 | 2 | [[Cerebro 2 - Contactos]] | Directorio de empresas, alumni, conferencistas y autoridades, con su historial |
-| 3 | [[Cerebro 3 - Oportunidades IEEE]] | Becas, concursos y voluntariados IEEE con extracción asistida por Gemini y búsqueda a petición en fuentes oficiales |
+| 3 | [[Cerebro 3 - Oportunidades IEEE]] | Becas, concursos y voluntariados IEEE: búsqueda y búsqueda a petición en fuentes oficiales; la extracción con Gemini queda solo en el backend |
 | 4 | [[Cerebro 4 - Difusión y QR]] | Enlaces cortos, QR dinámicos y conteo de visitas |
 | 5 | [[Cerebro 5 - Secretaría y formularios]] | Formularios dinámicos versionados, respuestas y enlaces de Drive |
 | 6 | [[Cerebro 6 - Feedback y KPIs]] | Dashboard: miembros, oportunidades, respuestas, satisfacción, NPS y escaneos QR, con alcance por capítulo |

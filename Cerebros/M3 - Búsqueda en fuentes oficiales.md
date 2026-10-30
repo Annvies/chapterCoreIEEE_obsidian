@@ -28,7 +28,8 @@ tags:
 
 > [!info] Confirmado en el código
 > - `POST /opportunities/discover` (acceso **Ver**: cualquier persona con sesión).
->   «Extraer ficha» y «Publicar» siguen exigiendo Editar.
+>   Cada resultado ofrece solo el enlace a la página oficial: la acción «Extraer ficha» se
+>   retiró de la interfaz en el PR #43.
 > - **Cascada** registrada en `opportunities.module.ts`: páginas oficiales estáticas →
 >   navegador automatizado (solo en local) → [[M3 - Catálogo de respaldo]].
 > - Presupuesto común: 15 s y 10 páginas por búsqueda (configurables con
@@ -38,7 +39,8 @@ tags:
 > - Los resultados pasan por `result-filter.ts` y la lista de
 >   [[M3 - Fuentes oficiales admitidas]]; enlazan a la página, nunca a un archivo.
 > - `GET /opportunities/discover/config` da a la interfaz la configuración, y
->   `GET /opportunities/official-domains` la lista verificada de dominios.
+>   `GET /opportunities/official-domains` la lista verificada de dominios (desde el PR #43 la
+>   interfaz ya no la consulta).
 
 > [!warning] Estrategia declarada sin implementar
 > El tipo `discovery_strategy` y `STRATEGY_NAMES` incluyen `busqueda_sitio` («Búsqueda del

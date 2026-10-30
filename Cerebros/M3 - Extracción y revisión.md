@@ -9,7 +9,14 @@ tags:
 
 [[Cerebro 3 - Oportunidades IEEE]] · Preparación de fichas
 
-> [!abstract] Qué hace
+> [!warning] Retirado de la interfaz (PR #43, 2026-10-30)
+> El panel «Extraer convocatoria» y la acción «Extraer ficha» se quitaron del frontend porque
+> la extracción con IA no funciona en producción (el alojamiento no tiene la clave del
+> proveedor). Desde entonces **no se puede extraer ni publicar desde la interfaz**. El
+> backend no cambió: `POST /opportunities/extract` y `POST /opportunities` siguen existiendo,
+> sin uso desde la interfaz. Fuente: `CONTEXTO.md` §7 y `specs/002-oportunidades-fuentes-oficiales/spec.md`.
+
+> [!abstract] Qué hace (backend)
 > Desde una URL admitida, el backend obtiene contenido y Gemini propone una ficha con
 > información de la convocatoria.
 
@@ -36,3 +43,4 @@ Módulo 1.
 - [[M3 - Fuentes oficiales admitidas]]
 - [[M3 - Descarga de la página]]
 - [[M3 - Extracción con Gemini]]
+- [[M3 - Retiro de la extracción en la interfaz]]

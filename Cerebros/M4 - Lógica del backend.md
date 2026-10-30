@@ -15,12 +15,16 @@ tags:
 [[M4 - Código del módulo]] · [[Cerebro 4 - Difusión y QR]]
 
 > [!abstract] Lógica del backend
-> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 3 notas generadas desde el código.
+> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 4 notas generadas desde el código.
 
 ### Dominio (2)
 
 - [[M4 - short-link.views]]
 - [[M4 - short-links.util]]
+
+### Módulo Nest (1)
+
+- [[M4 - difusion.module]]
 
 ### Servicio (1)
 

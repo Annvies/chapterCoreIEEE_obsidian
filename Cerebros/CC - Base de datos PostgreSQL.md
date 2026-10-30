@@ -15,7 +15,7 @@ tags:
 
 [[CC - Arquitectura y stack]] · [[ChapterCore - Cerebro central]]
 
-> [!abstract] Una sola base PostgreSQL compartida por los seis módulos, gestionada con migraciones TypeORM.
+> [!abstract] Una sola base PostgreSQL compartida por los siete módulos (el Módulo 6 no tiene tablas propias), gestionada con migraciones TypeORM.
 
 ## Migraciones (en orden)
 
@@ -27,6 +27,10 @@ tags:
 | `1792454400000-UniqueOpportunityEnlace` | Unicidad del enlace de oportunidades |
 | `1792540800000-CreateDifusionModule` | `short_links`, `link_visits` y enums de enlaces y QR |
 | `1792627200000-CreateContactsModule` | `contacts`, `contact_interactions` |
+| `1792713600000-AddIeeeMembershipToUsers` | `user_ieee_societies` y la columna `ieee_membership_grade` en `users` |
+| `1792800000000-AddPendingApprovalToUsers` | Columna `pending_approval` (booleana, falsa por defecto) en `users` |
+| `1792886400000-CreateExpensesModule` | `expenses` |
+| `1792972800000-CreateOpportunitySearchHistory` | `opportunity_searches` y el enum `discovery_strategy` |
 
 - Extensiones: `pgcrypto` (UUID) y `citext` (correos sin distinguir mayúsculas).
 - Conexión: `DATABASE_URL` (o `DATABASE_URL_UNPOOLED` para migraciones) o `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`; `DB_SSL` opcional.
@@ -41,3 +45,4 @@ tags:
 - [[Cerebro 4 - Difusión y QR]]
 - [[Cerebro 5 - Secretaría y formularios]]
 - [[Cerebro 6 - Feedback y KPIs]]
+- [[Cerebro 7 - Tesorería y Gastos]]

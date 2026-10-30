@@ -34,8 +34,6 @@ tags:
 | `response` | sí | `DiscoveryResponse \| null` |
 | `error` | sí | `string \| null` |
 | `config` | sí | `DiscoveryConfig \| null` |
-| `canExtract` | sí | `boolean` |
-| `onExtract` | sí | `(url: string) => void` |
 
 
 ## Enlaces

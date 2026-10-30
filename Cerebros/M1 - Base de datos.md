@@ -15,7 +15,13 @@ tags:
 [[M1 - Código del módulo]] · [[Cerebro 1 - Base institucional]]
 
 > [!abstract] Base de datos
-> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 4 notas generadas desde el código.
+> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 7 notas generadas desde el código.
+
+### Migración (3)
+
+- [[M1 - Migración AddIeeeMembershipToUsers]]
+- [[M1 - Migración AddPendingApprovalToUsers]]
+- [[M1 - Migración CreateAuthModule]]
 
 ### Tabla (4)
 

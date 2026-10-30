@@ -23,7 +23,7 @@ tags:
 |---|---|---|
 | `/dashboard` | [[M6 - DashboardPage]] | dashboard · view |
 
-### Cliente api (1)
+### Cliente API (1)
 
 - [[M6 - Cliente API dashboard]]
 

@@ -15,7 +15,7 @@ tags:
 [[M2 - Código del módulo]] · [[Cerebro 2 - Contactos]]
 
 > [!abstract] Lógica del backend
-> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 8 notas generadas desde el código.
+> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 9 notas generadas desde el código.
 
 ### Dominio (3)
 
@@ -26,6 +26,10 @@ tags:
 ### Mapper (1)
 
 - [[M2 - contact.mapper]]
+
+### Módulo Nest (1)
+
+- [[M2 - contacts.module]]
 
 ### Repositorio (2)
 

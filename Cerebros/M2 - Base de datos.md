@@ -15,7 +15,11 @@ tags:
 [[M2 - Código del módulo]] · [[Cerebro 2 - Contactos]]
 
 > [!abstract] Base de datos
-> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 2 notas generadas desde el código.
+> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 3 notas generadas desde el código.
+
+### Migración (1)
+
+- [[M2 - Migración CreateContactsModule]]
 
 ### Tabla (2)
 

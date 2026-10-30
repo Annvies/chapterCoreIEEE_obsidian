@@ -25,10 +25,7 @@ tags:
 |---|---|---|
 | `OPPORTUNITY_TYPES` | const | Ficha de oportunidad según CONTEXTO.md §7 (mockup 05): titulo, tipo, fecha_limite, elegibilidad, beneficio y enlace. Contrato real de backendChapterCoreIEEE (snake_case). |
 | `OpportunityType` | type | — |
-| `OpportunityFields` | interface | Campos que se envían al publicar (POST /opportunities). |
-| `OpportunityDraft` | interface | Ficha propuesta por la IA (POST /opportunities/extract); aún no se ha guardado. |
-| `DraftField` | type | — |
-| `DraftNotice` | interface | — |
+| `OpportunityFields` | interface | Campos de una oportunidad publicada. |
 | `STRATEGY_NAMES` | const | — |
 | `StrategyName` | type | — |
 | `STRATEGY_LABEL` | const | — |
@@ -40,7 +37,6 @@ tags:
 | `DiscoveryResponse` | interface | — |
 | `DiscoveryConfig` | interface | — |
 | `SearchHistoryEntry` | interface | — |
-| `OfficialDomain` | interface | — |
 | `Opportunity` | interface | — |
 | `IeeeSociety` | interface | — |
 | `OPPORTUNITY_TYPE_LABEL` | const | — |

@@ -2,7 +2,8 @@
 
 Crea, por módulo, seis grupos técnicos (API, DTO y validaciones, Lógica del backend,
 Base de datos, Interfaz, Pruebas) y una nota por cada endpoint, DTO, tabla, archivo de
-backend, componente, hook, cliente de API, archivo de tipos y archivo de pruebas.
+backend, módulo Nest, migración, componente, hook, cliente de API, archivo de tipos y archivo de
+pruebas.
 
 Seguridad:
 - Solo LEE `backendChapterCoreIEEE/src` y `frontendChapterCoreIEEE/src` (nunca .env).
@@ -235,6 +236,17 @@ def parse_dtos() -> None:
                             cuerpo, [rel(p)])
             NOTES[note]["parent"] = parent
             DTO_CLASS[cls] = note
+        if "export class" not in text:
+            # Archivos de dto/ sin clases (p. ej. transformaciones compartidas por varios DTO).
+            exports = []
+            for i, line in enumerate(lines):
+                m = re.match(r"export (const|function|type) (\w+)", line)
+                if m:
+                    exports.append(f"| `{m.group(2)}` | {m.group(1)} | {cell(leading_comment(lines, i)) or '—'} |")
+            if exports:
+                add_note(f"M{mod} - {p.stem}", mod, "dto", "transformación",
+                         file_comment(text) or f"Utilidades de validación de los DTO (`{rel(p)}`).",
+                         ["### Exporta", "", "| Nombre | Tipo | Descripción |", "|---|---|---|", *exports], [rel(p)])
     for name, n in NOTES.items():
         par = n.get("parent")
         if par:
@@ -495,6 +507,90 @@ def parse_tables() -> None:
             NOTES[name]["enlaces"].append(concept)
 
 
+def parse_migrations() -> None:
+    """Una nota por migración: qué crea o cambia, en qué orden y sobre qué tablas."""
+    for p in sorted((BE / "database" / "migrations").glob("*.ts")):
+        text = read(p)
+        up = text[text.find("async up"):text.find("async down")] if "async down" in text else text
+        ops, tocadas = [], []
+        for m in re.finditer(r"CREATE EXTENSION IF NOT EXISTS (\w+)", up):
+            ops.append(f"Extensión `{m.group(1)}`")
+        for m in re.finditer(r"CREATE TYPE (\w+) AS ENUM", up):
+            ops.append(f"Tipo enumerado `{m.group(1)}`")
+        for m in re.finditer(r'CREATE TABLE "?(\w+)"?', up):
+            ops.append(f"Crea la tabla `{m.group(1)}`")
+            tocadas.append(m.group(1))
+        for m in re.finditer(r'ALTER TABLE "?(\w+)"?\s+(ADD|DROP|ALTER|RENAME)\s+(COLUMN |CONSTRAINT )?"?(\w+)', up):
+            ops.append(f"Modifica `{m.group(1)}`: {m.group(2)} {(m.group(3) or '').strip().lower()} `{m.group(4)}`".replace("  ", " "))
+            tocadas.append(m.group(1))
+        for m in re.finditer(r'CREATE (UNIQUE )?INDEX "?(\w+)"?\s+ON "?(\w+)"?', up):
+            ops.append(f"Índice {'único ' if m.group(1) else ''}`{m.group(2)}` en `{m.group(3)}`")
+            tocadas.append(m.group(3))
+        for m in re.finditer(r'INSERT INTO "?(\w+)"?', up):
+            ops.append(f"Inserta datos iniciales en `{m.group(1)}`")
+            tocadas.append(m.group(1))
+        for m in re.finditer(r'UPDATE "?(\w+)"? SET', up):
+            ops.append(f"Actualiza filas de `{m.group(1)}`")
+            tocadas.append(m.group(1))
+        mods = [TABLE_MOD[t] for t in tocadas if t in TABLE_MOD]
+        if not mods:
+            continue
+        mod = max(set(mods), key=mods.count)  # el módulo con más operaciones en la migración
+        ts = re.match(r"(\d{13})-(\w+)", p.stem)
+        clase = ts.group(2) if ts else p.stem
+        cuerpo = ["| Campo | Valor |", "|---|---|", f"| Archivo | `{p.name}` |"]
+        if ts:
+            cuerpo.append(f"| Marca de tiempo | `{ts.group(1)}` (orden de ejecución) |")
+        cuerpo.append(f"| Reversible | {'sí, tiene `down()`' if 'async down' in text else 'no'} |")
+        if ops:
+            cuerpo += ["", "### Qué hace", ""] + [f"- {o}" for o in dict.fromkeys(ops)]
+        name = add_note(f"M{mod} - Migración {clase}", mod, "db", "migración",
+                        file_comment(text) or f"Migración TypeORM `{p.name}`.", cuerpo, [rel(p)])
+        for t in dict.fromkeys(tocadas):
+            tabla = f"M{TABLE_MOD.get(t)} - Tabla {t}"
+            if tabla in NOTES and NOTES[tabla]["modulo"] == mod:
+                NOTES[name]["enlaces"].append(tabla)
+                NOTES[tabla]["enlaces"].append(name)
+
+
+def parse_nest_modules() -> None:
+    """Una nota por módulo Nest: qué importa, qué controladores expone y qué proveedores registra."""
+    for p in sorted(BE.rglob("*.module.ts")):
+        mod = BE_MOD.get(p.relative_to(BE).parts[0])
+        if not mod:
+            continue
+        text = read(p)
+        cuerpo = []
+        listas = {}
+        for key, titulo in (("imports", "Importa"), ("controllers", "Controladores"),
+                            ("providers", "Proveedores"), ("exports", "Exporta")):
+            m = re.search(rf"\b{key}:\s*\[", text)
+            if not m:
+                continue
+            bloque = text[m.end() - 1:balanced(text, m.end() - 1, "[", "]") + 1]
+            nombres = list(dict.fromkeys(re.findall(r"\b([A-Z]\w+)\b(?!\s*:)", bloque)))
+            nombres = [n for n in nombres if n not in ("TypeOrmModule", "ConfigModule") or key == "imports"]
+            if nombres:
+                listas[key] = nombres
+                cuerpo += [f"### {titulo}", ""] + [f"- `{n}`" for n in nombres] + [""]
+        name = add_note(f"M{mod} - {p.stem}", mod, "backend", "módulo Nest",
+                        file_comment(text) or f"Módulo NestJS que agrupa el código de `{p.parent.relative_to(BE).as_posix()}/`.",
+                        cuerpo or ["Sin declaraciones detectadas."], [rel(p)])
+        for prov in listas.get("providers", []):
+            svc = SERVICE_TYPE.get(prov)
+            if svc and NOTES[svc]["modulo"] == mod:
+                NOTES[name]["enlaces"].append(svc)
+        # Controladores → sus endpoints, siguiendo el import relativo del módulo.
+        for ctrl in listas.get("controllers", []):
+            im = re.search(rf"import \{{[^}}]*\b{ctrl}\b[^}}]*\}} from '(\.[^']+)'", text)
+            if not im:
+                continue
+            ctrl_file = rel(Path(str((p.parent / im.group(1)).resolve()) + ".ts"))
+            for _, _, ep in ENDPOINTS:
+                if ctrl_file in NOTES[ep]["fuentes"] and NOTES[ep]["modulo"] == mod:
+                    NOTES[name]["enlaces"].append(ep)
+
+
 # ---------------------------------------------------------------- frontend
 API_CALLS: list[tuple[str, str, str]] = []  # (metodo, ruta normalizada, nota del cliente)
 
@@ -617,7 +713,9 @@ def parse_tests() -> None:
             mod = BE_MOD.get(p.relative_to(BE).parts[0])
         else:
             parts = p.relative_to(FE).parts
-            mod = FE_FEAT_MOD.get(parts[1]) if parts[0] == "features" else FE_NAME_MOD.get(p.name.split(".")[0])
+            stem = p.name.split(".")[0]
+            mod = (FE_FEAT_MOD.get(parts[1]) if parts[0] == "features" else
+                   HOOK_MOD.get(stem) if parts[0] == "hooks" else FE_NAME_MOD.get(stem))
         if not mod:
             continue
         text = read(p)
@@ -655,7 +753,7 @@ def write_all() -> int:
             for n in miembros:
                 por_tipo.setdefault(NOTES[n]["tipo"], []).append(n)
             for tipo, ns in sorted(por_tipo.items()):
-                lineas += [f"### {tipo.capitalize()} ({len(ns)})", ""] + [f"- [[{n}]]" for n in ns] + [""]
+                lineas += [f"### {tipo[:1].upper() + tipo[1:]} ({len(ns)})", ""] + [f"- [[{n}]]" for n in ns] + [""]
             write_note(gname, {"type": "grupo", "modulo": mod}, ["chaptercore", f"modulo-{mod}", "grupo"],
                        f"[[M{mod} - Código del módulo]] · [[{CEREBROS[mod]}]]",
                        f"> [!abstract] {titulo}\n> {desc} {len(miembros)} notas generadas desde el código.",
@@ -674,7 +772,7 @@ def write_all() -> int:
         enlaces = list(dict.fromkeys(d["enlaces"]))
         write_note(name, {"type": d["tipo"], "modulo": mod}, ["chaptercore", f"modulo-{mod}", d["tipo"].replace(" ", "-")],
                    f"[[{enlaces[0]}]] · [[{CEREBROS[mod]}]]" if enlaces else f"[[{CEREBROS[mod]}]]",
-                   f"> [!abstract] {d['tipo'].capitalize()}\n> {cell(d['abstract'])}",
+                   f"> [!abstract] {d['tipo'][:1].upper() + d['tipo'][1:]}\n> {cell(d['abstract'])}",
                    cuerpo, d["fuentes"], enlaces[1:], d["alias"])
     return len(NOTES)
 
@@ -732,6 +830,7 @@ def link_code_hubs() -> None:
         grupos = [f"M{mod} - {titulo}" for titulo, _ in GRUPOS.values() if (C / f"M{mod} - {titulo}.md").exists()]
         sec = "\n## Grupos técnicos\n\nCada grupo tiene una nota por pieza del código:\n\n" + "\n".join(f"- [[{g}]]" for g in grupos) + "\n"
         t = t.replace("\n## Endpoints del backend", sec + "\n## Endpoints del backend", 1)
+        t = re.sub(r"\n{3,}", "\n\n", t)  # cada ejecución dejaba una línea en blanco de más
         p.write_text(t, encoding="utf-8", newline="\n")
 
 
@@ -740,7 +839,9 @@ if __name__ == "__main__":
     parse_backend_files()
     link_backend_imports()
     parse_endpoints()
+    parse_nest_modules()
     parse_tables()
+    parse_migrations()
     parse_frontend()
     link_api_calls()
     parse_tests()

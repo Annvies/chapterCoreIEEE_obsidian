@@ -15,11 +15,10 @@ tags:
 [[M3 - Código del módulo]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Pruebas
-> Archivos de pruebas automatizadas y los casos que verifican. 23 notas generadas desde el código.
+> Archivos de pruebas automatizadas y los casos que verifican. 21 notas generadas desde el código.
 
-### Prueba (23)
+### Prueba (21)
 
-- [[M3 - Prueba ExtractPanel.test]]
 - [[M3 - Prueba OfficialSearchResults.test]]
 - [[M3 - Prueba OpportunitiesPage.test]]
 - [[M3 - Prueba browser.strategy.spec]]
@@ -32,7 +31,6 @@ tags:
 - [[M3 - Prueba filters.test]]
 - [[M3 - Prueba gemini-extractor.service.spec]]
 - [[M3 - Prueba official-sources.spec]]
-- [[M3 - Prueba officialSources.test]]
 - [[M3 - Prueba opportunities.controller.spec]]
 - [[M3 - Prueba opportunities.service.spec]]
 - [[M3 - Prueba page-fetcher.service.spec]]
@@ -41,7 +39,7 @@ tags:
 - [[M3 - Prueba search-history.integration.spec]]
 - [[M3 - Prueba search-history.service.spec]]
 - [[M3 - Prueba static-pages.strategy.spec]]
-- [[M3 - Prueba validateDraft.test]]
+- [[M3 - Prueba useOpportunityDiscovery.test]]
 
 
 ## Enlaces

@@ -44,5 +44,6 @@ tags:
 ## Enlaces
 
 - [[M2 - Historial de interacciones]]
+- [[M2 - Migración CreateContactsModule]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

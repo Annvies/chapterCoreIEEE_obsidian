@@ -27,8 +27,8 @@ tags:
 >   resultados, extracción y publicación. Cada dominio guarda la URL oficial que lo
 >   acredita y la fecha de verificación (2026-10-19); uno que deja de ser oficial no se
 >   borra, se marca como retirado con su motivo.
-> - No basta con que el dominio contenga «ieee». La interfaz recibe la misma lista con
->   `GET /opportunities/official-domains`.
+> - No basta con que el dominio contenga «ieee». `GET /opportunities/official-domains` expone
+>   la misma lista; desde el PR #43 la interfaz ya no la usa (se quitó `lib/officialSources.ts`).
 
 ## Enlaces
 

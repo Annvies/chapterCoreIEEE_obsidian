@@ -15,11 +15,15 @@ tags:
 [[M6 - Código del módulo]] · [[Cerebro 6 - Feedback y KPIs]]
 
 > [!abstract] Lógica del backend
-> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 2 notas generadas desde el código.
+> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 3 notas generadas desde el código.
 
 ### Dominio (1)
 
 - [[M6 - dashboard.types]]
+
+### Módulo Nest (1)
+
+- [[M6 - dashboard.module]]
 
 ### Servicio (1)
 

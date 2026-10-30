@@ -45,11 +45,15 @@ Documentación técnica: [[M3 - Código del módulo]] (endpoints, archivos, pant
 > 4. Una persona revisa la información y decide si publicarla.
 > 5. Los miembros buscan por palabras clave y filtran por tipo y capítulo/sociedad.
 > 6. Si hay menos de 3 resultados vigentes, cualquiera con sesión puede pedir una
->    [[M3 - Búsqueda en fuentes oficiales]]: devuelve enlaces «sin verificar» que una
->    persona con permiso de edición puede pasar a «Extraer ficha».
+>    [[M3 - Búsqueda en fuentes oficiales]]: devuelve enlaces «sin verificar» a páginas
+>    oficiales.
 >
 > Buscar requiere sesión y permiso de lectura; extraer y publicar requieren permiso de
 > edición. La extracción no publica por sí sola.
+>
+> **Desde el PR #43 (2026-10-30) los pasos 1 a 4 solo existen en el backend:** la interfaz
+> retiró el panel «Extraer convocatoria» porque la extracción con IA no funciona en
+> producción. Hoy no se puede publicar desde la interfaz (`CONTEXTO.md` §7).
 
 > [!example] Revisión editorial recomendada
 > Antes de publicar, abrir la convocatoria original y confirmar que el plazo no venció,
@@ -80,6 +84,7 @@ Documentación técnica: [[M3 - Código del módulo]] (endpoints, archivos, pant
 > - La estrategia `busqueda_sitio` está declarada pero no implementada.
 > - El perfil IEEE propuesto no está implementado.
 > - La extracción puede equivocarse; la revisión humana es necesaria.
+> - Decidir cómo se publicarán oportunidades ahora que la interfaz no lo permite.
 > - Documentar y mantener coherente la política de dominios admitidos.
 
 ## Conexiones

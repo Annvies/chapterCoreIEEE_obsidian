@@ -23,7 +23,7 @@ tags:
 |---|---|---|
 | `/difusion` | [[M4 - DifusionPage]] | dissemination · view |
 
-### Cliente api (1)
+### Cliente API (1)
 
 - [[M4 - Cliente API difusion]]
 

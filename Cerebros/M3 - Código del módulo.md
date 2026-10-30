@@ -23,16 +23,12 @@ tags:
 [[Cerebro 3 - Oportunidades IEEE]] · documentación técnica del módulo
 
 > [!abstract] Qué hace el código
-> Búsqueda de oportunidades, extracción asistida por Gemini desde fuentes oficiales y publicación revisada.
+> Búsqueda de oportunidades, búsqueda a petición en fuentes oficiales con historial, y extracción asistida por Gemini con publicación revisada. Desde el PR #43 la interfaz solo usa la búsqueda: extraer y publicar quedan en el backend, sin pantalla.
 
 > [!info] Convenciones de toda la API
 > - Sin prefijo global de rutas; `main.ts` aplica `helmet`, CORS y `ValidationPipe`.
 > - Guard global JWT: toda ruta exige sesión salvo las marcadas con `@Public()`.
 > - `@RequirePermission(función, acceso)` se compara con la matriz oficial del Módulo 1.
-
-
-
-
 
 ## Grupos técnicos
 
@@ -67,7 +63,10 @@ Cada grupo tiene una nota por pieza del código:
 
 ```mermaid
 flowchart LR
-  UI[ExtractPanel] --> API[POST /opportunities/extract]
+  P[OpportunitiesPage] --> S[GET /opportunities]
+  P --> DSC[POST /opportunities/discover] --> C[Cascada: estáticas · navegador · catálogo]
+  DSC --> H[(opportunity_searches)]
+  B[Sin interfaz desde el PR #43] -.-> API[POST /opportunities/extract]
   API --> F[PageFetcherService] --> W[(Página oficial IEEE)]
   API --> G[GeminiExtractorService] --> AI[Gemini API]
   API --> D[buildDraft + advertencias]
@@ -90,23 +89,25 @@ flowchart LR
 |---|---|
 | `/oportunidades` | OpportunitiesPage |
 
-- `features/opportunities/ (OpportunitiesPage, SearchPanel, OpportunityResults, ExtractPanel, ExtractSteps, DraftCard, DraftEditor, OfficialSearchResults, DiscoveryResultList, StrategySelector, SearchHistory)`
+- `features/opportunities/ (OpportunitiesPage, SearchPanel, OpportunityResults, OfficialSearchResults, DiscoveryResultList, StrategySelector, SearchHistory, filters, discoveryAnnouncement)`
 - `components/OpportunityCard.tsx, components/DeadlineBadge.tsx`
-- `hooks/useOpportunitySearch.ts, useOpportunityExtraction.ts, useSavedOpportunities.ts, useOpportunityDiscovery.ts, useSearchHistory.ts, useOfficialDomains.ts`
-- `lib/officialSources.ts, api/opportunities.ts, types/opportunity.ts`
+- `hooks/useOpportunitySearch.ts, useSavedOpportunities.ts, useOpportunityDiscovery.ts, useSearchHistory.ts`
+- `api/opportunities.ts, types/opportunity.ts`
+- Retirados en el PR #43: `ExtractPanel`, `ExtractSteps`, `DraftCard`, `DraftEditor`, `validateDraft`, `useOpportunityExtraction`, `useOfficialDomains`, `lib/officialSources.ts`.
 
 ## Pruebas
 
-- **Backend:** `opportunities/opportunities.controller.spec.ts`, `opportunities/opportunities.service.spec.ts`, `opportunities/gemini-extractor.service.spec.ts`, `opportunities/page-fetcher.service.spec.ts`, `opportunities/official-sources.spec.ts`
-- **Frontend:** `features/opportunities/ExtractPanel.test.tsx`, `features/opportunities/validateDraft.test.ts`
+- **Backend:** `opportunities/opportunities.controller.spec.ts`, `opportunities/opportunities.service.spec.ts`, `opportunities/gemini-extractor.service.spec.ts`, `opportunities/page-fetcher.service.spec.ts`, `opportunities/official-sources.spec.ts` y las de `opportunities/discovery/` (cascada, estrategias, catálogo, filtro, robots e historial)
+- **Frontend:** `features/opportunities/OpportunitiesPage.test.tsx`, `OfficialSearchResults.test.tsx`, `filters.test.ts`, `hooks/useOpportunityDiscovery.test.ts`
+- **E2E:** `backendChapterCoreIEEE/test/e2e/opportunities-discovery.e2e.mjs` (comprueba que no aparecen el panel ni «Extraer ficha»)
 
 ## Documentos y mockups
 
-- `CONTEXTO.md` §7 (IA y oportunidades)
+- `CONTEXTO.md` §7 (IA y oportunidades) · `specs/002-oportunidades-fuentes-oficiales/`
 - `docs/qa/estrategia-pruebas-oportunidades.md`
 - Mockup `05-oportunidades-ia`
 
 ## Enlaces
 
 - Cerebro del módulo: [[Cerebro 3 - Oportunidades IEEE]].
-- Detalle de reglas y datos: [[M3 - Modelo de datos opportunities]], [[M3 - Extracción con Gemini]], [[M3 - Fuentes oficiales admitidas]].
+- Detalle de reglas y datos: [[M3 - Modelo de datos opportunities]], [[M3 - Extracción con Gemini]], [[M3 - Fuentes oficiales admitidas]], [[M3 - Búsqueda en fuentes oficiales]], [[M3 - Historial de búsquedas]].

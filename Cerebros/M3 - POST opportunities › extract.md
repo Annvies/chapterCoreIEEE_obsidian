@@ -42,14 +42,13 @@ tags:
 > [!note] Comentario del controlador
 > Los guards globales del Módulo 1 exigen sesión y permiso; ver es para todos los niveles y extraer/publicar exige Editar (CONTEXTO.md §7). El límite de peticiones se mantiene.
 
-### Consumido por el frontend
-
-- [[M3 - Cliente API opportunities]]
+> [!question] Sin llamada directa en el frontend
+> No se encontró una llamada a esta ruta en `frontendChapterCoreIEEE/src`. Puede usarse con una
+> URL que devuelve el servidor, desde fuera de la app (p. ej. un QR) o no usarse todavía.
 
 ## Enlaces
 
 - [[M3 - opportunities.service]]
 - [[M3 - DTO ExtractOpportunityDto]]
-- [[M3 - Cliente API opportunities]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

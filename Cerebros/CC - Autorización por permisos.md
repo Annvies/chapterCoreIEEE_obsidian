@@ -24,6 +24,9 @@ tags:
 | Formularios | Total | Total | Editar | Responder |
 | Dashboard | Total | Ver | Ver (su capítulo) | Ninguno |
 | Usuarios | Total | Ninguno | Ninguno | Ninguno |
+| Gastos | Total | Ver | Editar (su capítulo) | Ninguno |
+
+«Su capítulo» (`chapterOnly`) filtra los datos en Dashboard y Gastos; lo aplica cada servicio.
 
 Sin permiso: `403 Tu cargo no tiene permiso para realizar esta acción.`
 
@@ -36,3 +39,4 @@ Sin permiso: `403 Tu cargo no tiene permiso para realizar esta acción.`
 - [[Cerebro 4 - Difusión y QR]]
 - [[Cerebro 5 - Secretaría y formularios]]
 - [[Cerebro 6 - Feedback y KPIs]]
+- [[Cerebro 7 - Tesorería y Gastos]]

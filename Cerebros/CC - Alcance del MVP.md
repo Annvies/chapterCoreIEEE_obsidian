@@ -17,6 +17,8 @@ tags:
 
 - La definición de "operativo" y los criterios de aceptación por módulo siguen pendientes.
 - No se debe reducir ni ampliar el alcance en silencio.
+- El Módulo 7 (tesorería) amplía el MVP: su código está en `main`, pero `CONTEXTO.md` §4 y §9 lo
+  siguen marcando como propuesto, pendiente de aprobación ([[Cerebro 7 - Tesorería y Gastos]]).
 - Fuera del MVP por ahora: registro de actividad, transferencia de gestión, logos de empresas, duplicados y exportación del directorio, módulo de eventos.
 
 ## Enlaces

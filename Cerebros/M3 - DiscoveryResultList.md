@@ -31,8 +31,6 @@ tags:
 | Prop | Obligatoria | Tipo |
 |---|---|---|
 | `results` | sí | `DiscoveryResult[]` |
-| `canExtract` | sí | `boolean` |
-| `onExtract` | sí | `(url: string) => void` |
 | `headingLevel` | no | `3 \| 4` |
 
 

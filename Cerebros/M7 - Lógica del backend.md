@@ -15,7 +15,7 @@ tags:
 [[M7 - Código del módulo]] · [[Cerebro 7 - Tesorería y Gastos]]
 
 > [!abstract] Lógica del backend
-> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 4 notas generadas desde el código.
+> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 5 notas generadas desde el código.
 
 ### Dominio (1)
 
@@ -24,6 +24,10 @@ tags:
 ### Mapper (1)
 
 - [[M7 - expense.mapper]]
+
+### Módulo Nest (1)
+
+- [[M7 - expenses.module]]
 
 ### Repositorio (1)
 

@@ -15,7 +15,13 @@ tags:
 [[M3 - Código del módulo]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Base de datos
-> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 2 notas generadas desde el código.
+> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 5 notas generadas desde el código.
+
+### Migración (3)
+
+- [[M3 - Migración CreateOpportunities]]
+- [[M3 - Migración CreateOpportunitySearchHistory]]
+- [[M3 - Migración UniqueOpportunityEnlace]]
 
 ### Tabla (2)
 

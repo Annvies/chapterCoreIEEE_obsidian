@@ -23,7 +23,7 @@ tags:
 |---|---|---|
 | `/contactos` | [[M2 - DirectoryPage]] | contacts · view |
 
-### Cliente api (1)
+### Cliente API (1)
 
 - [[M2 - Cliente API contacts]]
 

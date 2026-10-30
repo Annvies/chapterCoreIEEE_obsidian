@@ -15,7 +15,11 @@ tags:
 [[M5 - Código del módulo]] · [[Cerebro 5 - Secretaría y formularios]]
 
 > [!abstract] Base de datos
-> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 4 notas generadas desde el código.
+> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 5 notas generadas desde el código.
+
+### Migración (1)
+
+- [[M5 - Migración CreateFormsModule]]
 
 ### Tabla (4)
 

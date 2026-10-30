@@ -15,13 +15,18 @@ tags:
 [[M5 - Código del módulo]] · [[Cerebro 5 - Secretaría y formularios]]
 
 > [!abstract] Lógica del backend
-> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 7 notas generadas desde el código.
+> Servicios, reglas de dominio, guards, repositorios y utilidades del backend. 9 notas generadas desde el código.
 
 ### Dominio (3)
 
 - [[M5 - form-response.types]]
 - [[M5 - form-schema.types]]
 - [[M5 - form-schema.zod]]
+
+### Módulo Nest (2)
+
+- [[M5 - forms.module]]
+- [[M5 - storage.module]]
 
 ### Servicio (4)
 

@@ -51,5 +51,6 @@ tags:
 ## Enlaces
 
 - [[M7 - Modelo de datos expenses]]
+- [[M7 - Migración CreateExpensesModule]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

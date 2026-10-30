@@ -15,7 +15,11 @@ tags:
 [[M7 - Código del módulo]] · [[Cerebro 7 - Tesorería y Gastos]]
 
 > [!abstract] Base de datos
-> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 1 notas generadas desde el código.
+> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 2 notas generadas desde el código.
+
+### Migración (1)
+
+- [[M7 - Migración CreateExpensesModule]]
 
 ### Tabla (1)
 

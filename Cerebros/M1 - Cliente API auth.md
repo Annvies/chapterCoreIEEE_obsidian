@@ -16,7 +16,7 @@ tags:
 
 [[M1 - Interfaz]] · [[Cerebro 1 - Base institucional]]
 
-> [!abstract] Cliente api
+> [!abstract] Cliente API
 > Cliente api del frontend (`frontendChapterCoreIEEE/src/api/auth.ts`).
 
 ### Exporta

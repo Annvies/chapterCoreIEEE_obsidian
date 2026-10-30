@@ -27,7 +27,7 @@ tags:
 
 - `ConfigModule` global; lee `.env.local` (raíz) y `.env` del backend.
 - TypeORM asíncrono: `autoLoadEntities`, `synchronize: false`, migraciones en `src/database/migrations`, logging solo en desarrollo.
-- Módulos: `AuthModule`, `ContactsModule`, `DashboardModule`, `DifusionModule`, `FormsModule`, `OpportunitiesModule`.
+- Módulos: `AuthModule`, `ContactsModule`, `DashboardModule`, `DifusionModule`, `ExpensesModule`, `FormsModule`, `OpportunitiesModule`. Cada uno tiene su nota generada `MN - <nombre>.module` en el grupo «Lógica del backend» de su cerebro.
 - `AppController`: `GET /` público que responde `Hello World!` (comprobación de vida).
 
 ## Enlaces
