@@ -42,7 +42,7 @@ Nodos propios del cerebro central, agrupados por tema:
 
 | Módulo | Cerebro | De qué se ocupa |
 |---|---|---|
-| 1 | [[Cerebro 1 - Base institucional]] | Cuentas, cargos, niveles de acceso, matriz de permisos y catálogo de capítulos |
+| 1 | [[Cerebro 1 - Base institucional]] | Cuentas, cargos, niveles de acceso, matriz de permisos, catálogo de capítulos, perfil de membresía IEEE y aprobación de invitaciones |
 | 2 | [[Cerebro 2 - Contactos]] | Directorio de empresas, alumni, conferencistas y autoridades, con su historial |
 | 3 | [[Cerebro 3 - Oportunidades IEEE]] | Becas, concursos y voluntariados IEEE con extracción asistida por Gemini |
 | 4 | [[Cerebro 4 - Difusión y QR]] | Enlaces cortos, QR dinámicos y conteo de visitas |

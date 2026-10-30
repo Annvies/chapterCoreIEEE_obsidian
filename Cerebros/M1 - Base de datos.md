@@ -3,7 +3,7 @@ type: grupo
 modulo: 1
 estado: confirmado
 generado: true
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -15,12 +15,13 @@ tags:
 [[M1 - Código del módulo]] · [[Cerebro 1 - Base institucional]]
 
 > [!abstract] Base de datos
-> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 3 notas generadas desde el código.
+> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 4 notas generadas desde el código.
 
-### Tabla (3)
+### Tabla (4)
 
 - [[M1 - Tabla auth_tokens]]
 - [[M1 - Tabla ieee_societies]]
+- [[M1 - Tabla user_ieee_societies]]
 - [[M1 - Tabla users]]
 
 

@@ -20,8 +20,9 @@ tags:
 > Una cuenta pasa por tres estados: `invited` (invitada), `active` (activa) y `disabled` (desactivada). Solo la Mesa Directiva cambia el estado.
 
 > [!info] Confirmado en el código
-> - La Mesa Directiva invita con correo, nombre, cargo, ámbito, capítulo y n.º IEEE opcional.
-> - Al definir la contraseña con el enlace de invitación, la cuenta pasa a `active`.
+> - La Mesa Directiva invita con correo, nombre, cargo, ámbito y capítulo. El n.º IEEE no lo escribe la Mesa: si lo envía, se ignora.
+> - Las invitaciones nuevas nacen con `pending_approval = true`.
+> - Al activar el enlace de invitación, la persona escribe su n.º IEEE (obligatorio) y su contraseña; la cuenta pasa a `active`, pero no puede entrar hasta que la Mesa la acepte ([[M1 - Aprobación de invitaciones]]).
 > - Desactivar incrementa `token_version` y borra los enlaces pendientes: cierra todas las sesiones.
 > - Al reactivar, vuelve a `active` si ya tenía contraseña, o a `invited` si nunca la definió.
 

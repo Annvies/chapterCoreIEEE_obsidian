@@ -33,6 +33,7 @@ tags:
 
 
 
+
 ## Grupos técnicos
 
 Cada grupo tiene una nota por pieza del código:

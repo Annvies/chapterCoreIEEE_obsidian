@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/access/RolesPage.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -33,6 +33,7 @@ Página de la aplicación. Ruta y permiso en [[M1 - Interfaz]].
 - [[M1 - lib access]]
 - [[M1 - Tipos auth]]
 - [[M1 - AccessLinkNotice]]
+- [[M1 - PendingRequestsPanel]]
 - [[M1 - PermissionMatrixCard]]
 - [[M1 - UserDialog]]
 - [[M1 - UsersPanel]]

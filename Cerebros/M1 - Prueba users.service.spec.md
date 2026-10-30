@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/services/users.service.spec.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -17,7 +17,7 @@ tags:
 [[M1 - Pruebas]] · [[Cerebro 1 - Base institucional]]
 
 > [!abstract] Prueba
-> 10 casos de prueba (Jest).
+> 18 casos de prueba (Jest).
 
 ### Casos
 
@@ -34,6 +34,16 @@ tags:
 - **UsersService.issueAccessLink**
   - genera invitación para cuentas invitadas y restablecimiento para activas
   - no genera enlaces para cuentas desactivadas
+- **UsersService: perfil IEEE**
+  - guarda grado, vencimiento y sociedades de la propia persona
+  - rechaza sociedades que no existen en el catálogo
+  - cambiar el vencimiento borra la verificación previa
+  - cambiar solo las sociedades conserva la verificación
+  - la Mesa Directiva verifica el número y acepta la cuenta pendiente
+  - no se puede verificar un perfil sin número de miembro
+- **UsersService: el número IEEE solo lo registra la propia persona**
+  - la invitación ignora un número enviado por la Mesa Directiva
+  - editar a una persona no cambia su número ni su verificación
 
 ## Enlaces
 

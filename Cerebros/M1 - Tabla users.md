@@ -5,8 +5,10 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/database/migrations/1792454400000-CreateAuthModule.ts
+  - backendChapterCoreIEEE/src/database/migrations/1792713600000-AddIeeeMembershipToUsers.ts
+  - backendChapterCoreIEEE/src/database/migrations/1792800000000-AddPendingApprovalToUsers.ts
   - backendChapterCoreIEEE/src/auth/entities/user.entity.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -52,9 +54,16 @@ tags:
 
 - `users_chapter_id_idx`: (chapter_id)
 
+### Cambios posteriores
+
+- `ADD COLUMN ieee_membership_grade text CHECK (ieee_membership_grade IN (`
+- `ADD COLUMN pending_approval boolean NOT NULL DEFAULT false`
+
 ### Origen
 
 - `backendChapterCoreIEEE/src/database/migrations/1792454400000-CreateAuthModule.ts`
+- `backendChapterCoreIEEE/src/database/migrations/1792713600000-AddIeeeMembershipToUsers.ts`
+- `backendChapterCoreIEEE/src/database/migrations/1792800000000-AddPendingApprovalToUsers.ts`
 - `backendChapterCoreIEEE/src/auth/entities/user.entity.ts`
 
 ## Enlaces

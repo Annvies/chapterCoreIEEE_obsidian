@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/access/UserDialog.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -40,6 +40,7 @@ tags:
 - [[M1 - Cliente API auth]]
 - [[M1 - auth-context]]
 - [[M1 - lib access]]
+- [[M1 - lib ieee]]
 - [[M1 - Tipos auth]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/mappers/user.mapper.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -25,6 +25,7 @@ tags:
 |---|---|---|
 | `ChapterView` | interface | — |
 | `UserView` | interface | — |
+| `IeeeProfileView` | interface | — |
 | `ProfileView` | interface | — |
 | `toUserView` | function | — |
 | `toProfileView` | function | — |
@@ -34,6 +35,7 @@ tags:
 ## Enlaces
 
 - [[M1 - authenticated-user]]
+- [[M1 - ieee-membership]]
 - [[M1 - permissions]]
 - [[M1 - position]]
 
