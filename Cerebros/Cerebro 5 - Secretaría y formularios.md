@@ -30,13 +30,16 @@ Documentación técnica: [[M5 - Código del módulo]] (endpoints, archivos, pant
 > - **Definición:** título, descripción, URL pública y esquema JSON.
 > - **Versionado:** nuevas versiones permiten preservar la estructura asociada a
 >   respuestas anteriores.
-> - **Campos:** texto, correo, número, selección, escala, fecha, archivo y número de
->   membresía IEEE.
+> - **Campos:** texto, correo, número, selección, escala, fecha, enlace de Drive y
+>   número de membresía IEEE. El tipo archivo queda solo para versiones ya publicadas
+>   *(propuesto, PR #27)*.
 > - **Reglas:** visibilidad condicional y validaciones.
 > - **Respuestas:** formularios publicados se pueden responder sin sesión; las
 >   respuestas se pueden revisar, medir por estado y exportar a XLSX.
 > - **Archivos:** se usa una abstracción de almacenamiento; la configuración local no
->   equivale necesariamente a persistencia adecuada en todos los despliegues.
+>   equivale necesariamente a persistencia adecuada en todos los despliegues. El PR #27
+>   (pendiente de fusión) deja de guardar archivos nuevos y pide enlaces de Google
+>   Drive; los adjuntos históricos se conservan.
 
 > [!success] Ciclo de vida conceptual
 > 1. Preparar definición, campos y reglas.
@@ -72,7 +75,8 @@ Documentación técnica: [[M5 - Código del módulo]] (endpoints, archivos, pant
 > [!todo] Privacidad y calidad pendientes
 > - Definir aviso/propósito, consentimiento cuando corresponda, retención y eliminación.
 > - Verificar equivalencia entre validaciones frontend y backend.
-> - Evaluar el almacenamiento de archivos para el entorno de despliegue.
+> - ~~Evaluar el almacenamiento de archivos para el entorno de despliegue.~~ Propuesta:
+>   enlaces de Drive (PR #27, pendiente de fusión).
 > - Verificar el acceso a respuestas y archivos según los permisos.
 
 ## Conexiones

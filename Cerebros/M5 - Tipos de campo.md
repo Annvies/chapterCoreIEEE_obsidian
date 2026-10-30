@@ -22,6 +22,10 @@ tags:
 > [!info] Confirmado en el código
 > - `text`, `textarea`, `email`, `number`, `select`, `radio`, `checkbox`, `scale`, `date`, `file` y `membership_number`.
 > - Validaciones posibles: longitud, mínimo/máximo, patrón, fechas, tamaño y tipos de archivo.
+
+> [!info] Cambio propuesto (PR #27, pendiente de fusión)
+> Se añade `drive_link`; `file` deja de ofrecerse en el constructor y solo se conserva
+> para leer versiones publicadas antiguas. Ver [[M5 - Enlaces de Drive]].
 > - `scale` va de 1 a 5 por defecto; con `useInKpis` alimenta el Dashboard.
 
 ## Enlaces

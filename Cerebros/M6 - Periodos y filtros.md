@@ -19,9 +19,10 @@ tags:
 > Los conteos de integrantes, oportunidades, formularios y el ranking no se filtran por
 > periodo, según la descripción recibida.
 
-> [!todo] Filtro pendiente
-> Las métricas son globales para la Rama; falta aplicar el filtro por capítulo del
-> Director.
+> [!info] Alcance por capítulo (PR #28, pendiente de fusión)
+> El Director de capítulo ve solo miembros y ranking de su capítulo; el resto de
+> métricas no se le muestra. En `main` las métricas siguen siendo globales de la Rama.
+> Ver [[M6 - Alcance por capítulo]].
 
 ## Enlaces
 
@@ -31,3 +32,4 @@ Define el alcance de [[M6 - Indicadores]] y debe considerarse al interpretar
 ## Notas del subgrupo
 
 - [[M6 - Limitaciones del dashboard]]
+- [[M6 - Alcance por capítulo]]

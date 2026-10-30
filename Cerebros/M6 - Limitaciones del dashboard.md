@@ -4,7 +4,7 @@ modulo: 6
 estado: confirmado
 fuentes:
   - backendChapterCoreIEEE/src/dashboard/dashboard.service.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-6
@@ -23,8 +23,13 @@ tags:
 > - Las métricas son globales de la Rama: el filtro por capítulo del Director está pendiente.
 > - El periodo por defecto es **semestre**.
 
-> [!question] Texto desactualizado en el código
-> El mensaje del servicio dice que el módulo de difusión/QR «no está implementado», pero el Módulo 4 ya registra visitas: lo pendiente es la integración.
+> [!success] Resuelto en el PR #28 (pendiente de fusión)
+> - `escaneosQr` cuenta las visitas QR del periodo ([[M6 - Escaneos de QR]]).
+> - El Director de capítulo recibe alcance `chapter` ([[M6 - Alcance por capítulo]]).
+> - `limitaciones` conserva solo la de eventos; para el Director añade la de métricas
+>   sin asociación de capítulo y, si no tiene capítulo, la que lo explica.
+> - Con eso deja de existir el mensaje desactualizado que decía que el módulo de QR «no
+>   está implementado».
 
 ## Enlaces
 
