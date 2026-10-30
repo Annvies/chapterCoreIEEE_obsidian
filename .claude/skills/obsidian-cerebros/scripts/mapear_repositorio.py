@@ -58,16 +58,16 @@ FEATURE = {"Users": "Usuarios", "Contacts": "Contactos", "Opportunities": "Oport
 ACCESS = {"None": "Ninguno", "Respond": "Responder", "View": "Ver", "Edit": "Editar", "Total": "Total"}
 
 BE_MOD = {"auth": 1, "contacts": 2, "opportunities": 3, "difusion": 4, "forms": 5, "dashboard": 6}
-FE_FEAT_MOD = {"access": 1, "auth": 1, "contacts": 2, "opportunities": 3, "difusion": 4,
+FE_FEAT_MOD = {"access": 1, "auth": 1, "profile": 1, "contacts": 2, "opportunities": 3, "difusion": 4,
                "forms": 5, "public": 5, "responses": 5, "dashboard": 6}
 FE_NAME_MOD = {"auth": 1, "contacts": 2, "opportunities": 3, "opportunity": 3, "difusion": 4,
-               "dashboard": 6, "forms": 5, "access": 1, "session": 1, "qr": 4, "form-schema": 5,
+               "dashboard": 6, "forms": 5, "access": 1, "session": 1, "ieee": 1, "qr": 4, "form-schema": 5,
                "form-schema-helpers": 5, "officialSources": 3, "api": 5}
 HOOK_MOD = {"useIeeeSocieties": 3, "useOpportunitySearch": 3, "useOpportunityExtraction": 3,
             "useSavedOpportunities": 3, "useShortLinks": 4, "useLinkStats": 4, "useQrSvg": 4,
             "usePublishedForms": 5, "useDashboardSummary": 6}
 COMPONENT_MOD = {"OpportunityCard": 3, "DeadlineBadge": 3}
-TABLE_MOD = {"users": 1, "auth_tokens": 1, "ieee_societies": 1, "contacts": 2, "contact_interactions": 2,
+TABLE_MOD = {"users": 1, "auth_tokens": 1, "ieee_societies": 1, "user_ieee_societies": 1, "contacts": 2, "contact_interactions": 2,
              "opportunities": 3, "short_links": 4, "link_visits": 4, "forms": 5, "form_versions": 5,
              "form_submissions": 5, "form_uploads": 5}
 TABLE_CONCEPT = {"users": "M1 - Modelo de datos users y auth_tokens", "auth_tokens": "M1 - Modelo de datos users y auth_tokens",

@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/dto/access-link.dto.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -24,6 +24,7 @@ Hereda de `InspectLinkDto`.
 | Campo | Tipo | Opcional | Validaciones |
 |---|---|---|---|
 | `password` | `string` | no | `@IsString()`, `@Length(PASSWORD_MIN_LENGTH, 72, { message: PASSWORD_POLICY_MESSAGE })`, `@Matches(PASSWORD_PATTERN, { message: PASSWORD_POLICY_MESSAGE })` |
+| `ieeeMemberNumber` | `string \| null` | sí | `@EmptyToNull()`, `@IsOptional()`, `@Matches(/^\d{6,12}$/, { message: 'El número de membresía IEEE debe tener entre 6 y 12 díg…` |
 
 ## Enlaces
 

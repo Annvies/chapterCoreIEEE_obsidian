@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/repositories/chapters.repository.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -31,6 +31,7 @@ tags:
 |---|---|---|
 | `findAll()` | Promise<IeeeSociety[]> | — |
 | `exists()` | Promise<boolean> | — |
+| `findByIds()` | Promise<IeeeSociety[]> | — |
 
 
 ## Enlaces

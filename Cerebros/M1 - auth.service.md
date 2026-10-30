@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/services/auth.service.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -24,6 +24,7 @@ tags:
 | Nombre | Tipo | Descripción |
 |---|---|---|
 | `SessionView` | interface | — |
+| `PendingApprovalView` | interface | Respuesta al activar una invitación que todavía debe aceptar la Mesa Directiva. |
 | `TokenInfoView` | interface | — |
 | `AuthService` | class | — |
 
@@ -35,7 +36,7 @@ tags:
 | `authenticate()` | Promise<AuthenticatedUser \| null> | Valida un JWT y devuelve el usuario vigente, o null si la sesión ya no es válida. |
 | `profile()` | Promise<ProfileView> | — |
 | `inspectLink()` | Promise<TokenInfoView> | — |
-| `setPasswordWithLink()` | Promise<SessionView> | Activa una invitación o restablece la contraseña y abre sesión. |
+| `setPasswordWithLink()` | — | Activa una invitación (exige el número IEEE) o restablece la contraseña y abre sesión. Si la cuenta espera la aprobación de la Mesa Directiva, no abre sesión. |
 
 
 ## Enlaces

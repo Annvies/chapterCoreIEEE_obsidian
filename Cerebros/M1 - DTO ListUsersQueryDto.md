@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/dto/list-users-query.dto.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -23,6 +23,7 @@ tags:
 |---|---|---|---|
 | `search` | `string` | sí | `@IsOptional()`, `@IsString()`, `@MaxLength(120)` |
 | `level` | `AccessLevel` | sí | `@IsOptional()`, `@IsIn(ACCESS_LEVELS)` |
+| `pending` | `boolean` | sí | `@IsOptional()`, `@Transform(({ value }) => value === true \|\| value === 'true')`, `@IsBoolean()` |
 | `page` | `number` | sí | `@IsOptional()`, `@Type(() => Number)`, `@IsInt()`, `@Min(1)` |
 | `limit` | `number` | sí | `@IsOptional()`, `@Type(() => Number)`, `@IsInt()`, `@Min(1)`, `@Max(100)` |
 

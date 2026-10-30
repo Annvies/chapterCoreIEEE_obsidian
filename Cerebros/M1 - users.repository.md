@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/repositories/users.repository.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -36,7 +36,8 @@ tags:
 | `findByIdWithSecret()` | Promise<User \| null> | — |
 | `search()` | — | — |
 | `countByLevel()` | Promise<Record<AccessLevel, number>> | Conteo de usuarios no desactivados por nivel de acceso. |
-| `countActiveMesaDirectiva()` | Promise<number> | Personas activas con nivel Mesa Directiva, excluyendo opcionalmente a una. |
+| `countPendingApproval()` | Promise<number> | — |
+| `countActiveMesaDirectiva()` | Promise<number> | Personas activas (y aceptadas) con nivel Mesa Directiva, excluyendo opcionalmente a una. |
 | `create()` | User | — |
 | `save()` | Promise<User> | — |
 | `recordFailedLogin()` | Promise<void> | — |

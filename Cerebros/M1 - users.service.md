@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/services/users.service.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -37,6 +37,8 @@ tags:
 | `update()` | Promise<UserView> | — |
 | `setStatus()` | — | — |
 | `issueAccessLink()` | Promise<AccessLinkView> | Genera un enlace de invitación (si no activó su cuenta) o de restablecimiento. |
+| `updateIeeeProfile()` | Promise<UserView> | La propia persona edita su perfil IEEE (RF-IEEE-01). Los campos omitidos no cambian. |
+| `verifyIeee()` | Promise<UserView> | Un directivo confirma el número tras revisarlo en el Membership Validator de vTools. Si la cuenta esperaba aprobación, también la acepta. |
 
 
 ## Enlaces
