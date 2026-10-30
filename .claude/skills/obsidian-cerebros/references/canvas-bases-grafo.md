@@ -67,7 +67,8 @@ views:
 
 - `colorGroups`: lista de `{ "query": "tag:#modulo-1", "color": { "a": 1, "rgb": <entero> } }`.
   `rgb` es el hex en decimal (`0xF28C28` = 15895592). Gana el primer grupo que coincide.
-- Filtros útiles: `search` (p. ej. `path:Cerebros`), `showOrphans`, `showTags`,
+- Filtros útiles: `search` (en esta bóveda `path:"Cerebros/"`; sin la barra también
+  coincide con `ChapterCore - Cerebros.canvas`, que enlaza todo y se vuelve el centro), `showOrphans`, `showTags`,
   `showAttachments`, `hideUnresolved`. Fuerzas: `centerStrength`, `repelStrength`,
   `linkStrength`, `linkDistance`.
 - Colores de módulos usados en esta bóveda: 1 naranja `#F28C28`, 2 coral `#FF7F50`,

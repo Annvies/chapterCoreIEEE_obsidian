@@ -511,7 +511,7 @@ function vaultLint() {
     if (!n.frontmatter || Object.keys(n.frontmatter).length === 0) add('error', n.rel, 'Sin frontmatter (properties).');
     if (!n.tags.includes('chaptercore')) add('warning', n.rel, 'Falta la etiqueta chaptercore.');
     const mod = moduleOf(n);
-    const isMap = n.base === 'Mapa de cerebros';
+    const isMap = n.tags.includes('cerebro-central');
     if (!mod && !isMap) add('warning', n.rel, 'Falta etiqueta modulo-N: no tomará color en el grafo.');
     if (!isMap && n.callouts === 0) add('info', n.rel, 'Sin callouts: revisa la estructura estándar.');
     if (!/^##\s+(Enlaces|Conexiones)/m.test(n.text) && !isMap) add('info', n.rel, 'Sin sección "## Enlaces" o "## Conexiones".');
@@ -534,9 +534,27 @@ function vaultLint() {
     if (redactSecrets(text) !== text) add('error', rel, 'Contiene algo con forma de secreto (clave, token o contraseña). Elimínalo.');
   }
 
+  // Jerarquía: central -> cerebros -> subgrupos -> conceptos. Mantiene un racimo por módulo.
+  const centrales = [...v.notes.values()].filter((x) => x.tags.includes('cerebro-central'));
+  const central = centrales.find((x) => x.aliases.includes('Cerebro central')) ?? centrales[0];
+  if (!central) add('warning', 'Cerebros/', 'No hay nota con la etiqueta cerebro-central.');
   for (const n of v.notes.values()) {
     if (!n.rel.startsWith('Cerebros/')) continue;
     const mod = moduleOf(n);
+    const isHub = Object.values(MODULES).some((m) => m.cerebro === n.rel);
+    if (isHub && central && !n.links.some((l) => v.resolve(l) === central.rel)) {
+      add('warning', n.rel, `El cerebro no enlaza al cerebro central (${central.base}).`);
+    }
+    if (mod && !isHub) {
+      for (const l of n.links) {
+        const target = v.notes.get(v.resolve(l) ?? '');
+        const targetMod = target ? moduleOf(target) : null;
+        const targetIsHub = target && Object.values(MODULES).some((m) => m.cerebro === target.rel);
+        if (targetMod && targetMod !== mod && !targetIsHub) {
+          add('warning', n.rel, `Enlace cruzado a [[${l}]] (Módulo ${targetMod}): enlaza a su cerebro para no mezclar racimos.`);
+        }
+      }
+    }
     if (n.tags.includes('subgrupo') && mod) {
       const cerebro = MODULES[mod]?.cerebro;
       if (cerebro && !n.links.some((l) => v.resolve(l) === cerebro)) {
@@ -559,8 +577,15 @@ function vaultLint() {
       for (const e of canvas.edges ?? []) {
         if (!ids.has(e.fromNode) || !ids.has(e.toNode)) add('error', rel, `Conexión ${e.id} apunta a un nodo inexistente.`);
       }
+      // El canvas muestra la estructura (cerebros, subgrupos y grupos), no cada nota hoja.
+      const isStructure = (n) =>
+        n.tags.some((t) => ['subgrupo', 'grupo'].includes(t)) ||
+        Object.values(MODULES).some((m) => m.cerebro === n.rel) ||
+        n.frontmatter.type === 'codigo' ||
+        (n.tags.includes('cerebro-central') && n.frontmatter.type === undefined) ||
+        n.frontmatter.type === 'central' && n.base === 'ChapterCore - Cerebro central';
       for (const n of v.notes.values()) {
-        if (n.rel.startsWith('Cerebros/') && !inCanvas.has(n.rel) && n.base !== 'Mapa de cerebros') {
+        if (n.rel.startsWith('Cerebros/') && isStructure(n) && !inCanvas.has(n.rel)) {
           add('info', rel, `La nota ${n.rel} no está en el canvas.`);
         }
       }

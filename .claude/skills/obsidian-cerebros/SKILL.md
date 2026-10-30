@@ -24,8 +24,16 @@ conectado y sea fácil de navegar, **sin inventar nada** y con herramientas
   `backendChapterCoreIEEE/` (NestJS) y `frontendChapterCoreIEEE/` (React);
   `backend/`, `frontend/`, `fullstack/`, `DevOps/`, `QA/`, `uiux/` son tooling y
   **no** prueban que algo exista. Decisiones confirmadas: `CONTEXTO.md`.
-- **Seis módulos**, cada uno con un cerebro y tres subgrupos, etiquetados
-  `#modulo-1` … `#modulo-6`. Mapa en `references/chaptercore-mapa-codigo.md`.
+- **Estructura:** `ChapterCore - Cerebro central` (con 5 grupos `CC - …` de
+  conocimiento transversal) → seis cerebros `#modulo-1` … `#modulo-6`. Cada cerebro
+  tiene 3 subgrupos funcionales (con notas de concepto) y una nota
+  `MN - Código del módulo` con 6 grupos técnicos: API, DTO y validaciones, Lógica del
+  backend, Base de datos, Interfaz y Pruebas. Mapa en `references/chaptercore-mapa-codigo.md`.
+- **Notas generadas:** las que tienen `generado: true` las crea
+  `scripts/mapear_repositorio.py` desde el código (una por endpoint, DTO, tabla,
+  archivo de backend, componente, hook, cliente de API y prueba). **No las edites a
+  mano:** vuelve a ejecutar el script cuando cambie el repositorio. El conocimiento
+  interpretado va en conceptos, subgrupos, cerebros y notas `CC - …`.
 
 ## Reglas no negociables
 
@@ -57,6 +65,7 @@ conectado y sea fácil de navegar, **sin inventar nada** y con herramientas
 |---|---|---|
 | **A. MCP `chaptercore-vault`** (recomendado) | Cualquier agente con MCP | Ya configurado en `.mcp.json`, `.codex/config.toml`, `opencode.json`, `.gemini/settings.json`, `.vscode/mcp.json` |
 | **B. CLI del mismo servidor** | Agente sin MCP | `node .claude/skills/obsidian-cerebros/mcp/server.mjs lint` · `overview` · `module <1-6>` · `repo` |
+| **B2. Mapeador del repositorio** | Re-sincronizar notas técnicas tras cambios en el código (Python 3.9+) | `python -I .claude/skills/obsidian-cerebros/scripts/mapear_repositorio.py [ruta del repo]` y luego `lint` |
 | **C. Obsidian CLI** (v1.12+) | Obsidian abierto y CLI activada | `obsidian backlinks`, `orphans`, `unresolved`, `properties`, `base:query`… |
 | **D. Local REST API with MCP** (plugin) | Ediciones dentro de Obsidian | Ver `references/mcp-opciones.md` |
 | **E. Archivos** | Siempre | Herramientas de lectura y escritura del agente |
