@@ -3,8 +3,9 @@ type: auditoria
 fecha: 2026-10-29
 agente: Claude Code (Opus 5.5)
 solicitado_por: Marian Zamorano
-rama: feat/skill-obsidian-cerebros
-commits: []
+rama: main
+commits:
+  - 4cd99a4
 tags:
   - auditoria
 ---
@@ -41,4 +42,4 @@ skill al final.
 
 ## Pendiente o por decidir
 
-- Hacer commit de estos cambios cuando se autorice.
+- Ninguno: cambios confirmados en el commit `4cd99a4`.
