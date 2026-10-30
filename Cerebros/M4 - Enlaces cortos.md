@@ -28,3 +28,9 @@ tags:
 
 Los QR apuntan a estos enlaces en [[M4 - Códigos QR]]. Los destinos pueden ser
 formularios públicos.
+
+## Notas del subgrupo
+
+- [[M4 - Modelo short_links y link_visits]]
+- [[M4 - Códigos y alias]]
+- [[M4 - Validación de destinos]]

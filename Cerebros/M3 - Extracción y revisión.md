@@ -30,3 +30,9 @@ tags:
 La URL admitida depende de la política de fuentes; tras la revisión, la ficha pasa a
 [[M3 - Publicación y búsqueda]]. Los permisos se detallan en el cerebro principal del
 Módulo 1.
+
+## Notas del subgrupo
+
+- [[M3 - Fuentes oficiales admitidas]]
+- [[M3 - Descarga de la página]]
+- [[M3 - Extracción con Gemini]]

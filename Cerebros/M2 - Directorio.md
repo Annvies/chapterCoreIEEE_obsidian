@@ -29,3 +29,10 @@ tags:
 
 Clasifica relaciones en [[M2 - Relaciones institucionales]] y registra su continuidad
 en [[M2 - Seguimiento]]. El módulo también consulta el catálogo institucional.
+
+## Notas del subgrupo
+
+- [[M2 - Modelo de datos contacts]]
+- [[M2 - Tipos de contacto]]
+- [[M2 - Importación CSV]]
+- [[M2 - Acciones por nivel de acceso]]

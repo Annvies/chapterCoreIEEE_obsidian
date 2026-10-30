@@ -10,7 +10,8 @@ tags:
 [[Cerebro 3 - Oportunidades IEEE]] · Encontrar convocatorias
 
 > [!abstract] Propósito
-> Ayudar a los miembros a localizar becas, concursos, grants, premios y voluntariados
+> Ayudar a los miembros a localizar becas, concursos y voluntariados (los grants y premios con dotación
+> se clasifican como beca, ver [[M3 - Tipos de oportunidad]])
 > mediante búsqueda por palabras clave.
 
 > [!info] Filtros descritos
@@ -29,3 +30,8 @@ tags:
 
 La información puede originarse en [[M3 - Extracción y revisión]], se organiza en
 [[M3 - Publicación y búsqueda]].
+
+## Notas del subgrupo
+
+- [[M3 - Tipos de oportunidad]]
+- [[M3 - Búsqueda por palabras clave]]

@@ -18,7 +18,7 @@ tags:
 
 > [!example] Camino de una ficha
 > Fuente oficial → [[M3 - Extracción y revisión]] → revisión humana → publicación →
-> búsqueda de miembros → [[M6 - Indicadores]].
+> búsqueda de miembros → [[Cerebro 6 - Feedback y KPIs]].
 
 > [!todo] Pendiente
 > Mantener explícita la lista de dominios admitidos y coherente con las fuentes que el
@@ -28,3 +28,7 @@ tags:
 
 Vinculado con [[M3 - Descubrimiento]] y [[M3 - Extracción y revisión]]. Las
 oportunidades publicadas se resumen en el cerebro principal del Módulo 6.
+
+## Notas del subgrupo
+
+- [[M3 - Modelo de datos opportunities]]

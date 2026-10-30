@@ -38,3 +38,10 @@ tags:
 
 - Comparte criterios con [[M1 - Permisos compartidos]].
 - El cargo de capítulo se apoya en [[M1 - Capítulos y sociedades]].
+
+## Notas del subgrupo
+
+- [[M1 - Ciclo de vida de una cuenta]]
+- [[M1 - Enlaces de un solo uso]]
+- [[M1 - Contraseñas y bloqueo de sesión]]
+- [[M1 - Modelo de datos users y auth_tokens]]

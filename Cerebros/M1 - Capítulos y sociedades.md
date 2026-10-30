@@ -33,4 +33,8 @@ tags:
 ## Enlaces
 
 Se consume en [[Cerebro 2 - Contactos]], [[Cerebro 3 - Oportunidades IEEE]] y
-[[M6 - Indicadores]].
+[[Cerebro 6 - Feedback y KPIs]].
+
+## Notas del subgrupo
+
+- [[M1 - Catálogo ieee_societies]]

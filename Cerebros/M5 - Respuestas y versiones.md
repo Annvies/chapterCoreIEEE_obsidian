@@ -30,3 +30,8 @@ tags:
 Las respuestas nacen de [[M5 - Diseño de formularios]] y deben revisarse según
 [[M5 - Datos y privacidad]]. Los indicadores que usan respuestas se describen en el
 cerebro principal del Módulo 6.
+
+## Notas del subgrupo
+
+- [[M5 - Versionado de formularios]]
+- [[M5 - Estados de una respuesta]]

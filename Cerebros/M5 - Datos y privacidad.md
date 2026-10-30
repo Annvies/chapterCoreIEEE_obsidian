@@ -32,3 +32,7 @@ tags:
 ## Enlaces
 
 Complementa [[M5 - Diseño de formularios]] y [[M5 - Respuestas y versiones]].
+
+## Notas del subgrupo
+
+- [[M5 - Archivos adjuntos]]

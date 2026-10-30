@@ -28,3 +28,8 @@ tags:
 
 El QR apunta a [[M4 - Enlaces cortos]] y genera señales para
 [[M4 - Métricas de difusión]].
+
+## Notas del subgrupo
+
+- [[M4 - Redirección pública]]
+- [[M4 - Tipos y estilos de QR]]

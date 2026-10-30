@@ -28,3 +28,7 @@ tags:
 
 Relacionado con [[M2 - Directorio]] y [[M2 - Relaciones institucionales]]. Los permisos
 del módulo se describen en su cerebro principal.
+
+## Notas del subgrupo
+
+- [[M2 - Historial de interacciones]]

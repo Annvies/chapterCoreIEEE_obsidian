@@ -30,3 +30,7 @@ tags:
 
 Para interpretación y cobertura, consultar [[M6 - Periodos y filtros]] y
 [[M6 - Lectura del feedback]].
+
+## Notas del subgrupo
+
+- [[M6 - Miembros activos y ranking]]

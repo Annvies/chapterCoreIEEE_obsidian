@@ -27,3 +27,7 @@ tags:
 
 Define el alcance de [[M6 - Indicadores]] y debe considerarse al interpretar
 [[M6 - Lectura del feedback]].
+
+## Notas del subgrupo
+
+- [[M6 - Limitaciones del dashboard]]

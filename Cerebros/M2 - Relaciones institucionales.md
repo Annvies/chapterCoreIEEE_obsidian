@@ -29,3 +29,7 @@ tags:
 
 Los registros viven en [[M2 - Directorio]] y cada contacto se mantiene con
 [[M2 - Seguimiento]].
+
+## Notas del subgrupo
+
+- [[M2 - Estados de la relación]]

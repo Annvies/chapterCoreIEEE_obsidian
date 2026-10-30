@@ -24,10 +24,16 @@ tags:
 
 > [!success] Compartir el formulario
 > Los formularios publicados pueden difundirse mediante un QR del
-> [[M4 - Códigos QR]].
+> [[Cerebro 4 - Difusión y QR]].
 
 ## Enlaces
 
 La definición se versiona en [[M5 - Respuestas y versiones]] y se complementa con
 [[M5 - Datos y privacidad]]. Los formularios publicados pueden promocionarse desde el
 Módulo 4.
+
+## Notas del subgrupo
+
+- [[M5 - Tipos de campo]]
+- [[M5 - Visibilidad condicional]]
+- [[M5 - Estados del formulario]]

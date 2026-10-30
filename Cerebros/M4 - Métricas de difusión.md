@@ -28,3 +28,7 @@ tags:
 
 Recoge actividad de [[M4 - Enlaces cortos]] y [[M4 - Códigos QR]]. El contexto para el
 uso de parámetros de campaña está en el cerebro principal del módulo.
+
+## Notas del subgrupo
+
+- [[M4 - Filtro de bots y precargas]]

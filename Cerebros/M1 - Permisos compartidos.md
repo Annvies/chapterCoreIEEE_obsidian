@@ -31,7 +31,7 @@ tags:
 
 > [!warning] «Su capítulo» todavía no filtra
 > El Director de capítulo tiene el Dashboard marcado como «Ver (su capítulo)», pero
-> hoy ve las métricas globales de la Rama. Ver [[M6 - Periodos y filtros]].
+> hoy ve las métricas globales de la Rama. Ver [[Cerebro 6 - Feedback y KPIs]].
 
 > [!todo] Pendiente
 > Decidir si «su capítulo» debe filtrar los datos en cada módulo, y definir los grupos
@@ -41,3 +41,8 @@ tags:
 
 Depende de [[M1 - Identidad y acceso]]. Implementado en
 `backendChapterCoreIEEE/src/auth/domain/permissions.ts`.
+
+## Notas del subgrupo
+
+- [[M1 - Niveles de acceso]]
+- [[M1 - Protección de la Mesa Directiva]]

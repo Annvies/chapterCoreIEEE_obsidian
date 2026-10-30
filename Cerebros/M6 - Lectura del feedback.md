@@ -33,3 +33,9 @@ tags:
 
 Interpretar junto con [[M6 - Indicadores]] y [[M6 - Periodos y filtros]], usando los
 datos originales del Módulo 5.
+
+## Notas del subgrupo
+
+- [[M6 - Satisfacción promedio]]
+- [[M6 - Cálculo del NPS]]
+- [[M6 - Feedback reciente]]
