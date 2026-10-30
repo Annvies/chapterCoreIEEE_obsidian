@@ -56,12 +56,12 @@ lo que no pertenece a un solo módulo:
 
 | Módulo | Color | Cerebro | De qué se ocupa |
 |---|---|---|---|
-| 1 | Naranja | Base institucional | Cuentas, cargos, niveles de acceso, permisos y catálogo de capítulos |
+| 1 | Naranja | Base institucional | Cuentas, cargos, niveles de acceso, permisos, catálogo de capítulos, perfil de membresía IEEE y aprobación de invitaciones |
 | 2 | Coral | Contactos | Directorio de empresas, alumni, conferencistas y autoridades, con su historial |
-| 3 | Amarillo | Oportunidades IEEE | Becas, concursos y voluntariados con extracción asistida por IA (Gemini) y búsqueda a petición en fuentes oficiales |
+| 3 | Amarillo | Oportunidades IEEE | Becas, concursos y voluntariados: búsqueda y búsqueda a petición en fuentes oficiales con historial; la extracción con IA (Gemini) queda solo en el backend |
 | 4 | Verde | Difusión y QR | Enlaces cortos, QR dinámicos y conteo de visitas |
-| 5 | Azul | Secretaría y formularios | Formularios dinámicos versionados, respuestas y adjuntos |
-| 6 | Violeta | Feedback y KPIs | Dashboard: miembros, oportunidades, respuestas, satisfacción, NPS y escaneos QR |
+| 5 | Azul | Secretaría y formularios | Formularios dinámicos versionados, respuestas y enlaces de Google Drive |
+| 6 | Violeta | Feedback y KPIs | Dashboard: miembros, oportunidades, respuestas, satisfacción, NPS y escaneos QR, con alcance por capítulo |
 | 7 | Turquesa | Tesorería y gastos | Gastos de la Rama y de cada capítulo y total gastado por periodo |
 
 ### Dentro de cada cerebro
@@ -78,10 +78,10 @@ Cada cerebro tiene dos lados:
 
 | Grupo técnico | Una nota por… | Ejemplo |
 |---|---|---|
-| API | endpoint (método, ruta, permiso, límites, quién lo usa) | `M3 - POST opportunities › extract` |
-| DTO y validaciones | contrato de entrada y sus reglas | `M2 - DTO ContactInputDto` |
-| Lógica del backend | servicio, regla de dominio, guard o repositorio | `M1 - users.service` |
-| Base de datos | tabla (columnas, enums, restricciones, índices) | `M4 - Tabla short_links` |
+| API | endpoint (método, ruta, permiso, límites, quién lo usa) | `M3 - POST opportunities › discover` |
+| DTO y validaciones | contrato de entrada y sus reglas, o archivo de transformaciones | `M2 - DTO ContactInputDto` |
+| Lógica del backend | módulo Nest, servicio, regla de dominio, guard o repositorio | `M1 - users.service`, `M7 - expenses.module` |
+| Base de datos | tabla (columnas, enums, restricciones, índices) y migración (qué crea o cambia) | `M4 - Tabla short_links`, `M7 - Migración CreateExpensesModule` |
 | Interfaz | página, componente, hook, cliente de API o tipos | `M5 - FormBuilderPage` |
 | Pruebas | archivo de pruebas con cada caso | `M2 - Prueba contact-import.spec` |
 
@@ -90,7 +90,7 @@ Cada cerebro tiene dos lados:
 - **Nombres:** `MN - …` para notas del módulo N, `CC - …` para las del cerebro central.
 - **Properties:** `type` (tipo de nota), `modulo`, `estado` (confirmado, propuesto o
   pendiente), `fuentes` (rutas del código que la respaldan) y `actualizado`.
-- **Etiquetas:** `#modulo-1` … `#modulo-6` y `#cerebro-central` dan el color en el grafo.
+- **Etiquetas:** `#modulo-1` … `#modulo-7` y `#cerebro-central` dan el color en el grafo.
 - **Notas generadas:** las que tienen `generado: true` (las de los grupos técnicos) se crean
   automáticamente desde el código. **No se editan a mano**: se regeneran cuando cambia el
   repositorio. El conocimiento interpretado va en cerebros, subgrupos, conceptos y notas `CC`.
@@ -105,6 +105,9 @@ Cada cerebro tiene dos lados:
 - **Canvas** [ChapterCore - Cerebros.canvas](ChapterCore%20-%20Cerebros.canvas): la estructura
   en un plano, con el cerebro central, cada módulo, sus subgrupos y sus grupos técnicos.
 - **Backlinks**: desde cualquier nota de detalle se llega a su grupo y a su cerebro.
+- **Navegabilidad comprobada:** desde el cerebro central se llega a todas las notas en 4 clics
+  como máximo, y desde cada cerebro a todas las de su módulo en 3. Se verifica con
+  `node .claude/skills/obsidian-cerebros/scripts/navegabilidad.mjs .`
 
 ## Carpetas
 
@@ -152,6 +155,8 @@ luego automáticamente en carpetas habituales.
 node .claude/skills/obsidian-cerebros/mcp/server.mjs where                 # ¿dónde está el repo del producto?
 node .claude/skills/obsidian-cerebros/mcp/server.mjs setup "<ruta>"        # fijar tu ruta
 node .claude/skills/obsidian-cerebros/mcp/server.mjs lint                  # auditoría de calidad de la bóveda
+node .claude/skills/obsidian-cerebros/mcp/server.mjs module 7              # contexto de un módulo (1-7)
+node .claude/skills/obsidian-cerebros/scripts/navegabilidad.mjs .          # ¿cada cerebro llega a todas sus notas?
 python -I .claude/skills/obsidian-cerebros/scripts/mapear_repositorio.py   # regenerar el mapa técnico
 ```
 

@@ -27,6 +27,7 @@ nodos por cerebro, y asegurar que cada cerebro sea navegable.
 | Notas generadas | Regeneradas desde `origin/main` (`54d8d14`): **+20** nuevas (10 migraciones, 8 módulos Nest, `M1 - transforms`, `M3 - Prueba useOpportunityDiscovery.test`) y **−11** de la interfaz de extracción retirada | 334 notas generadas |
 | Cerebro 3 | PR #43: la extracción con IA se retiró de la interfaz. Se actualizaron el cerebro, 4 subgrupos o conceptos y la nota de código, y se creó la decisión [[M3 - Retiro de la extracción en la interfaz]] | 8 |
 | Cerebro 1 | `M1 - Permisos compartidos`: fila de Gastos y «su capítulo» ya filtra en Dashboard y Gastos | 1 |
+| README de la bóveda | Descripciones de los módulos 1, 3, 5 y 6 al día (PR #43, Drive, alcance por capítulo); etiquetas hasta `#modulo-7`; migraciones y módulos Nest en la tabla de grupos técnicos; comprobación de navegabilidad y nuevos comandos | `README.md` |
 | Cerebro central (`CC - …`) | Tesorería en el menú, en las rutas, en la matriz y en la base de datos; migraciones nuevas; `ExpensesModule`; variables `OPPORTUNITY_DISCOVERY_*` (solo nombres); límite de la búsqueda por persona; decisiones y pendientes al día | 10 |
 
 ## Fuentes consultadas
