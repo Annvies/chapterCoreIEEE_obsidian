@@ -21,3 +21,5 @@ Reglas mínimas (detalle en la skill):
 - Solo plugins y servicios gratuitos, preferentemente locales.
 - No hagas commit ni push sin autorización explícita del usuario.
 - Conserva los nombres de archivo y los enlaces `[[...]]`; termina con el lint sin errores.
+- Si cambiaste archivos, deja un registro en `Auditoria/` (plantilla
+  `.claude/skills/obsidian-cerebros/templates/auditoria.md`) y actualiza `Auditoria/README.md`.

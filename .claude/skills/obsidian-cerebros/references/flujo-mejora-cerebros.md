@@ -51,6 +51,12 @@ Construye una tabla interna:
   decisiones necesita el equipo.
 - Pregunta si quiere commit (no lo hagas sin permiso).
 
+## 8. Registro de auditoría (obligatorio si cambiaste archivos)
+- Crea `Auditoria/AAAA-MM-DD - <Título corto>.md` desde `templates/auditoria.md`.
+- Añade la fila al índice `Auditoria/README.md`, la más reciente arriba.
+- Registra cantidades y rutas principales, no el contenido completo de cada nota.
+- Si luego se hace commit con autorización, añade los hashes en `commits`.
+
 ## Criterios de calidad de un cerebro "senior"
 
 - Cada afirmación del producto tiene fuente y estado.

@@ -58,6 +58,9 @@ conectado y sea fácil de navegar, **sin inventar nada** y con herramientas
 8. **No rompas la bóveda:** conserva nombres de archivo (los enlaces dependen de
    ellos), usa enlaces wiki `[[...]]`, valida el canvas como JSON y ejecuta el
    lint al terminar.
+9. **Toda ejecución que cambie archivos deja registro de auditoría** en
+   `Auditoria/` (paso 8 del flujo). Sin registro, el trabajo no está terminado.
+   Si solo consultas y no cambias nada, no hace falta registro.
 
 ## Herramientas (elige la primera disponible)
 
@@ -94,11 +97,18 @@ Detalle completo en `references/flujo-mejora-cerebros.md`. Resumen:
 6. **Verificar:** `vault_lint` sin errores; enlaces resueltos; canvas válido.
 7. **Informe:** qué cambió, con qué evidencia, qué queda pendiente y qué decisión
    necesita al equipo. No hagas commit.
+8. **Auditoría:** crea `Auditoria/AAAA-MM-DD - <Título corto>.md` con
+   `templates/auditoria.md` (pedido, qué se hizo por área con cantidad de archivos,
+   fuentes, verificación con el resultado del lint, hallazgos y pendientes) y añade
+   una fila al índice `Auditoria/README.md` (la más reciente arriba). Si ya hay un
+   registro del mismo día y tema, actualízalo en vez de crear otro. Si después se
+   hace commit con permiso, anota los hashes en `commits`. Nunca incluyas secretos
+   ni datos personales en el registro.
 
 ## Plantillas
 
 En `templates/`: `cerebro.md`, `subgrupo.md`, `concepto.md`, `decision.md`,
-`pendientes.base`. Cópialas y rellénalas; respeta las properties.
+`auditoria.md`, `pendientes.base`. Cópialas y rellénalas; respeta las properties.
 
 ## Conocimiento de referencia (léelo bajo demanda)
 
