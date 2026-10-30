@@ -9,6 +9,12 @@ tags:
 
 # Cerebro 4 — Difusión, webmaster y QR
 
+Parte de [[ChapterCore - Cerebro central]] · cerebro especializado del Módulo 4
+
+## Código
+
+Documentación técnica: [[M4 - Código del módulo]] (endpoints, archivos, pantallas y pruebas).
+
 ## Subgrupos conectados
 
 - [[M4 - Enlaces cortos]]

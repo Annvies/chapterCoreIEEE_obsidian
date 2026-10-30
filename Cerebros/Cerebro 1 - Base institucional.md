@@ -9,6 +9,12 @@ tags:
 
 # Cerebro 1 — Base institucional, usuarios y permisos
 
+Parte de [[ChapterCore - Cerebro central]] · cerebro especializado del Módulo 1
+
+## Código
+
+Documentación técnica: [[M1 - Código del módulo]] (endpoints, archivos, pantallas y pruebas).
+
 ## Subgrupos conectados
 
 - [[M1 - Identidad y acceso]]

@@ -9,6 +9,12 @@ tags:
 
 # Cerebro 6 — Feedback, métricas y KPIs
 
+Parte de [[ChapterCore - Cerebro central]] · cerebro especializado del Módulo 6
+
+## Código
+
+Documentación técnica: [[M6 - Código del módulo]] (endpoints, archivos, pantallas y pruebas).
+
 ## Subgrupos conectados
 
 - [[M6 - Indicadores]]

@@ -13,9 +13,10 @@ Estudiantil IEEE (UPB).
 
 ## Cerebros por módulo
 
-El mapa de los seis módulos y sus conexiones está en [[Cerebros/Mapa de cerebros]].
-La vista espacial con grupos de color está en [[ChapterCore - Cerebros.canvas]].
-Cada módulo tiene su cerebro y tres subgrupos enlazados.
+El punto de entrada es [[Cerebros/ChapterCore - Cerebro central]], que conecta los seis
+cerebros especializados, uno por módulo del sistema. Cada cerebro tiene tres subgrupos y,
+debajo, notas de concepto verificadas en el código del producto. La vista espacial con
+grupos de color está en [[ChapterCore - Cerebros.canvas]].
 
 ## Skill para agentes de IA: obsidian-cerebros
 

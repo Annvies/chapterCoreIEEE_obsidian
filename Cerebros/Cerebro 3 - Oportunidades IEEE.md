@@ -9,6 +9,12 @@ tags:
 
 # Cerebro 3 — Búsqueda inteligente de oportunidades IEEE
 
+Parte de [[ChapterCore - Cerebro central]] · cerebro especializado del Módulo 3
+
+## Código
+
+Documentación técnica: [[M3 - Código del módulo]] (endpoints, archivos, pantallas y pruebas).
+
 ## Subgrupos conectados
 
 - [[M3 - Descubrimiento]]
@@ -16,8 +22,8 @@ tags:
 - [[M3 - Publicación y búsqueda]]
 
 > [!abstract] Propósito
-> Ayudar a miembros a localizar oportunidades relevantes —por ejemplo, becas,
-> concursos, premios, grants y voluntariados— y asistir a las personas autorizadas al
+> Ayudar a miembros a localizar oportunidades relevantes —de tres tipos: becas,
+> concursos y voluntariados; los grants y premios con dotación cuentan como beca— y asistir a las personas autorizadas al
 > preparar una ficha para revisión. El sistema facilita descubrimiento y organización;
 > la fuente oficial de cada convocatoria sigue siendo la referencia para postular.
 
@@ -62,7 +68,7 @@ tags:
 > ayuda a evitar que una propuesta de IA se confunda con una convocatoria verificada.
 
 > [!todo] Límites y pendientes
-> - La búsqueda avanzada en lenguaje natural no usa IA actualmente.
+> - La búsqueda interpreta palabras, tipos y siglas, pero no usa IA.
 > - No hay recorrido/crawling automático de fuentes.
 > - El perfil IEEE propuesto no está implementado.
 > - La extracción puede equivocarse; la revisión humana es necesaria.

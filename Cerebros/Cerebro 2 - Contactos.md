@@ -9,6 +9,12 @@ tags:
 
 # Cerebro 2 — Contactos, empresas y exmiembros
 
+Parte de [[ChapterCore - Cerebro central]] · cerebro especializado del Módulo 2
+
+## Código
+
+Documentación técnica: [[M2 - Código del módulo]] (endpoints, archivos, pantallas y pruebas).
+
 ## Subgrupos conectados
 
 - [[M2 - Directorio]]

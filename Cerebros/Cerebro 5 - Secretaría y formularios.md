@@ -9,6 +9,12 @@ tags:
 
 # Cerebro 5 — Secretaría y formularios dinámicos
 
+Parte de [[ChapterCore - Cerebro central]] · cerebro especializado del Módulo 5
+
+## Código
+
+Documentación técnica: [[M5 - Código del módulo]] (endpoints, archivos, pantallas y pruebas).
+
 ## Subgrupos conectados
 
 - [[M5 - Diseño de formularios]]
