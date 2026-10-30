@@ -25,7 +25,7 @@ tags:
 > El campo `scope` del resumen del Dashboard: `branch` (toda la Rama) o `chapter` (solo
 > el capítulo de quien consulta, «Ver (su capítulo)» en la matriz de permisos).
 
-> [!info] En el código (PR #28, rama `feat/modulo-6-dashboard-qr-chapter-scope`, sin fusionar en `main`)
+> [!info] En el código (PR #28, en `main` con el PR #29)
 > - El alcance sale de `chapterOnly` en `PERMISSION_MATRIX[Feature.Dashboard]`
 >   (`auth/domain/permissions.ts`); el controlador pasa el usuario autenticado al
 >   servicio (`dashboard/dashboard.controller.ts`).
@@ -58,5 +58,5 @@ tags:
 
 ## Fuentes
 
-- PR #28 de `marianZamorano/chapterCoreIEEE` (commit `3034dfe`), pendiente de fusión.
+- PR #28 de `marianZamorano/chapterCoreIEEE` (commit `3034dfe`), integrado en `dev` (`fc0c916`) y en `main` con el PR #29 (`cdc4abf`).
 - `specs/008-modulo-6-dashboard-qr-chapter-scope/spec.md`

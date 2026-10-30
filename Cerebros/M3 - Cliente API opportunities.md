@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/api/opportunities.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -26,6 +26,12 @@ tags:
 | `searchOpportunities` | function | — |
 | `listSocieties` | function | — |
 | `extractOpportunity` | function | — |
+| `getDiscoveryConfig` | function | — |
+| `discoverOpportunities` | function | — |
+| `listSearchHistory` | function | — |
+| `deleteSearchHistoryEntry` | function | — |
+| `clearSearchHistory` | function | — |
+| `listOfficialDomains` | function | — |
 | `publishOpportunity` | function | — |
 
 ### Llamadas a la API
@@ -35,6 +41,12 @@ tags:
 | `searchOpportunities()` | `GET` | `/opportunities` |
 | `listSocieties()` | `GET` | `/opportunities/societies` |
 | `extractOpportunity()` | `POST` | `/opportunities/extract` |
+| `getDiscoveryConfig()` | `GET` | `/opportunities/discover/config` |
+| `discoverOpportunities()` | `POST` | `/opportunities/discover` |
+| `listSearchHistory()` | `GET` | `/opportunities/search-history` |
+| `deleteSearchHistoryEntry()` | `DELETE` | `/opportunities/search-history/:p` |
+| `clearSearchHistory()` | `DELETE` | `/opportunities/search-history` |
+| `listOfficialDomains()` | `GET` | `/opportunities/official-domains` |
 | `publishOpportunity()` | `POST` | `/opportunities` |
 
 

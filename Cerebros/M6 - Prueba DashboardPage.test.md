@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/dashboard/DashboardPage.test.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-6
@@ -17,12 +17,13 @@ tags:
 [[M6 - Pruebas]] · [[Cerebro 6 - Feedback y KPIs]]
 
 > [!abstract] Prueba
-> 3 casos de prueba (Vitest + Testing Library).
+> 4 casos de prueba (Vitest + Testing Library).
 
 ### Casos
 
 - **DashboardPage**
   - muestra KPIs, NPS, ranking y feedback del resumen
+  - no muestra métricas globales no atribuibles a un Director de capítulo
   - indica los KPIs sin datos todavía
   - vuelve a consultar al cambiar de periodo
 

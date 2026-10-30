@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/forms/form-submissions.controller.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 aliases:
   - "GET /forms/:formId/submissions/:id/uploads/:uploadId"
 tags:

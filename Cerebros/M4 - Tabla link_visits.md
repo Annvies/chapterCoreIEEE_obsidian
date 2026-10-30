@@ -6,7 +6,7 @@ generado: true
 fuentes:
   - backendChapterCoreIEEE/src/database/migrations/1792540800000-CreateDifusionModule.ts
   - backendChapterCoreIEEE/src/difusion/entities/link-visit.entity.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-4

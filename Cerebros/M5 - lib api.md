@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/lib/api.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -37,7 +37,6 @@ tags:
 | `publishForm()` | `POST` | `/forms/:p/publish` |
 | `deleteForm()` | `DELETE` | `/forms/:p` |
 | `getPublicForm()` | `GET` | `/public/forms/:p` |
-| `submitPublicForm()` | `POST` | `/public/forms/:p/submissions` |
 | `submitPublicForm()` | `POST` | `/public/forms/:p/submissions` |
 | `listSubmissions()` | `GET` | `/forms/:p/submissions` |
 | `getSubmission()` | `GET` | `/forms/:p/submissions/:p` |

@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/forms/schema/form-schema.types.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -44,6 +44,7 @@ tags:
 | `DEFAULT_SCALE_MAX` | const | — |
 | `isChoiceField` | function | — |
 | `isEmptyAnswer` | function | — |
+| `isGoogleDriveUrl` | function | — |
 | `isFieldVisible` | function | — |
 
 

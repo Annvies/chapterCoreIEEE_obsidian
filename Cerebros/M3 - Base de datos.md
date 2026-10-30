@@ -3,7 +3,7 @@ type: grupo
 modulo: 3
 estado: confirmado
 generado: true
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -15,11 +15,12 @@ tags:
 [[M3 - Código del módulo]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Base de datos
-> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 1 notas generadas desde el código.
+> Tablas PostgreSQL creadas por las migraciones TypeORM, con columnas, restricciones e índices. 2 notas generadas desde el código.
 
-### Tabla (1)
+### Tabla (2)
 
 - [[M3 - Tabla opportunities]]
+- [[M3 - Tabla opportunity_searches]]
 
 
 ## Enlaces

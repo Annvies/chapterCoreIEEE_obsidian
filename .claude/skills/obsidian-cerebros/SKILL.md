@@ -25,7 +25,7 @@ conectado y sea fácil de navegar, **sin inventar nada** y con herramientas
   `backend/`, `frontend/`, `fullstack/`, `DevOps/`, `QA/`, `uiux/` son tooling y
   **no** prueban que algo exista. Decisiones confirmadas: `CONTEXTO.md`.
 - **Estructura:** `ChapterCore - Cerebro central` (con 5 grupos `CC - …` de
-  conocimiento transversal) → seis cerebros `#modulo-1` … `#modulo-6`. Cada cerebro
+  conocimiento transversal) → siete cerebros `#modulo-1` … `#modulo-7`. Cada cerebro
   tiene 3 subgrupos funcionales (con notas de concepto) y una nota
   `MN - Código del módulo` con 6 grupos técnicos: API, DTO y validaciones, Lógica del
   backend, Base de datos, Interfaz y Pruebas. Mapa en `references/chaptercore-mapa-codigo.md`.
@@ -67,7 +67,7 @@ conectado y sea fácil de navegar, **sin inventar nada** y con herramientas
 | Opción | Cuándo | Cómo |
 |---|---|---|
 | **A. MCP `chaptercore-vault`** (recomendado) | Cualquier agente con MCP | Ya configurado en `.mcp.json`, `.codex/config.toml`, `opencode.json`, `.gemini/settings.json`, `.vscode/mcp.json` |
-| **B. CLI del mismo servidor** | Agente sin MCP | `node .claude/skills/obsidian-cerebros/mcp/server.mjs lint` · `overview` · `module <1-6>` · `repo` |
+| **B. CLI del mismo servidor** | Agente sin MCP | `node .claude/skills/obsidian-cerebros/mcp/server.mjs lint` · `overview` · `module <1-7>` · `repo` |
 | **B2. Mapeador del repositorio** | Re-sincronizar notas técnicas tras cambios en el código (Python 3.9+) | `python -I .claude/skills/obsidian-cerebros/scripts/mapear_repositorio.py [ruta del repo]` y luego `lint` |
 | **C. Obsidian CLI** (v1.12+) | Obsidian abierto y CLI activada | `obsidian backlinks`, `orphans`, `unresolved`, `properties`, `base:query`… |
 | **D. Local REST API with MCP** (plugin) | Ediciones dentro de Obsidian | Ver `references/mcp-opciones.md` |

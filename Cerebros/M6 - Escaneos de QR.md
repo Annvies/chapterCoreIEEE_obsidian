@@ -23,7 +23,7 @@ tags:
 > El KPI `escaneosQr` del Dashboard: cuántas veces se abrió un enlace corto desde su
 > código QR durante el periodo elegido.
 
-> [!info] En el código (PR #28, rama `feat/modulo-6-dashboard-qr-chapter-scope`, sin fusionar en `main`)
+> [!info] En el código (PR #28, en `main` con el PR #29)
 > - Cuenta las filas de `link_visits` con `origen = 'qr'`; el QR codifica la URL corta
 >   con `?o=qr` (`difusion/entities/link-visit.entity.ts`).
 > - Filtra por `visited_at` desde el inicio del periodo; en `management` cuenta todo el
@@ -44,5 +44,5 @@ tags:
 
 ## Fuentes
 
-- PR #28 de `marianZamorano/chapterCoreIEEE` (commit `3034dfe`), pendiente de fusión.
+- PR #28 de `marianZamorano/chapterCoreIEEE` (commit `3034dfe`), integrado en `dev` (`fc0c916`) y en `main` con el PR #29 (`cdc4abf`).
 - `specs/008-modulo-6-dashboard-qr-chapter-scope/spec.md`

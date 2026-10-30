@@ -3,7 +3,7 @@ type: grupo
 modulo: 2
 estado: confirmado
 generado: true
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-2

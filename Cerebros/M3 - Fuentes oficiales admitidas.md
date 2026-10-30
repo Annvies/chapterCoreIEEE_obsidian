@@ -4,7 +4,8 @@ modulo: 3
 estado: confirmado
 fuentes:
   - backendChapterCoreIEEE/src/opportunities/official-sources.ts
-actualizado: 2026-10-29
+  - backendChapterCoreIEEE/src/opportunities/official-domains.ts
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -22,12 +23,19 @@ tags:
 > - Dominios: `ieee.org` y subdominios, `ieee-pes.org`, `comsoc.org`, `ieee-cas.org`, `embs.org`, `ieee-ras.org` y `computer.org`.
 > - Solo `https`, sin usuario ni contraseña en la URL y sin puertos distintos de 443.
 > - La sociedad se infiere del dominio (p. ej. `wie.ieee.org` → WIE).
+> - Desde la spec 002 la lista vive en `official-domains.ts` y es la **única fuente** para
+>   resultados, extracción y publicación. Cada dominio guarda la URL oficial que lo
+>   acredita y la fecha de verificación (2026-10-19); uno que deja de ser oficial no se
+>   borra, se marca como retirado con su motivo.
+> - No basta con que el dominio contenga «ieee». La interfaz recibe la misma lista con
+>   `GET /opportunities/official-domains`.
 
 ## Enlaces
 
 - Forma parte de [[M3 - Extracción y revisión]].
-- Relacionada con [[M3 - Descarga de la página]], [[M3 - Extracción con Gemini]].
+- Relacionada con [[M3 - Descarga de la página]], [[M3 - Extracción con Gemini]], [[M3 - Búsqueda en fuentes oficiales]].
 
 ## Fuentes
 
 - `backendChapterCoreIEEE/src/opportunities/official-sources.ts`
+- `backendChapterCoreIEEE/src/opportunities/official-domains.ts`

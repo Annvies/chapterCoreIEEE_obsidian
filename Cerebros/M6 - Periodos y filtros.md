@@ -19,9 +19,9 @@ tags:
 > Los conteos de integrantes, oportunidades, formularios y el ranking no se filtran por
 > periodo, según la descripción recibida.
 
-> [!info] Alcance por capítulo (PR #28, pendiente de fusión)
+> [!info] Alcance por capítulo (PR #28, en `main` con el PR #29)
 > El Director de capítulo ve solo miembros y ranking de su capítulo; el resto de
-> métricas no se le muestra. En `main` las métricas siguen siendo globales de la Rama.
+> métricas no se le muestra. La Mesa Directiva y la Secretaría siguen viendo la Rama.
 > Ver [[M6 - Alcance por capítulo]].
 
 ## Enlaces

@@ -24,7 +24,7 @@ tags:
 > - Tamaño máximo configurable con `MAX_UPLOAD_MB` (20 MB por defecto).
 > - Si se borra la respuesta, se borran sus adjuntos (`ON DELETE CASCADE`).
 
-> [!info] Cambio propuesto (PR #27, pendiente de fusión)
+> [!info] Cambio en `main` (PR #27, integrado con el PR #29)
 > Los envíos nuevos ya no crean registros en `form_uploads`: se reemplazan por
 > [[M5 - Enlaces de Drive]]. La tabla, sus archivos y la descarga autenticada se
 > conservan para las respuestas históricas.

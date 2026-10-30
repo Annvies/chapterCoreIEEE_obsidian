@@ -33,6 +33,7 @@ tags:
 
 
 
+
 ## Grupos técnicos
 
 Cada grupo tiene una nota por pieza del código:
@@ -52,6 +53,12 @@ Cada grupo tiene una nota por pieza del código:
 | `GET` | `/opportunities/societies` | Oportunidades · Ver |
 | `POST` | `/opportunities/extract` | Oportunidades · Editar · 5/min |
 | `POST` | `/opportunities` | Oportunidades · Editar · 10/min (publicar) |
+| `GET` | `/opportunities/official-domains` | Oportunidades · Ver |
+| `GET` | `/opportunities/discover/config` | Oportunidades · Ver |
+| `POST` | `/opportunities/discover` | Oportunidades · Ver · 3/min por persona |
+| `GET` | `/opportunities/search-history` | Oportunidades · Ver (solo las propias) |
+| `DELETE` | `/opportunities/search-history/:id` | Oportunidades · Ver (solo las propias) |
+| `DELETE` | `/opportunities/search-history` | Oportunidades · Ver (solo las propias) |
 
 > [!tip] Límite de peticiones
 > El módulo configura 30 peticiones por minuto por defecto; extraer y publicar tienen límites propios más estrictos.
@@ -75,6 +82,7 @@ flowchart LR
 - **Reglas:** `opportunities/official-sources.ts`, `opportunities/is-official-ieee-url.decorator.ts`, `opportunities/opportunity.views.ts`
 - **DTO:** `opportunities/dto/search-opportunities-query.dto.ts`, `opportunities/dto/extract-opportunity.dto.ts`, `opportunities/dto/create-opportunity.dto.ts`
 - **Datos:** `opportunities/entities/opportunity.entity.ts`, `opportunities/entities/ieee-society.entity.ts`, `database/migrations/1792368000000-CreateOpportunities.ts`, `database/migrations/1792454400000-UniqueOpportunityEnlace.ts`
+- **Búsqueda en fuentes oficiales (spec 002):** `opportunities/discovery/` (`discovery.controller.ts`, `discovery.service.ts`, `search-history.service.ts`, `result-filter.ts`, `robots.ts`, `user-throttler.guard.ts`, `strategies/` estáticas · navegador · catálogo, `catalog/`), `opportunities/official-domains.ts`, migración `1792972800000-CreateOpportunitySearchHistory.ts`
 
 ## Frontend (`frontendChapterCoreIEEE/src/`)
 
@@ -82,9 +90,9 @@ flowchart LR
 |---|---|
 | `/oportunidades` | OpportunitiesPage |
 
-- `features/opportunities/ (OpportunitiesPage, SearchPanel, OpportunityResults, ExtractPanel, DraftEditor)`
+- `features/opportunities/ (OpportunitiesPage, SearchPanel, OpportunityResults, ExtractPanel, ExtractSteps, DraftCard, DraftEditor, OfficialSearchResults, DiscoveryResultList, StrategySelector, SearchHistory)`
 - `components/OpportunityCard.tsx, components/DeadlineBadge.tsx`
-- `hooks/useOpportunitySearch.ts, useOpportunityExtraction.ts, useSavedOpportunities.ts`
+- `hooks/useOpportunitySearch.ts, useOpportunityExtraction.ts, useSavedOpportunities.ts, useOpportunityDiscovery.ts, useSearchHistory.ts, useOfficialDomains.ts`
 - `lib/officialSources.ts, api/opportunities.ts, types/opportunity.ts`
 
 ## Pruebas

@@ -3,7 +3,7 @@ type: grupo
 modulo: 3
 estado: confirmado
 generado: true
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -15,11 +15,12 @@ tags:
 [[M3 - Código del módulo]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] DTO y validaciones
-> Contratos de entrada de la API y sus reglas de validación (class-validator). 3 notas generadas desde el código.
+> Contratos de entrada de la API y sus reglas de validación (class-validator). 4 notas generadas desde el código.
 
-### Dto (3)
+### Dto (4)
 
 - [[M3 - DTO CreateOpportunityDto]]
+- [[M3 - DTO DiscoverDto]]
 - [[M3 - DTO ExtractOpportunityDto]]
 - [[M3 - DTO SearchOpportunitiesQueryDto]]
 

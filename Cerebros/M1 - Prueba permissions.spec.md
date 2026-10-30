@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/domain/permissions.spec.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1
@@ -17,7 +17,7 @@ tags:
 [[M1 - Pruebas]] · [[Cerebro 1 - Base institucional]]
 
 > [!abstract] Prueba
-> 8 casos de prueba (Jest).
+> 11 casos de prueba (Jest).
 
 ### Casos
 
@@ -28,6 +28,10 @@ tags:
   - solo la Mesa Directiva administra usuarios
   - formularios: secretaría total, director edita sin borrar, miembro solo responde
   - todas las personas ven oportunidades; los miembros no editan
+- **hasAccess (Módulo 7 · gastos y tesorería)**
+  - solo la Mesa Directiva elimina gastos
+  - Director de capítulo registra solo en su capítulo y Secretaría solo consulta
+  - un Miembro no accede a la tesorería
 - **normalizePosition**
   - limpia ámbito y capítulo cuando no hay cargo
   - descarta el capítulo en cargos de Rama

@@ -44,6 +44,9 @@ Documentación técnica: [[M3 - Código del módulo]] (endpoints, archivos, pant
 > 3. El sistema muestra advertencias si faltan datos o hace falta confirmación.
 > 4. Una persona revisa la información y decide si publicarla.
 > 5. Los miembros buscan por palabras clave y filtran por tipo y capítulo/sociedad.
+> 6. Si hay menos de 3 resultados vigentes, cualquiera con sesión puede pedir una
+>    [[M3 - Búsqueda en fuentes oficiales]]: devuelve enlaces «sin verificar» que una
+>    persona con permiso de edición puede pasar a «Extraer ficha».
 >
 > Buscar requiere sesión y permiso de lectura; extraer y publicar requieren permiso de
 > edición. La extracción no publica por sí sola.
@@ -69,7 +72,12 @@ Documentación técnica: [[M3 - Código del módulo]] (endpoints, archivos, pant
 
 > [!todo] Límites y pendientes
 > - La búsqueda interpreta palabras, tipos y siglas, pero no usa IA.
-> - No hay recorrido/crawling automático de fuentes.
+> - ~~No hay recorrido automático de fuentes.~~ Desde el PR #42 las fuentes oficiales se
+>   recorren **a petición**, nunca de forma programada (`CONTEXTO.md` §7).
+> - El catálogo de respaldo se regenera a mano antes de cada integración a `main`.
+> - Pendiente de la spec 002: ampliar la lista de dominios desde
+>   `https://www.ieee.org/sitemap.html`.
+> - La estrategia `busqueda_sitio` está declarada pero no implementada.
 > - El perfil IEEE propuesto no está implementado.
 > - La extracción puede equivocarse; la revisión humana es necesaria.
 > - Documentar y mantener coherente la política de dominios admitidos.

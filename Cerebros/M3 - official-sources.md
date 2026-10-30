@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/opportunities/official-sources.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -17,13 +17,13 @@ tags:
 [[M3 - Lógica del backend]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Dominio
-> Fuentes oficiales aceptadas (CONTEXTO.md §7): ieee.org y sus subdominios, más los sitios oficiales verificados de sociedades que no cuelgan de ieee.org.
+> Fuentes oficiales aceptadas (CONTEXTO.md §7, spec 002 RF-329): se derivan de la lista verificada, sin los dominios retirados.
 
 ### Exporta
 
 | Nombre | Tipo | Descripción |
 |---|---|---|
-| `OFFICIAL_DOMAINS` | const | Fuentes oficiales aceptadas (CONTEXTO.md §7): ieee.org y sus subdominios, más los sitios oficiales verificados de sociedades que no cuelgan de ieee.org. |
+| `OFFICIAL_DOMAINS` | const | Fuentes oficiales aceptadas (CONTEXTO.md §7, spec 002 RF-329): se derivan de la lista verificada, sin los dominios retirados. |
 | `parseOfficialUrl` | function | — |
 | `normalizeOfficialUrl` | function | Forma canónica de una URL oficial para comparar duplicados: host en minúsculas, sin puerto por defecto, sin fragmento y sin «/» final (salvo la raíz). Conserva la query. |
 | `isOfficialIeeeUrl` | function | — |
@@ -32,6 +32,6 @@ tags:
 
 ## Enlaces
 
-- [[Cerebro 3 - Oportunidades IEEE]]
+- [[M3 - official-domains]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

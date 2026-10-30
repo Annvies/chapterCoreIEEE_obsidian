@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/types/dashboard.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-6
@@ -27,7 +27,12 @@ tags:
 | `DASHBOARD_PERIODS` | const | — |
 | `DashboardChapterRank` | interface | — |
 | `DashboardFeedbackItem` | interface | — |
-| `DashboardSummary` | interface | — |
+| `DashboardResponses` | interface | — |
+| `DashboardSatisfaction` | interface | — |
+| `DashboardNps` | interface | — |
+| `BranchDashboardSummary` | interface | Mesa Directiva y Secretaría: métricas de toda la Rama. |
+| `ChapterDashboardSummary` | interface | Director de capítulo ("Ver (su capítulo)"): solo miembros y ranking de su capítulo; el resto no tiene asociación de capítulo y llega como null. |
+| `DashboardSummary` | type | — |
 
 
 ## Enlaces

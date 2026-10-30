@@ -6,7 +6,7 @@ generado: true
 fuentes:
   - backendChapterCoreIEEE/src/database/migrations/1792454400000-CreateAuthModule.ts
   - backendChapterCoreIEEE/src/auth/entities/auth-token.entity.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-1

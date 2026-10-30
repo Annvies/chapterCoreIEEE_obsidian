@@ -22,9 +22,14 @@ tags:
 > Probar términos del nombre oficial, tipo de oportunidad y área temática. Confirmar
 > elegibilidad y plazo en la convocatoria original antes de actuar.
 
+> [!success] Búsqueda en fuentes oficiales (spec 002, PR #42)
+> Si la búsqueda devuelve menos de 3 oportunidades vigentes, la interfaz ofrece buscar en
+> sitios oficiales IEEE **a petición de la persona**, con un catálogo de respaldo al final
+> y un historial personal. Los resultados quedan «sin verificar» y nunca se publican solos.
+
 > [!warning] No es una búsqueda conversacional
-> La búsqueda avanzada en lenguaje natural no usa IA actualmente; tampoco hay
-> rastreo/crawling automático de fuentes.
+> La búsqueda normal en lenguaje natural no usa IA (es por palabras clave). Tampoco hay
+> rastreo programado: las fuentes solo se recorren cuando alguien lo pide.
 
 ## Enlaces
 
@@ -35,3 +40,6 @@ La información puede originarse en [[M3 - Extracción y revisión]], se organiz
 
 - [[M3 - Tipos de oportunidad]]
 - [[M3 - Búsqueda por palabras clave]]
+- [[M3 - Búsqueda en fuentes oficiales]]
+- [[M3 - Catálogo de respaldo]]
+- [[M3 - Historial de búsquedas]]

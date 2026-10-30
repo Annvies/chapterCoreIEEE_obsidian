@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/opportunities/official-sources.spec.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -17,7 +17,7 @@ tags:
 [[M3 - Pruebas]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Prueba
-> 4 casos de prueba (Jest).
+> 7 casos de prueba (Jest).
 
 ### Casos
 
@@ -26,6 +26,10 @@ tags:
   - normaliza mayúsculas del host
   - normaliza enlaces para detectar duplicados
   - infiere la sociedad solo de hosts verificados
+  - **lista verificada de dominios**
+    - los dominios aceptados son los de la lista que no están retirados
+    - rechaza un dominio retirado
+    - no acepta un dominio solo porque contenga «ieee»
 
 ## Enlaces
 

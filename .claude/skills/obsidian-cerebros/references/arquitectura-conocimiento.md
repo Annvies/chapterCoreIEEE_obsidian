@@ -11,7 +11,7 @@
   cada `Cerebro N` (MOC de módulo) → subgrupos `MN - …` → notas de concepto/decisión.
 - **Un racimo por módulo:** subgrupos y conceptos solo enlazan dentro de su módulo.
   Las relaciones entre módulos van entre cerebros (o se mencionan sin enlace). Así el
-  grafo muestra un cerebro central con seis cerebros especializados alrededor, en vez
+  grafo muestra un cerebro central con siete cerebros especializados alrededor, en vez
   de una sola bola. `vault_lint` avisa de los enlaces cruzados.
 - **Conectar con intención:** cada enlace debe explicar *por qué* se relaciona
   ("depende de", "alimenta a", "contradice"). Un enlace sin contexto vale poco.
@@ -42,7 +42,7 @@ de `CONTEXTO.md` y pendientes transversales (privacidad, filtro por capítulo).
 ```yaml
 ---
 type: subgrupo            # mapa | cerebro | subgrupo | concepto | decision
-modulo: 3                 # 1-6 (omitir en notas transversales)
+modulo: 3                 # 1-7 (omitir en notas transversales)
 estado: confirmado        # confirmado | propuesto | pendiente | desactualizado
 fuentes:                  # rutas del repo del producto o URLs oficiales
   - backendChapterCoreIEEE/src/opportunities/opportunities.service.ts

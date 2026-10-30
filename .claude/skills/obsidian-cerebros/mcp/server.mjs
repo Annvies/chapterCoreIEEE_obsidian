@@ -106,6 +106,14 @@ const MODULES = {
     docs: ['CONTEXTO.md'],
     mockups: ['02-dashboard'],
   },
+  7: {
+    name: 'Control de gastos y tesorería',
+    tag: 'modulo-7',
+    cerebro: 'Cerebros/Cerebro 7 - Tesorería y Gastos.md',
+    keywords: ['expense', 'Expense', 'tesoreria'],
+    docs: ['CONTEXTO.md', 'docs/spec-modulo-7-gastos.md'],
+    mockups: [],
+  },
 };
 const PRODUCT_DIRS = ['backendChapterCoreIEEE', 'frontendChapterCoreIEEE', 'docs', 'mockups'];
 
@@ -790,10 +798,10 @@ const TOOLS = [
   },
   {
     name: 'module_context',
-    description: 'Contexto completo de un módulo (1-6): notas de la bóveda, pendientes abiertos y archivos relacionados del repositorio del producto.',
+    description: 'Contexto completo de un módulo (1-7):notas de la bóveda, pendientes abiertos y archivos relacionados del repositorio del producto.',
     inputSchema: {
       type: 'object',
-      properties: { module: { type: 'integer', minimum: 1, maximum: 6 } },
+      properties: { module: { type: 'integer', minimum: 1, maximum: 7 } },
       required: ['module'],
     },
     run: moduleContext,
@@ -942,6 +950,6 @@ else if (cmd === 'setup') {
     process.exitCode = 1;
   }
 } else {
-  console.error('Uso: node server.mjs [lint | overview | module <1-6> | repo | where | setup <ruta>]');
+  console.error('Uso: node server.mjs [lint | overview | module <1-7> | repo | where | setup <ruta>]');
   process.exitCode = 2;
 }

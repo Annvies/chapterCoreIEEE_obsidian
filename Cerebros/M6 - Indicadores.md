@@ -23,8 +23,8 @@ tags:
 > - Formularios y respuestas: Módulo 5.
 
 > [!warning] Métricas que no llegan
-> En `main`, las visitas del Módulo 4 aún no están integradas en el Dashboard; el PR #28
-> (pendiente de fusión) las cuenta como escaneos. No se describe una
+> Desde el PR #28 (en `main` con el PR #29) las visitas QR del Módulo 4 se cuentan como
+> escaneos. No se describe una
 > integración de métricas desde el directorio de contactos.
 
 ## Enlaces

@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/opportunities/filters.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -27,6 +27,9 @@ tags:
 | `QuickFilter` | type | — |
 | `QUICK_FILTERS` | const | — |
 | `FilterOptions` | interface | — |
+| `countCurrent` | function | Vigente = sin fecha límite o con fecha límite igual o posterior a hoy (spec 002, RF-310). |
+| `DiscoveryOfferInput` | interface | — |
+| `shouldOfferDiscovery` | function | ¿Se ofrece «Buscar en fuentes oficiales IEEE»? (RF-310) |
 | `applyFilters` | function | — |
 
 

@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/opportunities/opportunities.controller.spec.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -17,7 +17,7 @@ tags:
 [[M3 - Pruebas]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Prueba
-> 5 casos de prueba (Jest).
+> 6 casos de prueba (Jest).
 
 ### Casos
 
@@ -27,6 +27,7 @@ tags:
   - rechaza extraer URLs no oficiales sin llegar al servicio
   - valida los parámetros de búsqueda
   - limita las extracciones a 5 por minuto
+  - devuelve la lista verificada de dominios sin los retirados
 
 ## Enlaces
 

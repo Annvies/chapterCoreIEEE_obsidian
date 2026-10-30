@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/opportunities/page-fetcher.service.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -24,11 +24,14 @@ tags:
 | Nombre | Tipo | Descripción |
 |---|---|---|
 | `FetchedPage` | interface | — |
+| `FetchPageOptions` | interface | — |
+| `USER_AGENT` | const | Agente propio: los sitios de IEEE pueden identificarlo y aplicarle sus reglas de robots.txt. |
 | `isPrivateAddress` | function | — |
 | `htmlToText` | function | Convierte HTML en texto legible; descarta scripts, estilos y comentarios. Tiempo lineal. |
 | `extractTitle` | function | — |
 | `extractOfficialLinks` | function | — |
-| `PageFetcherService` | class | Descarga una página oficial IEEE con protección SSRF: solo https, solo dominios de la allowlist (también en cada redirección), sin IPs privadas, tamaño y tiempo acotados. |
+| `HostRejectedException` | class | Descarga una página oficial IEEE con protección SSRF: solo https, solo dominios de la allowlist (también en cada redirección), sin IPs privadas, tamaño y tiempo acotados. El sitio rechazó la descarga automática: 403, 429 o desafío del cortafuegos de AWS (spec 002, RF-358). Lleva el host para no volver a pedirle páginas; nunca se evade. |
+| `PageFetcherService` | class | — |
 
 ### Métodos públicos
 

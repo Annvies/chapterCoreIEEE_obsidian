@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/dashboard/dashboard.service.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-6
@@ -23,13 +23,14 @@ tags:
 
 | Nombre | Tipo | Descripción |
 |---|---|---|
-| `DashboardService` | class | Módulo 6 · Feedback, métricas y KPIs (mockup 02). Fórmulas confirmadas el 2026-10-19: - Satisfacción: media aritmética de campos `scale` con `useInKpis` (1–5). - NPS: %promotores (>= 9) - %detractores (<= 6) sobre campos `scale` 0–10. - Periodos: month = 30 días, semester = 180 días, management = histórico. - Miembros activos: usuarios con status `active`. Eventos, asistencia y escaneos de QR no tienen fuente de datos todavía. |
+| `DashboardViewer` | type | Quién consulta el dashboard: decide el alcance de las métricas. |
+| `DashboardService` | class | Módulo 6 · Feedback, métricas y KPIs (mockup 02). Fórmulas confirmadas el 2026-10-19: - Satisfacción: media aritmética de campos `scale` con `useInKpis` (1–5). - NPS: %promotores (>= 9) - %detractores (<= 6) sobre campos `scale` 0–10. - Periodos: month = 30 días, semester = 180 días, management = histórico. - Miembros activos: usuarios con status `active`. - Escaneos de QR: visitas de enlaces cortos con origen `qr` en el periodo. Alcance: el Director de capítulo ("Ver (su capítulo)" en la matriz) solo ve miembros y ranking de su capítulo. Eventos y asistencia no tienen fuente de datos todavía. |
 
 ### Métodos públicos
 
 | Método | Devuelve | Descripción |
 |---|---|---|
-| `summary()` | Promise<DashboardSummary> | — |
+| `summary()` | — | — |
 
 
 ## Enlaces

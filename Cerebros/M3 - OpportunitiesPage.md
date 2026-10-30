@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/opportunities/OpportunitiesPage.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -31,11 +31,19 @@ Página de la aplicación. Ruta y permiso en [[M3 - Interfaz]].
 ## Enlaces
 
 - [[M3 - useIeeeSocieties]]
+- [[M3 - useOfficialDomains]]
+- [[M3 - useOpportunityDiscovery]]
 - [[M3 - useOpportunitySearch]]
 - [[M3 - useSavedOpportunities]]
+- [[M3 - useSearchHistory]]
+- [[M3 - Tipos opportunity]]
 - [[M3 - ExtractPanel]]
 - [[M3 - filters]]
+- [[M3 - discoveryAnnouncement]]
+- [[M3 - OfficialSearchResults]]
 - [[M3 - OpportunityResults]]
+- [[M3 - SearchHistory]]
 - [[M3 - SearchPanel]]
+- [[M3 - StrategySelector]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

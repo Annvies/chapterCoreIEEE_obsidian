@@ -20,7 +20,7 @@ Un **cerebro** es un mapa de conocimiento: una nota principal que resume un áre
 todas las notas que la detallan. En el grafo de Obsidian cada cerebro se ve como un
 **racimo de nodos del mismo color**.
 
-La bóveda tiene **un cerebro central** y **seis cerebros especializados**, uno por cada
+La bóveda tiene **un cerebro central** y **siete cerebros especializados**, uno por cada
 módulo de ChapterCore.
 
 ## Estructura
@@ -28,7 +28,7 @@ módulo de ChapterCore.
 ```mermaid
 flowchart TD
   CC[Cerebro central] --> T[5 grupos transversales<br/>CC - …]
-  CC --> M[6 cerebros de módulo<br/>Cerebro 1 … Cerebro 6]
+  CC --> M[7 cerebros de módulo<br/>Cerebro 1 … Cerebro 7]
   M --> F[3 subgrupos funcionales<br/>qué hace el módulo]
   F --> K[Notas de concepto<br/>reglas y datos clave]
   M --> COD[Código del módulo]
@@ -41,7 +41,7 @@ Cada nivel enlaza solo hacia su padre y sus hijos. Las relaciones entre módulos
 
 ### Cerebro central (dorado)
 
-Resume el producto y conecta los seis cerebros. Además tiene su propio conocimiento,
+Resume el producto y conecta los siete cerebros. Además tiene su propio conocimiento,
 lo que no pertenece a un solo módulo:
 
 | Grupo | Qué contiene |
@@ -52,16 +52,17 @@ lo que no pertenece a un solo módulo:
 | **CC - Diseño e interfaz** | Paleta IEEE, navegación, componentes compartidos y una nota por cada uno de los 8 mockups |
 | **CC - Proyecto y equipo** | Equipo, alcance del MVP, fuentes de verdad, decisiones confirmadas, pendientes y reglas para agentes |
 
-### Los seis cerebros de módulo
+### Los siete cerebros de módulo
 
 | Módulo | Color | Cerebro | De qué se ocupa |
 |---|---|---|---|
 | 1 | Naranja | Base institucional | Cuentas, cargos, niveles de acceso, permisos y catálogo de capítulos |
 | 2 | Coral | Contactos | Directorio de empresas, alumni, conferencistas y autoridades, con su historial |
-| 3 | Amarillo | Oportunidades IEEE | Becas, concursos y voluntariados con extracción asistida por IA (Gemini) |
+| 3 | Amarillo | Oportunidades IEEE | Becas, concursos y voluntariados con extracción asistida por IA (Gemini) y búsqueda a petición en fuentes oficiales |
 | 4 | Verde | Difusión y QR | Enlaces cortos, QR dinámicos y conteo de visitas |
 | 5 | Azul | Secretaría y formularios | Formularios dinámicos versionados, respuestas y adjuntos |
-| 6 | Violeta | Feedback y KPIs | Dashboard: miembros, oportunidades, respuestas, satisfacción y NPS |
+| 6 | Violeta | Feedback y KPIs | Dashboard: miembros, oportunidades, respuestas, satisfacción, NPS y escaneos QR |
+| 7 | Turquesa | Tesorería y gastos | Gastos de la Rama y de cada capítulo y total gastado por periodo |
 
 ### Dentro de cada cerebro
 

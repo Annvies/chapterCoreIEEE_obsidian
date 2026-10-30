@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/types/forms.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -25,6 +25,9 @@ tags:
 |---|---|---|
 | `FIELD_TYPES` | const | — |
 | `FieldType` | type | — |
+| `BUILDER_FIELD_TYPES` | const | — |
+| `BuilderFieldType` | type | — |
+| `isBuilderFieldType` | function | — |
 | `VISIBILITY_OPERATORS` | const | — |
 | `VisibilityOperator` | type | — |
 | `FieldOption` | interface | — |

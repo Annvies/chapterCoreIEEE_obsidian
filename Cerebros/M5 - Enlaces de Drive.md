@@ -27,7 +27,7 @@ tags:
 > formularios públicos: quien responde pega un enlace de Google Drive en lugar de subir
 > un archivo al servidor.
 
-> [!info] En el código (PR #27, rama `feat/modulo-5-drive-links`, sin fusionar en `main`)
+> [!info] En el código (PR #27, en `main` con el PR #29)
 > - Solo se acepta una URL absoluta `https`, sin usuario ni contraseña y con host
 >   exactamente `drive.google.com` o `docs.google.com` (`isGoogleDriveUrl` en
 >   `forms/schema/form-schema.types.ts`; validación en `forms/schema/form-schema.zod.ts`).
@@ -58,5 +58,5 @@ tags:
 
 ## Fuentes
 
-- PR #27 de `marianZamorano/chapterCoreIEEE` (commit `3169b49`), pendiente de fusión.
+- PR #27 de `marianZamorano/chapterCoreIEEE` (commit `3169b49`), integrado en `dev` (`8c81834`) y en `main` con el PR #29 (`cdc4abf`).
 - `specs/007-modulo-5-drive-links/spec.md`

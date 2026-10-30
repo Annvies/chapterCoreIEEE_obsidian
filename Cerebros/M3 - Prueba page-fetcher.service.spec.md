@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/opportunities/page-fetcher.service.spec.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -17,7 +17,7 @@ tags:
 [[M3 - Pruebas]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Prueba
-> 11 casos de prueba (Jest).
+> 15 casos de prueba (Jest).
 
 ### Casos
 
@@ -26,6 +26,10 @@ tags:
   - solo conserva enlaces oficiales absolutos
   - rechaza URLs fuera de la allowlist sin hacer peticiones
   - sigue redirecciones relativas y absolutas dentro de los sitios oficiales
+  - se identifica con el agente de usuario propio de ChapterCore
+  - devuelve el HTML y el tipo de contenido de la página final
+  - corta la descarga cuando se aborta la señal externa, antes de su propio límite
+  - no descarga nada si la señal externa ya está abortada
   - corta tras 3 redirecciones
   - rechaza páginas de más de 1 MB
   - rechaza contenido que no es HTML

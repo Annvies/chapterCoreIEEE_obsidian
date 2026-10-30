@@ -23,7 +23,7 @@ tags:
 > - Las métricas son globales de la Rama: el filtro por capítulo del Director está pendiente.
 > - El periodo por defecto es **semestre**.
 
-> [!success] Resuelto en el PR #28 (pendiente de fusión)
+> [!success] Resuelto en el PR #28 (en `main` con el PR #29)
 > - `escaneosQr` cuenta las visitas QR del periodo ([[M6 - Escaneos de QR]]).
 > - El Director de capítulo recibe alcance `chapter` ([[M6 - Alcance por capítulo]]).
 > - `limitaciones` conserva solo la de eventos; para el Director añade la de métricas

@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/responses/FormResponsesPage.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -31,6 +31,7 @@ Página de la aplicación. Ruta y permiso en [[M5 - Interfaz]].
 ## Enlaces
 
 - [[M5 - lib api]]
+- [[M5 - lib form-schema]]
 - [[M5 - Tipos forms]]
 - [[M5 - StatsPanel]]
 - [[M5 - SubmissionDetail]]

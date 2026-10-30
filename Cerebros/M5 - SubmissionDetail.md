@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/responses/SubmissionDetail.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -42,6 +42,7 @@ tags:
 ## Enlaces
 
 - [[M5 - lib api]]
+- [[M5 - lib form-schema]]
 - [[M5 - Tipos forms]]
 
 %% Nota generada por scripts/mapear_repositorio.py: no la edites a mano; se regenera. %%

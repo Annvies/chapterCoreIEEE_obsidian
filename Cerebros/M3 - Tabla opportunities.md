@@ -7,7 +7,7 @@ fuentes:
   - backendChapterCoreIEEE/src/database/migrations/1792368000000-CreateOpportunities.ts
   - backendChapterCoreIEEE/src/database/migrations/1792454400000-UniqueOpportunityEnlace.ts
   - backendChapterCoreIEEE/src/opportunities/entities/opportunity.entity.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3

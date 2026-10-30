@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/auth/controllers/auth.controller.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 aliases:
   - "POST /auth/login"
 tags:

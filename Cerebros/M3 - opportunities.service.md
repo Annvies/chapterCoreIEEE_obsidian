@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/opportunities/opportunities.service.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -24,6 +24,8 @@ tags:
 | Nombre | Tipo | Descripción |
 |---|---|---|
 | `DEFAULT_LIMIT` | const | — |
+| `keywordType` | function | Tipo que nombra una palabra en minúsculas («becas», «contest»…), o null. |
+| `SearchTerms` | interface | — |
 | `parseSearchTerms` | function | — |
 | `isValidIsoDate` | function | — |
 | `ungroundedNumbers` | function | Cifras (2+ dígitos) del texto de la IA que no aparecen en la página fuente. |

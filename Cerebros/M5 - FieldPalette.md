@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/forms/FieldPalette.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -29,7 +29,7 @@ tags:
 
 | Prop | Obligatoria | Tipo |
 |---|---|---|
-| `onAdd` | sí | `(type: FieldType) => void` |
+| `onAdd` | sí | `(type: BuilderFieldType) => void` |
 
 
 ## Enlaces

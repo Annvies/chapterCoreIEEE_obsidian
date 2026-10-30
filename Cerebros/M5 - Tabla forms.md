@@ -6,7 +6,7 @@ generado: true
 fuentes:
   - backendChapterCoreIEEE/src/database/migrations/1730000000000-CreateFormsModule.ts
   - backendChapterCoreIEEE/src/forms/entities/form.entity.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5

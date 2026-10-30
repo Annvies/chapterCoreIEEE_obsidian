@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/forms/BuilderCanvas.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -37,7 +37,7 @@ tags:
 | `onMove` | sí | `(id: string, direction: -1 \| 1) => void` |
 | `onDuplicate` | sí | `(id: string) => void` |
 | `onRemove` | sí | `(id: string) => void` |
-| `onDropType` | sí | `(type: FieldType) => void` |
+| `onDropType` | sí | `(type: BuilderFieldType) => void` |
 
 
 ## Enlaces

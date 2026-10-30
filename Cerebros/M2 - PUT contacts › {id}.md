@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/contacts/controllers/contacts.controller.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 aliases:
   - "PUT /contacts/:id"
 tags:

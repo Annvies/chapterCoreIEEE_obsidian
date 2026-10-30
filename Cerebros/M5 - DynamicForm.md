@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/features/public/DynamicForm.tsx
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -32,9 +32,7 @@ tags:
 | `schema` | sí | `FormSchema` |
 | `submitting` | sí | `boolean` |
 | `serverError` | sí | `string \| null` |
-| `onSubmit` | sí | `(` |
-| `data` | sí | `Record<string, unknown>,` |
-| `files` | sí | `Array<{ fieldId: string` |
+| `onSubmit` | sí | `(data: Record<string, unknown>) => Promise<void>` |
 | `field` | sí | `FormField` |
 | `value` | sí | `unknown` |
 | `error` | no | `string` |

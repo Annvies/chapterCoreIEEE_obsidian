@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/dashboard/dashboard.types.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-6
@@ -30,7 +30,9 @@ tags:
 | `DashboardNps` | interface | — |
 | `DashboardChapterRank` | interface | — |
 | `DashboardFeedbackItem` | interface | — |
-| `DashboardSummary` | interface | — |
+| `DashboardScope` | type | Alcance del resumen según la matriz de permisos: `branch` para quien ve toda la Rama y `chapter` para el Director de capítulo ("Ver (su capítulo)"). |
+| `DashboardResponses` | interface | — |
+| `DashboardSummary` | interface | Los campos que admiten null lo hacen en alcance `chapter`: oportunidades, formularios, respuestas y QR no tienen asociación de capítulo y no se muestran para no exponer métricas globales de la Rama. |
 
 
 ## Enlaces

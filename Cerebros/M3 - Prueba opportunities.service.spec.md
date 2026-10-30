@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/opportunities/opportunities.service.spec.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -17,12 +17,13 @@ tags:
 [[M3 - Pruebas]] · [[Cerebro 3 - Oportunidades IEEE]]
 
 > [!abstract] Prueba
-> 17 casos de prueba (Jest).
+> 18 casos de prueba (Jest).
 
 ### Casos
 
 - **buildDraft**
   - conserva los datos válidos y deduce el capítulo del host
+  - asocia cada advertencia a su campo
   - no inventa datos ausentes y lo advierte
   - descarta enlaces que no aparecen en la página
   - advierte de fechas límite pasadas

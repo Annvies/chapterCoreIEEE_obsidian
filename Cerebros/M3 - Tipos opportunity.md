@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/types/opportunity.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -27,6 +27,20 @@ tags:
 | `OpportunityType` | type | — |
 | `OpportunityFields` | interface | Campos que se envían al publicar (POST /opportunities). |
 | `OpportunityDraft` | interface | Ficha propuesta por la IA (POST /opportunities/extract); aún no se ha guardado. |
+| `DraftField` | type | — |
+| `DraftNotice` | interface | — |
+| `STRATEGY_NAMES` | const | — |
+| `StrategyName` | type | — |
+| `STRATEGY_LABEL` | const | — |
+| `CatalogMeta` | interface | Datos del catálogo de respaldo que acompañan a sus resultados (RF-352 a RF-354). |
+| `AttemptStatus` | type | — |
+| `ATTEMPT_STATUS_LABEL` | const | — |
+| `DiscoveryAttempt` | interface | — |
+| `DiscoveryResult` | interface | Resultado «sin verificar» encontrado en una página oficial. |
+| `DiscoveryResponse` | interface | — |
+| `DiscoveryConfig` | interface | — |
+| `SearchHistoryEntry` | interface | — |
+| `OfficialDomain` | interface | — |
 | `Opportunity` | interface | — |
 | `IeeeSociety` | interface | — |
 | `OPPORTUNITY_TYPE_LABEL` | const | — |

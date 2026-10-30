@@ -6,7 +6,7 @@ generado: true
 fuentes:
   - backendChapterCoreIEEE/src/database/migrations/1792627200000-CreateContactsModule.ts
   - backendChapterCoreIEEE/src/contacts/entities/contact.entity.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-2

@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/difusion/difusion.controller.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 aliases:
   - "GET /difusion/enlaces"
 tags:

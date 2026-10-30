@@ -17,12 +17,12 @@ tags:
 # ChapterCore — Cerebro central
 
 **ChapterCore** es el sistema de gestión integral de la Rama Estudiantil IEEE (UPB) y sus
-capítulos. Este cerebro central conecta los **seis cerebros especializados** del MVP, uno
-por módulo del sistema, y el del Módulo 7, propuesto. Cada cerebro tiene tres subgrupos y, debajo, notas de concepto
+capítulos. Este cerebro central conecta los **siete cerebros especializados**, uno por
+módulo del sistema: los seis del MVP y el del Módulo 7, ya en `main`. Cada cerebro tiene tres subgrupos y, debajo, notas de concepto
 verificadas en el código.
 
 > [!abstract] Estructura del conocimiento
-> **Cerebro central** → 6 **cerebros de módulo** → 3 **subgrupos** cada uno → **conceptos**.
+> **Cerebro central** → 7 **cerebros de módulo** → 3 **subgrupos** cada uno → **conceptos**.
 > Cada cerebro tiene además una nota **«MN - Código del módulo»** con la documentación
 > técnica: endpoints y permisos, archivos de backend y frontend, pruebas y diagrama de flujo.
 > Las relaciones entre módulos se expresan entre cerebros; los subgrupos y conceptos
@@ -38,17 +38,17 @@ Nodos propios del cerebro central, agrupados por tema:
 - [[CC - Diseño e interfaz]] — Mockups oficiales, paleta IEEE, navegación y componentes compartidos.
 - [[CC - Proyecto y equipo]] — Equipo, alcance, fuentes de verdad, decisiones, pendientes y reglas del proyecto.
 
-## Los seis cerebros especializados
+## Los siete cerebros especializados
 
 | Módulo | Cerebro | De qué se ocupa |
 |---|---|---|
 | 1 | [[Cerebro 1 - Base institucional]] | Cuentas, cargos, niveles de acceso, matriz de permisos, catálogo de capítulos, perfil de membresía IEEE y aprobación de invitaciones |
 | 2 | [[Cerebro 2 - Contactos]] | Directorio de empresas, alumni, conferencistas y autoridades, con su historial |
-| 3 | [[Cerebro 3 - Oportunidades IEEE]] | Becas, concursos y voluntariados IEEE con extracción asistida por Gemini |
+| 3 | [[Cerebro 3 - Oportunidades IEEE]] | Becas, concursos y voluntariados IEEE con extracción asistida por Gemini y búsqueda a petición en fuentes oficiales |
 | 4 | [[Cerebro 4 - Difusión y QR]] | Enlaces cortos, QR dinámicos y conteo de visitas |
-| 5 | [[Cerebro 5 - Secretaría y formularios]] | Formularios dinámicos versionados, respuestas y adjuntos |
-| 6 | [[Cerebro 6 - Feedback y KPIs]] | Dashboard: miembros, oportunidades, respuestas, satisfacción y NPS |
-| 7 | [[Cerebro 7 - Tesorería y Gastos]] *(propuesto)* | Gastos de la Rama y de cada capítulo y total gastado por periodo; en rama, pendiente de aprobación |
+| 5 | [[Cerebro 5 - Secretaría y formularios]] | Formularios dinámicos versionados, respuestas y enlaces de Drive |
+| 6 | [[Cerebro 6 - Feedback y KPIs]] | Dashboard: miembros, oportunidades, respuestas, satisfacción, NPS y escaneos QR, con alcance por capítulo |
+| 7 | [[Cerebro 7 - Tesorería y Gastos]] | Gastos de la Rama y de cada capítulo y total gastado por periodo; código en `main`, aprobación formal pendiente en `CONTEXTO.md` |
 
 > [!info] Arquitectura del producto
 > - Backend NestJS + PostgreSQL en `backendChapterCoreIEEE/`; frontend React en
@@ -68,14 +68,14 @@ Nodos propios del cerebro central, agrupados por tema:
 > - **Módulo 4 → Módulo 6:** las visitas con origen QR se cuentan como escaneos en el
 >   Dashboard.
 > - **Módulo 2:** usa permisos y capítulos del Módulo 1; no alimenta el Dashboard.
-> - **Módulo 1 y 2 → Módulo 7** *(propuesto)*: tesorería usa la matriz de permisos y el
+> - **Módulo 1 y 2 → Módulo 7:** tesorería usa la matriz de permisos y el
 >   catálogo de capítulos; no alimenta el Dashboard.
 
 > [!warning] Integraciones pendientes
 > - Escaneos QR en el Dashboard, alcance por capítulo del Director (PR #28) y enlaces de
 >   Google Drive en formularios públicos (PR #27): **ya están en `main`** (PR #29).
-> - Módulo 7, tesorería: en la rama `feat/modulo-7-gastos-tesoreria`, pendiente de
->   aprobación del equipo.
+> - Módulo 7, tesorería: **en `main`** desde el PR #31 (`607d4b8`), pero `CONTEXTO.md` aún
+>   lo describe como propuesto; falta registrar la aprobación y la enmienda 2.1.0.
 > - No existe un módulo de eventos (el Dashboard lo informa como no disponible).
 
 ## Cómo leer el grafo

@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - frontendChapterCoreIEEE/src/lib/form-schema.test.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -17,7 +17,7 @@ tags:
 [[M5 - Pruebas]] · [[Cerebro 5 - Secretaría y formularios]]
 
 > [!abstract] Prueba
-> 6 casos de prueba (Vitest + Testing Library).
+> 8 casos de prueba (Vitest + Testing Library).
 
 ### Casos
 
@@ -26,7 +26,9 @@ tags:
   - crea campos de escala con rango por defecto
   - valida campos obligatorios visibles
   - oculta y no exige campos condicionales
-  - separa archivos y descarta respuestas ocultas
+  - serializa solo respuestas visibles sin adjuntos
+  - trata un campo de archivo heredado como enlace de Drive en respuestas nuevas
+  - rechaza URLs que no sean HTTPS de Google Drive en un campo heredado
   - rechaza valores fuera de la escala
 
 ## Enlaces

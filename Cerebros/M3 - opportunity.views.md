@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/opportunities/opportunity.views.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-3
@@ -24,6 +24,8 @@ tags:
 | Nombre | Tipo | Descripción |
 |---|---|---|
 | `OpportunityDraftView` | interface | — |
+| `DraftField` | type | — |
+| `DraftNotice` | interface | — |
 | `OpportunityView` | interface | — |
 | `IeeeSocietyView` | interface | — |
 | `toOpportunityView` | function | — |

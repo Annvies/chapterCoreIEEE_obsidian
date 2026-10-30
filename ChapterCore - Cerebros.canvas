@@ -786,8 +786,8 @@
 			"x": 0,
 			"y": 1980,
 			"width": 1000,
-			"height": 220,
-			"label": "MÓDULO 7 · TESORERÍA Y GASTOS (PROPUESTO)",
+			"height": 600,
+			"label": "MÓDULO 7 · TESORERÍA Y GASTOS",
 			"color": "#14B8A6"
 		},
 		{
@@ -798,6 +798,106 @@
 			"y": 2020,
 			"width": 960,
 			"height": 100,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-f0",
+			"type": "file",
+			"file": "Cerebros/M7 - Registro de gastos.md",
+			"x": 20,
+			"y": 2155,
+			"width": 305,
+			"height": 110,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-f1",
+			"type": "file",
+			"file": "Cerebros/M7 - Alcance y permisos.md",
+			"x": 345,
+			"y": 2155,
+			"width": 305,
+			"height": 110,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-f2",
+			"type": "file",
+			"file": "Cerebros/M7 - Totales y filtros.md",
+			"x": 670,
+			"y": 2155,
+			"width": 305,
+			"height": 110,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "code-m7",
+			"type": "file",
+			"file": "Cerebros/M7 - Código del módulo.md",
+			"x": 20,
+			"y": 2295,
+			"width": 960,
+			"height": 90,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t0",
+			"type": "file",
+			"file": "Cerebros/M7 - API.md",
+			"x": 20,
+			"y": 2420,
+			"width": 150,
+			"height": 130,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t1",
+			"type": "file",
+			"file": "Cerebros/M7 - DTO y validaciones.md",
+			"x": 182,
+			"y": 2420,
+			"width": 150,
+			"height": 130,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t2",
+			"type": "file",
+			"file": "Cerebros/M7 - Lógica del backend.md",
+			"x": 344,
+			"y": 2420,
+			"width": 150,
+			"height": 130,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t3",
+			"type": "file",
+			"file": "Cerebros/M7 - Base de datos.md",
+			"x": 506,
+			"y": 2420,
+			"width": 150,
+			"height": 130,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t4",
+			"type": "file",
+			"file": "Cerebros/M7 - Interfaz.md",
+			"x": 668,
+			"y": 2420,
+			"width": 150,
+			"height": 130,
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t5",
+			"type": "file",
+			"file": "Cerebros/M7 - Pruebas.md",
+			"x": 830,
+			"y": 2420,
+			"width": 150,
+			"height": 130,
 			"color": "#14B8A6"
 		}
 	],
@@ -1367,7 +1467,88 @@
 			"fromNode": "central",
 			"toNode": "hub-m7",
 			"color": "#14B8A6",
-			"label": "módulo 7 (propuesto)"
+			"label": "módulo 7"
+		},
+		{
+			"id": "m7-f0-in",
+			"fromNode": "hub-m7",
+			"toNode": "m7-f0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-f1-in",
+			"fromNode": "hub-m7",
+			"toNode": "m7-f1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-f2-in",
+			"fromNode": "hub-m7",
+			"toNode": "m7-f2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#14B8A6"
+		},
+		{
+			"id": "code-m7-in",
+			"fromNode": "hub-m7",
+			"toNode": "code-m7",
+			"fromSide": "left",
+			"toSide": "left",
+			"color": "#14B8A6",
+			"label": "código"
+		},
+		{
+			"id": "m7-t0-in",
+			"fromNode": "code-m7",
+			"toNode": "m7-t0",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t1-in",
+			"fromNode": "code-m7",
+			"toNode": "m7-t1",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t2-in",
+			"fromNode": "code-m7",
+			"toNode": "m7-t2",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t3-in",
+			"fromNode": "code-m7",
+			"toNode": "m7-t3",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t4-in",
+			"fromNode": "code-m7",
+			"toNode": "m7-t4",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#14B8A6"
+		},
+		{
+			"id": "m7-t5-in",
+			"fromNode": "code-m7",
+			"toNode": "m7-t5",
+			"fromSide": "bottom",
+			"toSide": "top",
+			"color": "#14B8A6"
 		}
 	]
 }

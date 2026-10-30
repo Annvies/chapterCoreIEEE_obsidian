@@ -44,6 +44,7 @@ if not BE.is_dir() or not FE.is_dir():
 CEREBROS = {
     1: "Cerebro 1 - Base institucional", 2: "Cerebro 2 - Contactos", 3: "Cerebro 3 - Oportunidades IEEE",
     4: "Cerebro 4 - Difusión y QR", 5: "Cerebro 5 - Secretaría y formularios", 6: "Cerebro 6 - Feedback y KPIs",
+    7: "Cerebro 7 - Tesorería y Gastos",
 }
 GRUPOS = {
     "api": ("API", "Endpoints HTTP del módulo: método, ruta, permiso, límites y lógica que invocan."),
@@ -54,28 +55,32 @@ GRUPOS = {
     "test": ("Pruebas", "Archivos de pruebas automatizadas y los casos que verifican."),
 }
 FEATURE = {"Users": "Usuarios", "Contacts": "Contactos", "Opportunities": "Oportunidades",
-           "Dissemination": "Difusión", "Forms": "Formularios", "Dashboard": "Dashboard"}
+           "Dissemination": "Difusión", "Forms": "Formularios", "Dashboard": "Dashboard", "Expenses": "Gastos"}
 ACCESS = {"None": "Ninguno", "Respond": "Responder", "View": "Ver", "Edit": "Editar", "Total": "Total"}
 
-BE_MOD = {"auth": 1, "contacts": 2, "opportunities": 3, "difusion": 4, "forms": 5, "dashboard": 6}
+BE_MOD = {"auth": 1, "contacts": 2, "opportunities": 3, "difusion": 4, "forms": 5, "dashboard": 6, "expenses": 7}
 FE_FEAT_MOD = {"access": 1, "auth": 1, "profile": 1, "contacts": 2, "opportunities": 3, "difusion": 4,
-               "forms": 5, "public": 5, "responses": 5, "dashboard": 6}
+               "forms": 5, "public": 5, "responses": 5, "dashboard": 6,
+               "expenses": 7}
 FE_NAME_MOD = {"auth": 1, "contacts": 2, "opportunities": 3, "opportunity": 3, "difusion": 4,
                "dashboard": 6, "forms": 5, "access": 1, "session": 1, "ieee": 1, "qr": 4, "form-schema": 5,
-               "form-schema-helpers": 5, "officialSources": 3, "api": 5}
+               "form-schema-helpers": 5, "officialSources": 3, "api": 5, "expenses": 7}
 HOOK_MOD = {"useIeeeSocieties": 3, "useOpportunitySearch": 3, "useOpportunityExtraction": 3,
-            "useSavedOpportunities": 3, "useShortLinks": 4, "useLinkStats": 4, "useQrSvg": 4,
+            "useSavedOpportunities": 3, "useOpportunityDiscovery": 3, "useSearchHistory": 3,
+            "useOfficialDomains": 3,
+            "useShortLinks": 4, "useLinkStats": 4, "useQrSvg": 4,
             "usePublishedForms": 5, "useDashboardSummary": 6}
 COMPONENT_MOD = {"OpportunityCard": 3, "DeadlineBadge": 3}
 TABLE_MOD = {"users": 1, "auth_tokens": 1, "ieee_societies": 1, "user_ieee_societies": 1, "contacts": 2, "contact_interactions": 2,
-             "opportunities": 3, "short_links": 4, "link_visits": 4, "forms": 5, "form_versions": 5,
-             "form_submissions": 5, "form_uploads": 5}
+             "opportunities": 3, "opportunity_searches": 3, "short_links": 4, "link_visits": 4, "forms": 5, "form_versions": 5,
+             "form_submissions": 5, "form_uploads": 5, "expenses": 7}
 TABLE_CONCEPT = {"users": "M1 - Modelo de datos users y auth_tokens", "auth_tokens": "M1 - Modelo de datos users y auth_tokens",
                  "ieee_societies": "M1 - Catálogo ieee_societies", "contacts": "M2 - Modelo de datos contacts",
                  "contact_interactions": "M2 - Historial de interacciones", "opportunities": "M3 - Modelo de datos opportunities",
                  "short_links": "M4 - Modelo short_links y link_visits", "link_visits": "M4 - Modelo short_links y link_visits",
                  "forms": "M5 - Estados del formulario", "form_versions": "M5 - Versionado de formularios",
-                 "form_submissions": "M5 - Estados de una respuesta", "form_uploads": "M5 - Archivos adjuntos"}
+                 "form_submissions": "M5 - Estados de una respuesta", "form_uploads": "M5 - Archivos adjuntos",
+                 "opportunity_searches": "M3 - Historial de búsquedas", "expenses": "M7 - Modelo de datos expenses"}
 
 
 def read(p: Path) -> str:
@@ -637,7 +642,7 @@ def write_all() -> int:
     for old in C.glob("*.md"):
         if is_generated(old):
             old.unlink()
-    for mod in range(1, 7):
+    for mod in range(1, 8):
         for key, (titulo, desc) in GRUPOS.items():
             miembros = sorted(n for n, d in NOTES.items() if d["modulo"] == mod and d["grupo"] == key)
             if not miembros:
@@ -718,7 +723,7 @@ def write_note(name, props, tags, migas, abstract, cuerpo, fuentes, enlaces, ali
 
 
 def link_code_hubs() -> None:
-    for mod in range(1, 7):
+    for mod in range(1, 8):
         p = C / f"M{mod} - Código del módulo.md"
         if not p.exists():
             continue
@@ -741,5 +746,5 @@ if __name__ == "__main__":
     parse_tests()
     total = write_all()
     link_code_hubs()
-    por_mod = {m: sum(1 for d in NOTES.values() if d["modulo"] == m) for m in range(1, 7)}
+    por_mod = {m: sum(1 for d in NOTES.values() if d["modulo"] == m) for m in range(1, 8)}
     print(f"Notas generadas: {total} (+ grupos). Por módulo: {por_mod}. Endpoints: {len(ENDPOINTS)}.")

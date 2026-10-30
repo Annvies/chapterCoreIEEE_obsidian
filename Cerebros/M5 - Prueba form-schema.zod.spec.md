@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/forms/schema/form-schema.zod.spec.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 tags:
   - chaptercore
   - modulo-5
@@ -17,7 +17,7 @@ tags:
 [[M5 - Pruebas]] · [[Cerebro 5 - Secretaría y formularios]]
 
 > [!abstract] Prueba
-> 7 casos de prueba (Jest).
+> 8 casos de prueba (Jest).
 
 ### Casos
 
@@ -25,11 +25,12 @@ tags:
   - acepta un esquema valido con logica condicional
   - rechaza ids duplicados
   - rechaza dependencias circulares de visibilidad
+  - acepta el tipo de campo drive_link
 - **buildSubmissionSchema**
   - no exige el campo condicional si no es visible
   - exige el campo condicional cuando la regla se cumple
   - valida el numero de membresia
-  - valida que un archivo tenga referencia de carga en servidor
+  - valida enlaces Drive en campos de archivo heredados
 
 ## Enlaces
 

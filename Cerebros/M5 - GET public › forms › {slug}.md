@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/forms/public-forms.controller.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 aliases:
   - "GET /public/forms/:slug"
 tags:

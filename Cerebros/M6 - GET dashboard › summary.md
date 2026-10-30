@@ -5,7 +5,7 @@ estado: confirmado
 generado: true
 fuentes:
   - backendChapterCoreIEEE/src/dashboard/dashboard.controller.ts
-actualizado: 2026-10-29
+actualizado: 2026-10-30
 aliases:
   - "GET /dashboard/summary"
 tags:
@@ -31,6 +31,7 @@ tags:
 ### Entradas
 
 - Query  → `DashboardQueryDto`
+- Usa la persona autenticada (`@CurrentUser`)
 
 ### Lógica que invoca
 
